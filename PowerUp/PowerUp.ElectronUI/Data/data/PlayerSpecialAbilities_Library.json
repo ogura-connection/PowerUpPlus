@@ -1,0 +1,5816 @@
+{
+  "A.J. Ramos": {
+    "Poise": 3,
+    "DoctorK": true,
+    "IsWalkProne": true,
+    "Recovery": 3
+  },
+  "Aaron Cook": {
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "Spin": 2,
+    "Durability": 2
+  },
+  "Adam Dunn": {
+    "IsPowerHitter": true,
+    "IsFreeSwinger": true,
+    "VersusLefty": 2,
+    "IsIntimidator": true,
+    "SmallBall": -1,
+    "BaseRunning": 2,
+    "IsErrorProne": true
+  },
+  "Adam Wainwright": {
+    "Poise": 4,
+    "Consistency": 4,
+    "IsStarterFinisher": true,
+    "Spin": 4,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "GoodReflexes": true
+  },
+  "Adrián Beltré": {
+    "IsStar": true,
+    "IsPowerHitter": true,
+    "IsGoldGlover": true,
+    "Throwing": 4,
+    "Consistency": 4,
+    "Durability": 4,
+    "ClutchHitter": 4,
+    "IsAggressiveFielder": true,
+    "IsFirstballHitter": true
+  },
+  "Adrian González": {
+    "IsPowerHitter": true,
+    "IsContactHitter": true,
+    "ClutchHitter": 4,
+    "VersusLefty": 2,
+    "Consistency": 4,
+    "SmallBall": -1
+  },
+  "Al Kaline": {
+    "IsStar": true,
+    "IsContactHitter": true,
+    "IsPowerHitter": true,
+    "IsSprayHitter": true,
+    "Consistency": 4,
+    "Durability": 4,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Alan Trammell": {
+    "IsStar": true,
+    "IsContactHitter": true,
+    "IsGoldGlover": true,
+    "IsPivotMan": true,
+    "ClutchHitter": 4,
+    "BaseRunning": 4
+  },
+  "Albert Belle": {
+    "IsPowerHitter": true,
+    "IsIntimidator": true,
+    "ClutchHitter": 4,
+    "IsPullHitter": true,
+    "Morale": -1,
+    "IsHotHitter": true,
+    "Durability": 2
+  },
+  "Albert Pujols": {
+    "IsStar": true,
+    "IsPowerHitter": true,
+    "IsContactHitter": true,
+    "Consistency": 4,
+    "ClutchHitter": 5,
+    "VersusLefty": 5,
+    "IsIntimidator": true,
+    "IsBackToBackHitter": true,
+    "IsRefinedHitter": true,
+    "IsToughOut": true
+  },
+  "Alex Bregman": {
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "ClutchHitter": 4,
+    "Consistency": 4,
+    "VersusLefty": 4
+  },
+  "Alex Colome": {
+    "Recovery": 4,
+    "GroundBallOrFlyBallPitcher": 1,
+    "Poise": 3
+  },
+  "Alex Gordon": {
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsAggressiveFielder": true,
+    "Durability": 4
+  },
+  "Alex Rodriguez": {
+    "IsStar": true,
+    "IsPowerHitter": true,
+    "ClutchHitter": 2,
+    "IsBackToBackHitter": true,
+    "IsIntimidator": true,
+    "Consistency": 4,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "VersusLefty": 4
+  },
+  "Alvin Davis": {
+    "IsRefinedHitter": true,
+    "IsContactHitter": true,
+    "VersusLefty": 4,
+    "Morale": 1
+  },
+  "Amos Otis": {
+    "IsSprayHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true
+  },
+  "André Dawson": {
+    "IsStar": true,
+    "IsPowerHitter": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "BaseRunning": 4,
+    "Durability": 2,
+    "ClutchHitter": 4
+  },
+  "Andres Galarraga": {
+    "IsPowerHitter": true,
+    "IsFreeSwinger": true,
+    "IsFirstballHitter": true,
+    "VersusLefty": 4,
+    "IsErrorProne": true,
+    "Morale": 1
+  },
+  "Andrew McCutchen": {
+    "IsSprayHitter": true,
+    "IsPowerHitter": true,
+    "IsRefinedHitter": true,
+    "BaseRunning": 4,
+    "IsSparkplug": true,
+    "Morale": 1,
+    "Consistency": 4
+  },
+  "Andruw Jones": {
+    "IsGoldGlover": true,
+    "IsPowerHitter": true,
+    "IsAggressiveFielder": true,
+    "HasCannonArm": true,
+    "IsFreeSwinger": true,
+    "IsPullHitter": true,
+    "VersusLefty": 4
+  },
+  "Andy Benes": {
+    "DoctorK": true,
+    "FastballLife": 4,
+    "Consistency": 2,
+    "Durability": 3
+  },
+  "Anthony Rendon": {
+    "IsContactHitter": true,
+    "ClutchHitter": 4,
+    "Consistency": 4,
+    "Durability": 2,
+    "IsRefinedHitter": true,
+    "VersusLefty": 4
+  },
+  "Anthony Rizzo": {
+    "IsPowerHitter": true,
+    "ClutchHitter": 4,
+    "VersusLefty": 2,
+    "IsContactHitter": true,
+    "IsGoldGlover": true,
+    "Morale": 1,
+    "IsSparkplug": true
+  },
+  "Archie Bradley": {
+    "FastballLife": 4,
+    "IsWalkProne": true,
+    "IsHotHead": true,
+    "Poise": 2
+  },
+  "Aroldis Chapman": {
+    "DoctorK": true,
+    "FastballLife": 4,
+    "IsIntimidator": true,
+    "IsWalkProne": true,
+    "Poise": 2,
+    "Recovery": 4
+  },
+  "Arthur Rhodes": {
+    "Recovery": 4,
+    "DoctorK": true,
+    "Durability": 4,
+    "WithRunnersInScoringPosition": 3
+  },
+  "Aurelio López": {
+    "Poise": 4,
+    "Spin": 4,
+    "WithRunnersInScoringPosition": 4
+  },
+  "Babe Ruth": {
+    "IsStar": true,
+    "IsPowerHitter": true,
+    "IsIntimidator": true,
+    "ClutchHitter": 5,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "IsBackToBackHitter": true,
+    "Consistency": 4,
+    "VersusLefty": 4
+  },
+  "Barry Bonds": {
+    "IsStar": true,
+    "IsPowerHitter": true,
+    "IsIntimidator": true,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "ClutchHitter": 5,
+    "Consistency": 4,
+    "VersusLefty": 5,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsGoldGlover": true
+  },
+  "Barry Larkin": {
+    "IsStar": true,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsGoldGlover": true,
+    "IsPivotMan": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "ClutchHitter": 4,
+    "Consistency": 4,
+    "IsSparkplug": true
+  },
+  "Barry Zito": {
+    "Spin": 4,
+    "GoodDelivery": true,
+    "GroundBallOrFlyBallPitcher": -1,
+    "Consistency": 2,
+    "SafeOrFatPitch": -1
+  },
+  "Ben Oglivie": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "VersusLefty": 2,
+    "ClutchHitter": 4
+  },
+  "Ben Sheets": {
+    "DoctorK": true,
+    "SafeOrFatPitch": 1,
+    "Spin": 4,
+    "Durability": 2,
+    "Poise": 4
+  },
+  "Ben Zobrist": {
+    "IsSprayHitter": true,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "ClutchHitter": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "VersusLefty": 4
+  },
+  "Benito Santiago": {
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsGoodBlocker": true,
+    "IsFreeSwinger": true,
+    "IsFirstballHitter": true,
+    "IsPowerHitter": true
+  },
+  "Bernie Williams": {
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "ClutchHitter": 4,
+    "Consistency": 4,
+    "IsRefinedHitter": true,
+    "BaseRunning": 4
+  },
+  "Bert Blyleven": {
+    "IsStar": true,
+    "DoctorK": true,
+    "Spin": 4,
+    "IsStarterFinisher": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "GoodLowPitch": true
+  },
+  "Bert Campaneris": {
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "SmallBall": 1,
+    "IsPivotMan": true,
+    "IsSparkplug": true
+  },
+  "Bill Mazeroski": {
+    "IsStar": true,
+    "IsGoldGlover": true,
+    "IsPivotMan": true,
+    "ClutchHitter": 5,
+    "SmallBall": 1,
+    "IsContactHitter": true
+  },
+  "Billy Koch": {
+    "FastballLife": 4,
+    "DoctorK": true,
+    "IsWalkProne": true,
+    "Poise": 2,
+    "Consistency": 2
+  },
+  "Billy Pierce": {
+    "DoctorK": true,
+    "Poise": 4,
+    "SafeOrFatPitch": 1,
+    "Consistency": 4
+  },
+  "Billy Wagner": {
+    "DoctorK": true,
+    "FastballLife": 4,
+    "IsIntimidator": true,
+    "Poise": 4,
+    "Recovery": 4,
+    "Consistency": 4
+  },
+  "Billy Williams": {
+    "IsStar": true,
+    "IsContactHitter": true,
+    "IsPowerHitter": true,
+    "Consistency": 4,
+    "Durability": 4,
+    "IsSprayHitter": true,
+    "ClutchHitter": 4
+  },
+  "Blake Snell": {
+    "DoctorK": true,
+    "IsWalkProne": true,
+    "Spin": 4,
+    "IsSlowStarter": true,
+    "Consistency": 2,
+    "Poise": 2
+  },
+  "Bo Jackson": {
+    "IsPowerHitter": true,
+    "IsFreeSwinger": true,
+    "BaseRunning": 4,
+    "Durability": 2,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsIntimidator": true,
+    "IsAggressiveRunner": true
+  },
+  "Bob Allison": {
+    "IsPowerHitter": true,
+    "IsToughRunner": true,
+    "IsAggressiveFielder": true,
+    "IsFreeSwinger": true
+  },
+  "Bob Boone": {
+    "IsGoldGlover": true,
+    "IsGoodBlocker": true,
+    "Durability": 4,
+    "Throwing": 4,
+    "SmallBall": 1
+  },
+  "Bob Feller": {
+    "IsStar": true,
+    "DoctorK": true,
+    "FastballLife": 4,
+    "IsIntimidator": true,
+    "IsWalkProne": true,
+    "Poise": 4,
+    "IsStarterFinisher": true
+  },
+  "Bob Friend": {
+    "Consistency": 4,
+    "Durability": 4,
+    "IsStarterFinisher": true,
+    "GroundBallOrFlyBallPitcher": 1
+  },
+  "Bob Gibson": {
+    "IsStar": true,
+    "DoctorK": true,
+    "IsIntimidator": true,
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "FastballLife": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsHotHead": true,
+    "GoodReflexes": true
+  },
+  "Bob Horner": {
+    "IsPowerHitter": true,
+    "Durability": 2,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true
+  },
+  "Bob Lemon": {
+    "IsStar": true,
+    "IsStarterFinisher": true,
+    "GroundBallOrFlyBallPitcher": 1,
+    "Poise": 4,
+    "Consistency": 4,
+    "GoodReflexes": true
+  },
+  "Bob McClure": {
+    "GroundBallOrFlyBallPitcher": 1,
+    "Recovery": 4,
+    "Consistency": 2
+  },
+  "Bob Stanley": {
+    "GroundBallOrFlyBallPitcher": 1,
+    "Recovery": 4,
+    "Durability": 4,
+    "Consistency": 2
+  },
+  "Bob Watson": {
+    "IsContactHitter": true,
+    "ClutchHitter": 4,
+    "IsSprayHitter": true,
+    "VersusLefty": 4
+  },
+  "Bobby Abreu": {
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "IsTableSetter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "Consistency": 4,
+    "VersusLefty": 4
+  },
+  "Bobby Bonilla": {
+    "IsPowerHitter": true,
+    "IsSprayHitter": true,
+    "ClutchHitter": 4,
+    "Morale": -1,
+    "VersusLefty": 4
+  },
+  "Bobby Doerr": {
+    "IsStar": true,
+    "IsContactHitter": true,
+    "ClutchHitter": 4,
+    "IsGoldGlover": true,
+    "IsPivotMan": true,
+    "Consistency": 4
+  },
+  "Bobby Grich": {
+    "IsPowerHitter": true,
+    "IsRefinedHitter": true,
+    "IsGoldGlover": true,
+    "IsPivotMan": true,
+    "Durability": 2
+  },
+  "Bobby Jenks": {
+    "FastballLife": 4,
+    "DoctorK": true,
+    "IsIntimidator": true,
+    "Poise": 4,
+    "Durability": 2
+  },
+  "Bobby Thomson": {
+    "ClutchHitter": 5,
+    "IsPowerHitter": true,
+    "IsHotHitter": true
+  },
+  "Boog Powell": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "IsIntimidator": true,
+    "ClutchHitter": 4,
+    "BaseRunning": 2
+  },
+  "Brad Ausmus": {
+    "IsGoldGlover": true,
+    "IsGoodBlocker": true,
+    "Throwing": 4,
+    "SmallBall": 1,
+    "Durability": 4
+  },
+  "Brad Lidge": {
+    "DoctorK": true,
+    "Poise": 4,
+    "Spin": 4,
+    "FastballLife": 4,
+    "Consistency": 2,
+    "Durability": 2
+  },
+  "Brad Ziegler": {
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "GoodDelivery": true,
+    "Poise": 4,
+    "Recovery": 4
+  },
+  "Brandon Webb": {
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "Spin": 4,
+    "Poise": 4,
+    "Durability": 2,
+    "IsStarterFinisher": true
+  },
+  "Brent Mayne": {
+    "IsGoodBlocker": true,
+    "SmallBall": 1,
+    "IsContactHitter": true
+  },
+  "Bret Saberhagen": {
+    "SafeOrFatPitch": 1,
+    "Poise": 4,
+    "Consistency": 2,
+    "Durability": 2,
+    "Spin": 4,
+    "GoodDelivery": true
+  },
+  "Brian Downing": {
+    "IsToughOut": true,
+    "IsRefinedHitter": true,
+    "Durability": 4,
+    "Morale": 1,
+    "ClutchHitter": 4
+  },
+  "Brian Fuentes": {
+    "DoctorK": true,
+    "Recovery": 4,
+    "IsWalkProne": true,
+    "Poise": 3
+  },
+  "Brian Wilson": {
+    "DoctorK": true,
+    "FastballLife": 4,
+    "Poise": 4,
+    "IsHotHead": true,
+    "IsIntimidator": true
+  },
+  "Brooks Robinson": {
+    "IsStar": true,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "ClutchHitter": 4,
+    "Throwing": 4,
+    "Consistency": 4,
+    "GoodReflexes": true
+  },
+  "Bruce Sutter": {
+    "IsStar": true,
+    "Spin": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Bryan Harvey": {
+    "DoctorK": true,
+    "FastballLife": 4,
+    "Durability": 2,
+    "Poise": 4
+  },
+  "Bryce Harper": {
+    "IsPowerHitter": true,
+    "IsIntimidator": true,
+    "ClutchHitter": 4,
+    "IsHotHitter": true,
+    "Consistency": 2,
+    "IsAggressiveRunner": true,
+    "Morale": 1,
+    "IsSparkplug": true
+  },
+  "Buster Posey": {
+    "IsContactHitter": true,
+    "ClutchHitter": 5,
+    "IsGoldGlover": true,
+    "IsGoodBlocker": true,
+    "Throwing": 4,
+    "Consistency": 4,
+    "Morale": 1,
+    "IsRefinedHitter": true
+  },
+  "Byung-Hyun Kim": {
+    "GoodDelivery": true,
+    "DoctorK": true,
+    "Poise": 2,
+    "Consistency": 2,
+    "Durability": 2
+  },
+  "Cal Ripken Jr.": {
+    "IsStar": true,
+    "IsPowerHitter": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "ClutchHitter": 4,
+    "IsGoldGlover": true,
+    "IsPivotMan": true,
+    "Morale": 1,
+    "Throwing": 4
+  },
+  "Cap Anson": {
+    "IsStar": true,
+    "IsContactHitter": true,
+    "Consistency": 4,
+    "ClutchHitter": 4,
+    "IsSprayHitter": true
+  },
+  "Carl Crawford": {
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsSparkplug": true,
+    "IsTableSetter": true,
+    "IsFreeSwinger": true,
+    "SmallBall": 1,
+    "WillSlideHeadFirst": true
+  },
+  "Carl Hubbell": {
+    "IsStar": true,
+    "Spin": 4,
+    "Poise": 4,
+    "SafeOrFatPitch": 1,
+    "IsStarterFinisher": true,
+    "Consistency": 4,
+    "GoodDelivery": true
+  },
+  "Carl Yastrzemski": {
+    "IsStar": true,
+    "IsPowerHitter": true,
+    "IsContactHitter": true,
+    "ClutchHitter": 5,
+    "Consistency": 4,
+    "Durability": 4,
+    "IsRefinedHitter": true,
+    "IsGoldGlover": true,
+    "VersusLefty": 4
+  },
+  "Carlos Baerga": {
+    "IsContactHitter": true,
+    "IsFirstballHitter": true,
+    "IsFreeSwinger": true,
+    "IsSprayHitter": true,
+    "SmallBall": -1
+  },
+  "Carlos Beltrán": {
+    "IsPowerHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsGoldGlover": true,
+    "ClutchHitter": 4,
+    "IsSprayHitter": true,
+    "Consistency": 4,
+    "VersusLefty": 4
+  },
+  "Carlos Correa": {
+    "IsPowerHitter": true,
+    "ClutchHitter": 4,
+    "VersusLefty": 4,
+    "IsRefinedHitter": true,
+    "Throwing": 4
+  },
+  "Carlos Delgado": {
+    "IsPowerHitter": true,
+    "IsIntimidator": true,
+    "IsBackToBackHitter": true,
+    "IsPullHitter": true,
+    "ClutchHitter": 4,
+    "VersusLefty": 4
+  },
+  "Carlos González": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "IsHotHitter": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "Consistency": 2
+  },
+  "Carlos Peña": {
+    "IsPowerHitter": true,
+    "IsFreeSwinger": true,
+    "IsPullHitter": true,
+    "IsRefinedHitter": true,
+    "VersusLefty": 2
+  },
+  "Carlton Fisk": {
+    "IsStar": true,
+    "IsPowerHitter": true,
+    "Durability": 4,
+    "ClutchHitter": 4,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsGoodBlocker": true,
+    "IsIntimidator": true
+  },
+  "Catfish Hunter": {
+    "IsStar": true,
+    "Poise": 4,
+    "SafeOrFatPitch": 1,
+    "IsStarterFinisher": true,
+    "Consistency": 4,
+    "WithRunnersInScoringPosition": 4,
+    "GoodPace": true
+  },
+  "CC Sabathia": {
+    "IsStarterFinisher": true,
+    "Durability": 4,
+    "Poise": 4,
+    "GroundBallOrFlyBallPitcher": 1,
+    "FastballLife": 4,
+    "WithRunnersInScoringPosition": 4,
+    "DoctorK": true
+  },
+  "Cecil Cooper": {
+    "IsContactHitter": true,
+    "IsPullHitter": true,
+    "ClutchHitter": 4,
+    "VersusLefty": 2,
+    "Consistency": 4
+  },
+  "Cecil Fielder": {
+    "IsPowerHitter": true,
+    "IsIntimidator": true,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "BaseRunning": 2,
+    "SmallBall": -1
+  },
+  "César Cedeño": {
+    "IsPowerHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsGoldGlover": true,
+    "IsSprayHitter": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "César Tovar": {
+    "IsSprayHitter": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "IsSparkplug": true,
+    "IsContactHitter": true
+  },
+  "Charles Johnson": {
+    "IsGoldGlover": true,
+    "IsGoodBlocker": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsPowerHitter": true
+  },
+  "Charlie Blackmon": {
+    "IsContactHitter": true,
+    "IsTableSetter": true,
+    "IsSprayHitter": true,
+    "BaseRunning": 4,
+    "IsSparkplug": true,
+    "IsHotHitter": true,
+    "Morale": 1
+  },
+  "Charlie Gehringer": {
+    "IsStar": true,
+    "IsContactHitter": true,
+    "Consistency": 4,
+    "IsSprayHitter": true,
+    "IsPivotMan": true,
+    "IsGoldGlover": true,
+    "IsRefinedHitter": true
+  },
+  "Chase Headley": {
+    "VersusLefty": 2,
+    "IsRefinedHitter": true,
+    "ClutchHitter": 2,
+    "Consistency": 2
+  },
+  "Chase Utley": {
+    "IsPowerHitter": true,
+    "IsPivotMan": true,
+    "WillBreakupDoublePlay": true,
+    "IsToughRunner": true,
+    "IsAggressiveRunner": true,
+    "ClutchHitter": 4,
+    "IsGoldGlover": true,
+    "Morale": 1,
+    "IsSparkplug": true
+  },
+  "Chipper Jones": {
+    "IsStar": true,
+    "IsContactHitter": true,
+    "IsPowerHitter": true,
+    "IsSprayHitter": true,
+    "ClutchHitter": 4,
+    "VersusLefty": 5,
+    "IsRefinedHitter": true,
+    "Consistency": 4
+  },
+  "Chris Carpenter": {
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "GroundBallOrFlyBallPitcher": 1,
+    "WithRunnersInScoringPosition": 4,
+    "Durability": 2,
+    "IsIntimidator": true,
+    "GoodLowPitch": true
+  },
+  "Christian Yelich": {
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsPowerHitter": true,
+    "IsRefinedHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "Consistency": 2
+  },
+  "Christy Mathewson": {
+    "IsStar": true,
+    "SafeOrFatPitch": 1,
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "Consistency": 4,
+    "Spin": 4,
+    "GoodDelivery": true,
+    "Morale": 1
+  },
+  "Chuck Finley": {
+    "DoctorK": true,
+    "Durability": 4,
+    "Spin": 4,
+    "IsStarterFinisher": true,
+    "Consistency": 3
+  },
+  "Chuck Knoblauch": {
+    "IsTableSetter": true,
+    "IsRefinedHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsPivotMan": true,
+    "IsErrorProne": true,
+    "Morale": -1
+  },
+  "Clayton Kershaw": {
+    "IsStar": true,
+    "DoctorK": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "Poise": 4,
+    "Consistency": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true
+  },
+  "Cleon Jones": {
+    "IsContactHitter": true,
+    "ClutchHitter": 4,
+    "IsSprayHitter": true
+  },
+  "Cool Papa Bell": {
+    "IsStar": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "SmallBall": 1,
+    "IsSparkplug": true,
+    "IsTableSetter": true,
+    "IsContactHitter": true
+  },
+  "Corey Kluber": {
+    "DoctorK": true,
+    "Poise": 4,
+    "Spin": 4,
+    "GroundBallOrFlyBallPitcher": 1,
+    "SafeOrFatPitch": 1,
+    "Durability": 2,
+    "Consistency": 4
+  },
+  "Craig Biggio": {
+    "IsStar": true,
+    "IsTableSetter": true,
+    "IsSparkplug": true,
+    "Durability": 4,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsToughOut": true,
+    "IsPivotMan": true,
+    "Morale": 1
+  },
+  "Craig Counsell": {
+    "SmallBall": 1,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "ClutchHitter": 4,
+    "IsSparkplug": true
+  },
+  "Craig Kimbrel": {
+    "DoctorK": true,
+    "FastballLife": 4,
+    "IsIntimidator": true,
+    "Poise": 4,
+    "Recovery": 4,
+    "Spin": 4
+  },
+  "Curt Schilling": {
+    "IsStar": true,
+    "DoctorK": true,
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "SafeOrFatPitch": 1,
+    "WithRunnersInScoringPosition": 4,
+    "FastballLife": 4,
+    "Spin": 4
+  },
+  "Cy Young": {
+    "IsStar": true,
+    "IsStarterFinisher": true,
+    "Durability": 4,
+    "Poise": 4,
+    "SafeOrFatPitch": 1,
+    "Consistency": 4,
+    "Recovery": 4
+  },
+  "Daisuke Matsuzaka": {
+    "DoctorK": true,
+    "Spin": 4,
+    "IsWalkProne": true,
+    "IsSlowStarter": true,
+    "GoodDelivery": true,
+    "Poise": 3
+  },
+  "Dale Murphy": {
+    "IsPowerHitter": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "Morale": 1,
+    "BaseRunning": 4,
+    "Consistency": 4,
+    "ClutchHitter": 4
+  },
+  "Damian Miller": {
+    "IsGoodBlocker": true,
+    "Throwing": 4,
+    "SmallBall": 1
+  },
+  "Dan Haren": {
+    "SafeOrFatPitch": 1,
+    "Poise": 4,
+    "DoctorK": true,
+    "GroundBallOrFlyBallPitcher": -1,
+    "Consistency": 4
+  },
+  "Dan Quisenberry": {
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "SafeOrFatPitch": 1,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "Recovery": 4,
+    "Consistency": 4
+  },
+  "Dan Wilson": {
+    "IsGoodBlocker": true,
+    "IsGoldGlover": true,
+    "Throwing": 4,
+    "SmallBall": 1,
+    "Morale": 1
+  },
+  "Dansby Swanson": {
+    "IsGoldGlover": true,
+    "IsPivotMan": true,
+    "Throwing": 4,
+    "ClutchHitter": 4,
+    "IsSparkplug": true
+  },
+  "Dante Bichette": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "IsFirstballHitter": true,
+    "IsFreeSwinger": true,
+    "ClutchHitter": 4,
+    "Throwing": 4
+  },
+  "Darin Erstad": {
+    "IsAggressiveFielder": true,
+    "IsSparkplug": true,
+    "IsContactHitter": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "WillSlideHeadFirst": true,
+    "IsGoldGlover": true
+  },
+  "Darren Daulton": {
+    "IsPowerHitter": true,
+    "ClutchHitter": 4,
+    "IsGoodBlocker": true,
+    "Morale": 1,
+    "IsIntimidator": true,
+    "Durability": 2
+  },
+  "Darryl Strawberry": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "IsIntimidator": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "Consistency": 2,
+    "Durability": 2,
+    "Morale": -1
+  },
+  "Dave Henderson": {
+    "IsPowerHitter": true,
+    "ClutchHitter": 4,
+    "Morale": 1,
+    "IsHotHitter": true,
+    "HasCannonArm": true
+  },
+  "Dave McNally": {
+    "IsStarterFinisher": true,
+    "Poise": 4,
+    "GroundBallOrFlyBallPitcher": 1,
+    "WithRunnersInScoringPosition": 4,
+    "Consistency": 4
+  },
+  "Dave Righetti": {
+    "DoctorK": true,
+    "Poise": 4,
+    "FastballLife": 4,
+    "Recovery": 4
+  },
+  "Dave Stewart": {
+    "IsIntimidator": true,
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "WithRunnersInScoringPosition": 4,
+    "FastballLife": 4,
+    "Consistency": 4
+  },
+  "Dave Stieb": {
+    "Spin": 4,
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "GroundBallOrFlyBallPitcher": 1,
+    "Consistency": 2,
+    "DoctorK": true
+  },
+  "Dave Winfield": {
+    "IsStar": true,
+    "IsPowerHitter": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsGoldGlover": true,
+    "Durability": 4,
+    "ClutchHitter": 4,
+    "IsIntimidator": true,
+    "BaseRunning": 4
+  },
+  "David DeJesus": {
+    "IsRefinedHitter": true,
+    "IsSprayHitter": true,
+    "IsTableSetter": true,
+    "SmallBall": 1
+  },
+  "David Freese": {
+    "ClutchHitter": 5,
+    "IsRallyHitter": true,
+    "Durability": 2,
+    "Consistency": 2
+  },
+  "David Justice": {
+    "IsPowerHitter": true,
+    "IsRefinedHitter": true,
+    "ClutchHitter": 4,
+    "VersusLefty": 2,
+    "Durability": 2
+  },
+  "David Ortiz": {
+    "IsStar": true,
+    "IsPowerHitter": true,
+    "IsIntimidator": true,
+    "ClutchHitter": 5,
+    "IsBackToBackHitter": true,
+    "IsRallyHitter": true,
+    "VersusLefty": 2,
+    "Morale": 1,
+    "IsSparkplug": true,
+    "IsPullHitter": true
+  },
+  "David Peralta": {
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "VersusLefty": 2,
+    "Morale": 1
+  },
+  "David Price": {
+    "DoctorK": true,
+    "FastballLife": 4,
+    "Poise": 2,
+    "Spin": 4,
+    "IsStarterFinisher": true,
+    "Consistency": 4
+  },
+  "David Wright": {
+    "IsContactHitter": true,
+    "IsPowerHitter": true,
+    "IsSprayHitter": true,
+    "ClutchHitter": 4,
+    "IsRefinedHitter": true,
+    "Durability": 2,
+    "Morale": 1
+  },
+  "Dennis Eckersley": {
+    "IsStar": true,
+    "Poise": 4,
+    "SafeOrFatPitch": 1,
+    "DoctorK": true,
+    "IsIntimidator": true,
+    "Recovery": 4,
+    "Consistency": 4
+  },
+  "Dennis Leonard": {
+    "IsStarterFinisher": true,
+    "Durability": 4,
+    "Poise": 4,
+    "GroundBallOrFlyBallPitcher": 1
+  },
+  "Dennis Martínez": {
+    "SafeOrFatPitch": 1,
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "Durability": 4,
+    "GroundBallOrFlyBallPitcher": 1,
+    "Consistency": 4
+  },
+  "Denny McLain": {
+    "IsStarterFinisher": true,
+    "DoctorK": true,
+    "Poise": 4,
+    "Morale": -1,
+    "Consistency": 2,
+    "FastballLife": 4
+  },
+  "Derek Jeter": {
+    "IsStar": true,
+    "IsContactHitter": true,
+    "ClutchHitter": 5,
+    "Consistency": 4,
+    "Durability": 4,
+    "Morale": 1,
+    "IsSparkplug": true,
+    "IsRallyHitter": true,
+    "IsTableSetter": true,
+    "IsPivotMan": true
+  },
+  "Derrek Lee": {
+    "IsPowerHitter": true,
+    "IsGoldGlover": true,
+    "IsSprayHitter": true,
+    "ClutchHitter": 4,
+    "Consistency": 2
+  },
+  "Desmond Jennings": {
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsTableSetter": true
+  },
+  "Devon White": {
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "SmallBall": 1,
+    "IsSparkplug": true
+  },
+  "Dick Allen": {
+    "IsPowerHitter": true,
+    "IsIntimidator": true,
+    "IsFreeSwinger": true,
+    "ClutchHitter": 4,
+    "BaseRunning": 4,
+    "Morale": -1,
+    "IsHotHitter": true
+  },
+  "Dick Green": {
+    "IsGoldGlover": true,
+    "IsPivotMan": true,
+    "SmallBall": 1,
+    "ClutchHitter": 4
+  },
+  "Dick Radatz": {
+    "DoctorK": true,
+    "FastballLife": 4,
+    "IsIntimidator": true,
+    "Recovery": 4,
+    "Durability": 2
+  },
+  "Dizzy Dean": {
+    "IsStar": true,
+    "Durability": 2,
+    "Morale": 1,
+    "Consistency": 4,
+    "Poise": 4,
+    "DoctorK": true,
+    "IsIntimidator": true,
+    "IsHotHead": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "SafeOrFatPitch": 1
+  },
+  "DJ LeMahieu": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "VersusLefty": 2,
+    "IsGoldGlover": true,
+    "IsPivotMan": true
+  },
+  "Dock Ellis": {
+    "Consistency": 2,
+    "Morale": -1,
+    "Poise": 3,
+    "IsHotHead": true,
+    "IsIntimidator": true,
+    "FastballLife": 4
+  },
+  "Dolf Luque": {
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1
+  },
+  "Don Baylor": {
+    "Durability": 4,
+    "ClutchHitter": 1,
+    "IsPowerHitter": true,
+    "IsIntimidator": true,
+    "IsToughRunner": true,
+    "WillBreakupDoublePlay": true,
+    "BaseRunning": 4
+  },
+  "Don Drysdale": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "DoctorK": true,
+    "IsIntimidator": true,
+    "IsHotHead": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "SafeOrFatPitch": 1,
+    "Recovery": 4
+  },
+  "Don Gullett": {
+    "Durability": 2,
+    "Poise": 4,
+    "FastballLife": 4,
+    "GoodDelivery": true,
+    "Recovery": 2
+  },
+  "Don Mattingly": {
+    "Durability": 2,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsPullHitter": true,
+    "IsRefinedHitter": true,
+    "IsGoldGlover": true
+  },
+  "Don Mincher": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "VersusLefty": 2
+  },
+  "Don Money": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true
+  },
+  "Don Newcombe": {
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "FastballLife": 4,
+    "GoodDelivery": true,
+    "IsStarterFinisher": true,
+    "Recovery": 4
+  },
+  "Don Stanhouse": {
+    "Consistency": 2,
+    "Poise": 2,
+    "IsWalkProne": true,
+    "IsSlowStarter": true
+  },
+  "Dontrelle Willis": {
+    "Morale": 1,
+    "Consistency": 2,
+    "Poise": 3,
+    "GoodDelivery": true,
+    "IsWalkProne": true,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodReflexes": true
+  },
+  "Doug DeCinces": {
+    "IsPowerHitter": true,
+    "IsHotHitter": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Doug Drabek": {
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true
+  },
+  "Doug Jones": {
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true
+  },
+  "Duane Ward": {
+    "FastballLife": 4,
+    "Poise": 4,
+    "DoctorK": true,
+    "IsWalkProne": true
+  },
+  "Duke Snider": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 3,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsPullHitter": true,
+    "VersusLefty": 1,
+    "IsAggressiveFielder": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Dwight Evans": {
+    "Durability": 4,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsAggressiveFielder": true
+  },
+  "Dwight Gooden": {
+    "Durability": 2,
+    "Morale": -1,
+    "Consistency": 2,
+    "Poise": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true
+  },
+  "Early Wynn": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "IsIntimidator": true,
+    "IsHotHead": true,
+    "FastballLife": 4,
+    "IsStarterFinisher": true,
+    "Recovery": 4
+  },
+  "Ed Walsh": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Edd Roush": {
+    "IsStar": true,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "BaseRunning": 4,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true
+  },
+  "Eddie Mathews": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsPullHitter": true,
+    "IsToughOut": true,
+    "BaseRunning": 4
+  },
+  "Eddie Murray": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "VersusLefty": 2,
+    "BaseRunning": 2
+  },
+  "Edgar Martinez": {
+    "IsStar": true,
+    "Consistency": 4,
+    "ClutchHitter": 2,
+    "VersusLefty": 1,
+    "IsContactHitter": true,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "IsGoodPinchHitter": true,
+    "BaseRunning": 2,
+    "Stealing": 2
+  },
+  "Edgar Rentería": {
+    "Consistency": 4,
+    "ClutchHitter": 1,
+    "IsContactHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsPivotMan": true,
+    "IsAggressiveRunner": true
+  },
+  "Edgardo Alfonzo": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "IsPivotMan": true
+  },
+  "Ellis Burks": {
+    "Durability": 2,
+    "IsPowerHitter": true,
+    "IsSprayHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveFielder": true
+  },
+  "Elrod Hendricks": {
+    "IsGoodBlocker": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Enos Cabell": {
+    "IsContactHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "SmallBall": 1
+  },
+  "Enos Slaughter": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsHotHitter": true,
+    "IsSparkplug": true,
+    "BaseRunning": 4,
+    "IsAggressiveRunner": true,
+    "IsToughRunner": true,
+    "WillSlideHeadFirst": true
+  },
+  "Eric Davis": {
+    "Durability": 2,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsFreeSwinger": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsAggressiveFielder": true,
+    "IsGoldGlover": true
+  },
+  "Eric Gagné": {
+    "Durability": 2,
+    "Consistency": 4,
+    "Poise": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "Recovery": 2
+  },
+  "Eric Show": {
+    "Morale": -1,
+    "Consistency": 2,
+    "Poise": 3,
+    "GoodDelivery": true,
+    "Spin": 4
+  },
+  "Ernie Banks": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsSparkplug": true,
+    "IsPivotMan": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Ernie Whitt": {
+    "IsGoodBlocker": true,
+    "IsPullHitter": true,
+    "VersusLefty": 2
+  },
+  "Evan Longoria": {
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "ClutchHitter": 1,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Félix Hernández": {
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "GroundBallOrFlyBallPitcher": 1
+  },
+  "Fergie Jenkins": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "Recovery": 4
+  },
+  "Fernando Rodney": {
+    "Consistency": 2,
+    "Poise": 2,
+    "FastballLife": 4,
+    "IsWalkProne": true,
+    "IsHotHead": true
+  },
+  "Fernando Tatis Jr.": {
+    "Morale": 1,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsFirstballHitter": true,
+    "IsFreeSwinger": true,
+    "IsSparkplug": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Fernando Valenzuela": {
+    "Durability": 2,
+    "Morale": 1,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true
+  },
+  "Francisco Cordero": {
+    "Consistency": 2,
+    "Poise": 3,
+    "FastballLife": 4,
+    "IsWalkProne": true,
+    "DoctorK": true
+  },
+  "Francisco Rodríguez": {
+    "Consistency": 4,
+    "Poise": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "IsHotHead": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1
+  },
+  "Frank Robinson": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsIntimidator": true,
+    "IsToughRunner": true,
+    "WillBreakupDoublePlay": true,
+    "BaseRunning": 4
+  },
+  "Frank Tanana": {
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Frank Thomas": {
+    "IsStar": true,
+    "Durability": 2,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "IsIntimidator": true,
+    "VersusLefty": 1,
+    "BaseRunning": 2,
+    "Stealing": 2
+  },
+  "Frank Viola": {
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true
+  },
+  "Frank White": {
+    "IsGoldGlover": true,
+    "IsPivotMan": true,
+    "IsAggressiveFielder": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Frankie Frisch": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsSparkplug": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsPivotMan": true,
+    "IsGoldGlover": true
+  },
+  "Fred Clarke": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsTableSetter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsAggressiveFielder": true
+  },
+  "Fred Lynn": {
+    "Durability": 2,
+    "Consistency": 3,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsContactHitter": true,
+    "IsRefinedHitter": true,
+    "VersusLefty": 1,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true
+  },
+  "Fred McGriff": {
+    "Durability": 4,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "VersusLefty": 2,
+    "BaseRunning": 2
+  },
+  "Freddie Freeman": {
+    "Durability": 4,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsContactHitter": true,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "IsGoldGlover": true,
+    "BaseRunning": 4
+  },
+  "Freddie Patek": {
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsPivotMan": true
+  },
+  "Freddy Garcia": {
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true
+  },
+  "Fumio Fujimura": {
+    "IsStar": true,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsContactHitter": true,
+    "ClutchHitter": 2,
+    "IsSprayHitter": true,
+    "BaseRunning": 4
+  },
+  "Gabby Hartnett": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "ClutchHitter": 1,
+    "IsGoodBlocker": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Garry Maddox": {
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsContactHitter": true
+  },
+  "Gary Carter": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "ClutchHitter": 1,
+    "IsRallyHitter": true,
+    "IsGoodBlocker": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsGoldGlover": true
+  },
+  "Gary Gaetti": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Gary Sheffield": {
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsIntimidator": true,
+    "IsFreeSwinger": true,
+    "IsFirstballHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Gaylord Perry": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": -1,
+    "Consistency": 4,
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "IsIntimidator": true,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Gene Garber": {
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "GroundBallOrFlyBallPitcher": 1,
+    "Recovery": 4
+  },
+  "Gene Tenace": {
+    "ClutchHitter": 1,
+    "IsPowerHitter": true,
+    "IsToughOut": true,
+    "IsGoodBlocker": true,
+    "VersusLefty": 2
+  },
+  "Geoff Jenkins": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "VersusLefty": 2,
+    "IsAggressiveFielder": true
+  },
+  "George Bell": {
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsFirstballHitter": true,
+    "IsFreeSwinger": true,
+    "IsPullHitter": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "George Brett": {
+    "IsStar": true,
+    "Durability": 2,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsContactHitter": true,
+    "IsHotHitter": true,
+    "IsSprayHitter": true,
+    "BaseRunning": 4,
+    "IsAggressiveRunner": true,
+    "IsToughRunner": true
+  },
+  "George Kell": {
+    "IsStar": true,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsRefinedHitter": true,
+    "IsGoldGlover": true
+  },
+  "George Springer": {
+    "Durability": 2,
+    "ClutchHitter": 2,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsHotHitter": true,
+    "IsTableSetter": true,
+    "IsSparkplug": true,
+    "IsAggressiveFielder": true
+  },
+  "Gerrit Cole": {
+    "Consistency": 4,
+    "Poise": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true
+  },
+  "Giancarlo Stanton": {
+    "Durability": 2,
+    "Consistency": 2,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsIntimidator": true,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "IsFirstballHitter": true
+  },
+  "Gil Hodges": {
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsGoldGlover": true
+  },
+  "Goose Gossage": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "IsIntimidator": true,
+    "IsHotHead": true,
+    "FastballLife": 4,
+    "SafeOrFatPitch": -1,
+    "Recovery": 4
+  },
+  "Gorman Thomas": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "IsBackToBackHitter": true,
+    "IsAggressiveFielder": true
+  },
+  "Greg Holland": {
+    "Durability": 2,
+    "Poise": 4,
+    "DoctorK": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "Recovery": 2
+  },
+  "Greg Luzinski": {
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "IsGoodPinchHitter": true,
+    "BaseRunning": 2,
+    "Stealing": 2
+  },
+  "Greg Maddux": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "VersusLefty": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "GoodReflexes": true,
+    "GoodPickoff": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Gregg Olson": {
+    "Poise": 4,
+    "Spin": 4,
+    "GoodDelivery": true,
+    "SafeOrFatPitch": 1,
+    "Recovery": 2
+  },
+  "Hack Wilson": {
+    "IsStar": true,
+    "Durability": 2,
+    "Morale": -1,
+    "Consistency": 2,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "IsIntimidator": true,
+    "BaseRunning": 2
+  },
+  "Hal McRae": {
+    "Consistency": 4,
+    "ClutchHitter": 1,
+    "IsContactHitter": true,
+    "IsHotHitter": true,
+    "IsToughRunner": true,
+    "WillBreakupDoublePlay": true,
+    "IsGoodPinchHitter": true
+  },
+  "Hal Newhouser": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "Recovery": 4
+  },
+  "Hank Aaron": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsContactHitter": true,
+    "IsRefinedHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Hank Greenberg": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsIntimidator": true,
+    "IsPullHitter": true,
+    "IsRefinedHitter": true
+  },
+  "Hanley Ramírez": {
+    "Durability": 2,
+    "Consistency": 2,
+    "IsPowerHitter": true,
+    "IsFirstballHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsErrorProne": true
+  },
+  "Harmon Killebrew": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsIntimidator": true,
+    "IsPullHitter": true,
+    "IsToughOut": true,
+    "BaseRunning": 2,
+    "Stealing": 2
+  },
+  "Harold Baines": {
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsRefinedHitter": true,
+    "ClutchHitter": 1,
+    "IsGoodPinchHitter": true,
+    "BaseRunning": 2
+  },
+  "Harold Reynolds": {
+    "IsGoldGlover": true,
+    "IsPivotMan": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsSparkplug": true
+  },
+  "Heath Bell": {
+    "Morale": 1,
+    "Poise": 4,
+    "DoctorK": true,
+    "FastballLife": 4,
+    "IsHotHead": true,
+    "Recovery": 4
+  },
+  "Hideo Nomo": {
+    "Consistency": 2,
+    "Poise": 4,
+    "DoctorK": true,
+    "IsWalkProne": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": -1
+  },
+  "Hiroki Kuroda": {
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Hiromichi Ishige": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsPivotMan": true,
+    "IsGoldGlover": true,
+    "BaseRunning": 4
+  },
+  "Hiromitsu Ochiai": {
+    "IsStar": true,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsContactHitter": true,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "VersusLefty": 2
+  },
+  "Honus Wagner": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsPowerHitter": true,
+    "ClutchHitter": 2,
+    "IsToughOut": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Hoyt Wilhelm": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4,
+    "WithRunnersInScoringPosition": 4
+  },
+  "Hunter Pence": {
+    "Morale": 1,
+    "IsSparkplug": true,
+    "IsRallyHitter": true,
+    "IsAggressiveRunner": true,
+    "IsAggressiveFielder": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Huston Street": {
+    "Poise": 4,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true
+  },
+  "Ian Desmond": {
+    "Consistency": 2,
+    "IsPowerHitter": true,
+    "IsFreeSwinger": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsErrorProne": true
+  },
+  "Ian Kinsler": {
+    "Durability": 4,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsSparkplug": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsGoldGlover": true,
+    "IsPivotMan": true
+  },
+  "Ichiro Suzuki": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsTableSetter": true,
+    "IsSprayHitter": true,
+    "IsPushHitter": true,
+    "IsFirstballHitter": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "WillSlideHeadFirst": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsAggressiveFielder": true
+  },
+  "Isao Harimoto": {
+    "IsStar": true,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "IsHotHitter": true
+  },
+  "Iván Rodríguez": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsPowerHitter": true,
+    "IsFirstballHitter": true,
+    "IsGoldGlover": true,
+    "IsGoodBlocker": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "BaseRunning": 4
+  },
+  "J.J. Putz": {
+    "Durability": 2,
+    "Poise": 4,
+    "DoctorK": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "Recovery": 2
+  },
+  "J.R. Richard": {
+    "Durability": 2,
+    "Poise": 4,
+    "DoctorK": true,
+    "IsIntimidator": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "IsSlowStarter": true
+  },
+  "Jack Morris": {
+    "Durability": 4,
+    "Consistency": 3,
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "IsIntimidator": true,
+    "IsHotHead": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "Recovery": 4
+  },
+  "Jackie Robinson": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "ClutchHitter": 2,
+    "IsContactHitter": true,
+    "IsSparkplug": true,
+    "IsRallyHitter": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsToughRunner": true,
+    "WillBreakupDoublePlay": true,
+    "WillSlideHeadFirst": true,
+    "IsGoldGlover": true,
+    "IsPivotMan": true
+  },
+  "Jacob deGrom": {
+    "Durability": 2,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "Recovery": 2
+  },
+  "Jake Arrieta": {
+    "Durability": 2,
+    "Consistency": 2,
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "FastballLife": 4
+  },
+  "Jake Peavy": {
+    "Durability": 2,
+    "Consistency": 4,
+    "Poise": 4,
+    "DoctorK": true,
+    "IsIntimidator": true,
+    "IsHotHead": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true
+  },
+  "James Shields": {
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "Spin": 4,
+    "Recovery": 4
+  },
+  "Jamie Moyer": {
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "GoodPickoff": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4,
+    "FastballLife": 2
+  },
+  "Jason Giambi": {
+    "Durability": 2,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsIntimidator": true,
+    "IsToughOut": true,
+    "IsPullHitter": true,
+    "VersusLefty": 1,
+    "BaseRunning": 2,
+    "Stealing": 2
+  },
+  "Jason Grilli": {
+    "Poise": 4,
+    "IsHotHead": true,
+    "FastballLife": 4,
+    "DoctorK": true,
+    "Recovery": 4
+  },
+  "Jason Isringhausen": {
+    "Durability": 2,
+    "Consistency": 2,
+    "Poise": 3,
+    "FastballLife": 4,
+    "Spin": 4,
+    "IsWalkProne": true
+  },
+  "Jay Bell": {
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsRefinedHitter": true,
+    "IsPivotMan": true,
+    "IsGoldGlover": true,
+    "BaseRunning": 4
+  },
+  "Jay Buhner": {
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsAggressiveFielder": true
+  },
+  "Jeff Bagwell": {
+    "IsStar": true,
+    "Durability": 2,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsGoldGlover": true
+  },
+  "Jeff Conine": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "ClutchHitter": 1,
+    "IsGoodPinchHitter": true
+  },
+  "Jeff Francis": {
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "GoodLowPitch": true,
+    "GroundBallOrFlyBallPitcher": 1
+  },
+  "Jeff Kent": {
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsPullHitter": true,
+    "IsPivotMan": true
+  },
+  "Jeff Montgomery": {
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Jeff Reardon": {
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "FastballLife": 4,
+    "SafeOrFatPitch": 1,
+    "Recovery": 4
+  },
+  "Jered Weaver": {
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "FastballLife": 2
+  },
+  "Jerry Koosman": {
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "GoodLowPitch": true,
+    "GroundBallOrFlyBallPitcher": 1,
+    "IsStarterFinisher": true
+  },
+  "Jesse Barfield": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true
+  },
+  "Jesse Haines": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Jim Bunning": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "Recovery": 4
+  },
+  "Jim Edmonds": {
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsPullHitter": true,
+    "VersusLefty": 1,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "WillSlideHeadFirst": true
+  },
+  "Jim Fregosi": {
+    "IsPowerHitter": true,
+    "IsContactHitter": true,
+    "IsPivotMan": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "BaseRunning": 4
+  },
+  "Jim Gantner": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "SmallBall": 1,
+    "IsPivotMan": true,
+    "IsGoldGlover": true
+  },
+  "Jim Hegan": {
+    "IsGoldGlover": true,
+    "IsGoodBlocker": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Jim Kaat": {
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "GoodReflexes": true,
+    "GoodPickoff": true,
+    "Spin": 4,
+    "GoodLowPitch": true,
+    "Recovery": 4,
+    "IsGoldGlover": true
+  },
+  "Jim Landis": {
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "BaseRunning": 4,
+    "SmallBall": 1
+  },
+  "Jim Palmer": {
+    "IsStar": true,
+    "Durability": 2,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "GoodReflexes": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true
+  },
+  "Jim Perry": {
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Jim Rice": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsIntimidator": true,
+    "IsPullHitter": true,
+    "IsFirstballHitter": true,
+    "BaseRunning": 2,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Jim Thome": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsToughOut": true,
+    "IsIntimidator": true,
+    "IsPullHitter": true,
+    "BaseRunning": 2,
+    "Stealing": 2
+  },
+  "Jim Wynn": {
+    "IsPowerHitter": true,
+    "IsToughOut": true,
+    "IsRefinedHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveFielder": true
+  },
+  "Jimmie Foxx": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsContactHitter": true,
+    "IsIntimidator": true,
+    "IsPullHitter": true,
+    "BaseRunning": 4
+  },
+  "Jimmy Rollins": {
+    "Morale": 1,
+    "IsSparkplug": true,
+    "IsPowerHitter": true,
+    "IsTableSetter": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsGoldGlover": true,
+    "IsPivotMan": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Joe Carter": {
+    "Consistency": 3,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsFreeSwinger": true,
+    "IsFirstballHitter": true,
+    "BaseRunning": 4,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Joe DiMaggio": {
+    "IsStar": true,
+    "Durability": 2,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsContactHitter": true,
+    "IsRefinedHitter": true,
+    "BaseRunning": 4,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Joe Mauer": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "IsSprayHitter": true,
+    "IsGoldGlover": true,
+    "IsGoodBlocker": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Joe Morgan": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "ClutchHitter": 2,
+    "IsSparkplug": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsGoldGlover": true,
+    "IsPivotMan": true
+  },
+  "Joe Nathan": {
+    "Durability": 2,
+    "Consistency": 4,
+    "Poise": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "Recovery": 2
+  },
+  "Joe Rudi": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "ClutchHitter": 1,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Johan Santana": {
+    "Durability": 2,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "Recovery": 2
+  },
+  "John Axford": {
+    "Consistency": 2,
+    "Poise": 3,
+    "FastballLife": 4,
+    "IsWalkProne": true,
+    "DoctorK": true
+  },
+  "John Franco": {
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "Recovery": 4
+  },
+  "John Hiller": {
+    "Poise": 3,
+    "Recovery": 4,
+    "GoodDelivery": true,
+    "FastballLife": 3
+  },
+  "John Mayberry": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "BaseRunning": 2
+  },
+  "John Olerud": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "IsGoldGlover": true,
+    "BaseRunning": 2
+  },
+  "John Smoltz": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "Recovery": 4
+  },
+  "John Wetteland": {
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 3,
+    "Recovery": 4
+  },
+  "Johnny Bench": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsGoldGlover": true,
+    "IsGoodBlocker": true
+  },
+  "Johnny Estrada": {
+    "IsContactHitter": true,
+    "IsGoodBlocker": true
+  },
+  "Johnny Pesky": {
+    "IsContactHitter": true,
+    "IsTableSetter": true,
+    "IsToughOut": true,
+    "SmallBall": 1,
+    "BaseRunning": 3
+  },
+  "Johnny Vander Meer": {
+    "Poise": 3,
+    "FastballLife": 4,
+    "IsWalkProne": true,
+    "GoodDelivery": true,
+    "DoctorK": true
+  },
+  "Jon Lester": {
+    "Consistency": 4,
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "GoodLowPitch": true,
+    "GroundBallOrFlyBallPitcher": 1
+  },
+  "Jonathan Papelbon": {
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "IsIntimidator": true,
+    "IsHotHead": true,
+    "FastballLife": 4,
+    "GoodDelivery": true,
+    "Recovery": 4
+  },
+  "Jorge De La Rosa": {
+    "IsWalkProne": true,
+    "DoctorK": true,
+    "FastballLife": 3,
+    "Spin": 3
+  },
+  "Jorge Posada": {
+    "Consistency": 3,
+    "IsPowerHitter": true,
+    "ClutchHitter": 1,
+    "IsToughOut": true,
+    "IsGoodBlocker": true,
+    "Throwing": 2
+  },
+  "José Canseco": {
+    "Durability": 2,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsPullHitter": true,
+    "IsIntimidator": true,
+    "IsFreeSwinger": true,
+    "Stealing": 4,
+    "IsErrorProne": true
+  },
+  "José Cruz": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4
+  },
+  "José Mesa": {
+    "Poise": 2,
+    "FastballLife": 4,
+    "GoodDelivery": true,
+    "Recovery": 4
+  },
+  "José Ramírez": {
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "ClutchHitter": 2,
+    "IsSprayHitter": true,
+    "IsRefinedHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true
+  },
+  "José Reyes": {
+    "IsTableSetter": true,
+    "IsSparkplug": true,
+    "IsFirstballHitter": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "WillSlideHeadFirst": true
+  },
+  "José Rijo": {
+    "Durability": 2,
+    "Poise": 4,
+    "DoctorK": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4
+  },
+  "José Valverde": {
+    "Poise": 3,
+    "IsHotHead": true,
+    "FastballLife": 4,
+    "GoodDelivery": true,
+    "Recovery": 4
+  },
+  "Josh Beckett": {
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "IsIntimidator": true,
+    "IsHotHead": true,
+    "FastballLife": 4,
+    "GoodDelivery": true,
+    "DoctorK": true
+  },
+  "Josh Donaldson": {
+    "IsPowerHitter": true,
+    "ClutchHitter": 1,
+    "IsPullHitter": true,
+    "IsIntimidator": true,
+    "IsAggressiveRunner": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Josh Gibson": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsIntimidator": true,
+    "IsContactHitter": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsGoodBlocker": true
+  },
+  "Josh Hamilton": {
+    "Durability": 2,
+    "Consistency": 2,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsHotHitter": true,
+    "IsFreeSwinger": true,
+    "IsPullHitter": true,
+    "IsFirstballHitter": true,
+    "IsAggressiveFielder": true
+  },
+  "Juan González": {
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsPullHitter": true,
+    "IsFirstballHitter": true,
+    "IsFreeSwinger": true,
+    "BaseRunning": 2
+  },
+  "Juan Marichal": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "IsHotHead": true
+  },
+  "Juan Pierre": {
+    "Consistency": 4,
+    "IsTableSetter": true,
+    "IsContactHitter": true,
+    "IsSparkplug": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "WillSlideHeadFirst": true
+  },
+  "Juan Soto": {
+    "Consistency": 4,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "ClutchHitter": 2,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "VersusLefty": 2
+  },
+  "Justin Turner": {
+    "Consistency": 4,
+    "ClutchHitter": 2,
+    "IsContactHitter": true,
+    "IsRefinedHitter": true,
+    "IsPullHitter": true,
+    "BaseRunning": 2
+  },
+  "Justin Verlander": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "IsIntimidator": true,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "Recovery": 4
+  },
+  "Katsuya Nomura": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsRefinedHitter": true,
+    "IsGoodBlocker": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "BaseRunning": 2
+  },
+  "Kazuhiro Sasaki": {
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "Recovery": 4
+  },
+  "Kazuhisa Inao": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "Recovery": 4
+  },
+  "Kazuo Matsui": {
+    "IsSparkplug": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsPivotMan": true
+  },
+  "Keith Foulke": {
+    "Poise": 4,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "Recovery": 4
+  },
+  "Keith Hernandez": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "IsSprayHitter": true,
+    "IsGoldGlover": true,
+    "BaseRunning": 2
+  },
+  "Ken Boyer": {
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Ken Caminiti": {
+    "Durability": 2,
+    "IsPowerHitter": true,
+    "ClutchHitter": 1,
+    "IsIntimidator": true,
+    "IsAggressiveRunner": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Ken Griffey Jr.": {
+    "IsStar": true,
+    "Durability": 2,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsPullHitter": true,
+    "IsFirstballHitter": true,
+    "IsIntimidator": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsAggressiveFielder": true
+  },
+  "Ken Griffey Sr.": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4
+  },
+  "Ken Singleton": {
+    "Consistency": 4,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "VersusLefty": 2,
+    "IsPowerHitter": true
+  },
+  "Kenley Jansen": {
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "DoctorK": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "Recovery": 4
+  },
+  "Kenny Lofton": {
+    "Consistency": 4,
+    "IsTableSetter": true,
+    "IsSparkplug": true,
+    "IsContactHitter": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true
+  },
+  "Kenny Rogers": {
+    "Consistency": 3,
+    "Poise": 3,
+    "GoodDelivery": true,
+    "GoodPickoff": true,
+    "Spin": 4,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true
+  },
+  "Kent Hrbek": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "ClutchHitter": 1,
+    "IsGoldGlover": true,
+    "BaseRunning": 2
+  },
+  "Kent Tekulve": {
+    "Durability": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "GroundBallOrFlyBallPitcher": 1,
+    "Recovery": 4
+  },
+  "Kerry Wood": {
+    "Durability": 2,
+    "DoctorK": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "IsWalkProne": true,
+    "GoodDelivery": true,
+    "SafeOrFatPitch": -1
+  },
+  "Ketel Marte": {
+    "Consistency": 3,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsHotHitter": true,
+    "BaseRunning": 3
+  },
+  "Kevin Appier": {
+    "Poise": 4,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "DoctorK": true,
+    "GoodLowPitch": true
+  },
+  "Kevin Brown": {
+    "Durability": 2,
+    "Morale": -1,
+    "Consistency": 3,
+    "Poise": 4,
+    "IsIntimidator": true,
+    "IsHotHead": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true
+  },
+  "Kevin Kiermaier": {
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "BaseRunning": 4,
+    "SmallBall": 1
+  },
+  "Kirby Puckett": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsFirstballHitter": true,
+    "ClutchHitter": 2,
+    "IsHotHitter": true,
+    "IsRallyHitter": true,
+    "IsSparkplug": true,
+    "BaseRunning": 4,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true
+  },
+  "Kirk Gibson": {
+    "Durability": 2,
+    "Consistency": 2,
+    "IsPowerHitter": true,
+    "ClutchHitter": 2,
+    "IsIntimidator": true,
+    "IsSparkplug": true,
+    "IsAggressiveRunner": true,
+    "IsToughRunner": true,
+    "WillBreakupDoublePlay": true,
+    "WillSlideHeadFirst": true,
+    "BaseRunning": 4,
+    "Stealing": 4
+  },
+  "Koichi Tabuchi": {
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "IsGoodBlocker": true,
+    "BaseRunning": 2
+  },
+  "Koji Uehara": {
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "DoctorK": true
+  },
+  "Koji Yamamoto": {
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Kris Bryant": {
+    "Consistency": 3,
+    "IsPowerHitter": true,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "BaseRunning": 3
+  },
+  "Kyle Freeland": {
+    "GoodDelivery": true,
+    "GoodLowPitch": true,
+    "GroundBallOrFlyBallPitcher": 1,
+    "Spin": 3
+  },
+  "Lance Berkman": {
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "VersusLefty": 2,
+    "IsToughOut": true,
+    "IsRefinedHitter": true,
+    "BaseRunning": 2
+  },
+  "Larry Doby": {
+    "IsStar": true,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsSparkplug": true,
+    "BaseRunning": 4
+  },
+  "Larry Walker": {
+    "IsStar": true,
+    "Durability": 2,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsRefinedHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsAggressiveFielder": true
+  },
+  "Lee Smith": {
+    "Durability": 4,
+    "Poise": 4,
+    "IsIntimidator": true,
+    "FastballLife": 4,
+    "GoodDelivery": true,
+    "Recovery": 4
+  },
+  "Lefty Gomez": {
+    "IsStar": true,
+    "Morale": 1,
+    "Consistency": 3,
+    "Poise": 4,
+    "DoctorK": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4
+  },
+  "Lefty Grove": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "IsIntimidator": true,
+    "IsHotHead": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1
+  },
+  "Lenny Dykstra": {
+    "Durability": 2,
+    "IsTableSetter": true,
+    "IsSparkplug": true,
+    "IsFirstballHitter": true,
+    "IsToughOut": true,
+    "ClutchHitter": 1,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "WillSlideHeadFirst": true
+  },
+  "Liván Hernández": {
+    "Durability": 4,
+    "Consistency": 2,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "Spin": 3,
+    "GroundBallOrFlyBallPitcher": 1
+  },
+  "Lloyd Moseby": {
+    "IsSprayHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsAggressiveFielder": true
+  },
+  "Lloyd Waner": {
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsTableSetter": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveFielder": true
+  },
+  "Lorenzo Cain": {
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "ClutchHitter": 1
+  },
+  "Lou Boudreau": {
+    "IsStar": true,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsRefinedHitter": true,
+    "ClutchHitter": 1,
+    "IsGoldGlover": true,
+    "IsPivotMan": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Lou Brock": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsTableSetter": true,
+    "IsSparkplug": true,
+    "IsFirstballHitter": true,
+    "ClutchHitter": 1,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "WillSlideHeadFirst": true
+  },
+  "Lou Gehrig": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsContactHitter": true,
+    "IsIntimidator": true,
+    "BaseRunning": 2
+  },
+  "Lou Whitaker": {
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsRefinedHitter": true,
+    "IsGoldGlover": true,
+    "IsPivotMan": true,
+    "BaseRunning": 4
+  },
+  "Luis Castillo": {
+    "Poise": 4,
+    "DoctorK": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true
+  },
+  "Luis González": {
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "ClutchHitter": 1,
+    "IsPullHitter": true,
+    "IsRefinedHitter": true,
+    "BaseRunning": 2
+  },
+  "Luke Appling": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "IsSprayHitter": true,
+    "BaseRunning": 3
+  },
+  "Madison Bumgarner": {
+    "Durability": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "IsIntimidator": true,
+    "GoodDelivery": true,
+    "FastballLife": 3,
+    "Spin": 4,
+    "GoodLowPitch": true
+  },
+  "Magglio Ordóñez": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsRefinedHitter": true,
+    "IsPowerHitter": true,
+    "BaseRunning": 2
+  },
+  "Manny Ramirez": {
+    "IsStar": true,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsRefinedHitter": true,
+    "IsIntimidator": true,
+    "IsPullHitter": true,
+    "BaseRunning": 2,
+    "Stealing": 2,
+    "IsErrorProne": true
+  },
+  "Manny Sanguillén": {
+    "IsContactHitter": true,
+    "IsFirstballHitter": true,
+    "IsFreeSwinger": true,
+    "IsGoodBlocker": true,
+    "BaseRunning": 4
+  },
+  "Marcus Stroman": {
+    "GoodDelivery": true,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "GoodReflexes": true,
+    "Spin": 3
+  },
+  "Mariano Rivera": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "GoodReflexes": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Mark Belanger": {
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "IsPivotMan": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "SmallBall": 1
+  },
+  "Mark Buehrle": {
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "GoodPickoff": true,
+    "GoodReflexes": true,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true
+  },
+  "Mark Grace": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "IsGoldGlover": true,
+    "BaseRunning": 2
+  },
+  "Mark Langston": {
+    "DoctorK": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 3,
+    "IsWalkProne": true,
+    "GoodPickoff": true
+  },
+  "Mark Lemke": {
+    "ClutchHitter": 1,
+    "IsContactHitter": true,
+    "IsPivotMan": true,
+    "SmallBall": 1
+  },
+  "Mark McGwire": {
+    "IsStar": true,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsPullHitter": true,
+    "IsIntimidator": true,
+    "IsFreeSwinger": true,
+    "BaseRunning": 2,
+    "Stealing": 2,
+    "IsGoldGlover": true
+  },
+  "Mark Wohlers": {
+    "Durability": 2,
+    "Poise": 2,
+    "FastballLife": 4,
+    "GoodDelivery": true,
+    "IsWalkProne": true
+  },
+  "Marquis Grissom": {
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "ClutchHitter": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "SmallBall": 1
+  },
+  "Masaichi Kaneda": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "Recovery": 4
+  },
+  "Matt Garza": {
+    "Consistency": 2,
+    "Poise": 3,
+    "IsHotHead": true,
+    "FastballLife": 4,
+    "GoodDelivery": true
+  },
+  "Matt Holliday": {
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "IsToughRunner": true,
+    "BaseRunning": 3
+  },
+  "Matt Joyce": {
+    "IsToughOut": true,
+    "VersusLefty": 2,
+    "IsPullHitter": true
+  },
+  "Matt Williams": {
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsPullHitter": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsFreeSwinger": true
+  },
+  "Maury Wills": {
+    "IsTableSetter": true,
+    "IsSparkplug": true,
+    "IsContactHitter": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "WillSlideHeadFirst": true
+  },
+  "Max Scherzer": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "IsIntimidator": true,
+    "IsHotHead": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "Recovery": 4
+  },
+  "Mel Harder": {
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true
+  },
+  "Mel Ott": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsPullHitter": true,
+    "IsToughOut": true,
+    "BaseRunning": 3
+  },
+  "Mel Rojas": {
+    "Poise": 3,
+    "FastballLife": 4,
+    "GoodDelivery": true,
+    "Recovery": 3
+  },
+  "Michael Young": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsRefinedHitter": true,
+    "BaseRunning": 3
+  },
+  "Mickey Cochrane": {
+    "IsStar": true,
+    "Durability": 2,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "ClutchHitter": 2,
+    "IsSparkplug": true,
+    "IsRefinedHitter": true,
+    "IsGoodBlocker": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "BaseRunning": 4
+  },
+  "Mickey Lolich": {
+    "Durability": 4,
+    "Consistency": 3,
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "DoctorK": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "Recovery": 4
+  },
+  "Mickey Mantle": {
+    "IsStar": true,
+    "Durability": 2,
+    "Consistency": 3,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "VersusLefty": 1,
+    "IsHotHitter": true,
+    "IsIntimidator": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "WillSlideHeadFirst": true
+  },
+  "Miguel Cabrera": {
+    "IsStar": true,
+    "Durability": 2,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "VersusLefty": 2,
+    "IsContactHitter": true,
+    "IsRefinedHitter": true,
+    "IsIntimidator": true,
+    "BaseRunning": 2,
+    "IsErrorProne": true
+  },
+  "Miguel Montero": {
+    "ClutchHitter": 1,
+    "IsPowerHitter": true,
+    "IsGoodBlocker": true,
+    "BaseRunning": 2
+  },
+  "Miguel Tejada": {
+    "Durability": 4,
+    "Consistency": 3,
+    "IsPowerHitter": true,
+    "IsFirstballHitter": true,
+    "IsFreeSwinger": true,
+    "BaseRunning": 3,
+    "IsErrorProne": true
+  },
+  "Mike Boddicker": {
+    "Poise": 4,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GroundBallOrFlyBallPitcher": -1
+  },
+  "Mike Caldwell": {
+    "Poise": 3,
+    "GoodDelivery": true,
+    "Spin": 3,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true
+  },
+  "Mike Cameron": {
+    "IsPowerHitter": true,
+    "IsFreeSwinger": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Mike Cuellar": {
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true
+  },
+  "Mike Flanagan": {
+    "Poise": 3,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "GoodLowPitch": true,
+    "GroundBallOrFlyBallPitcher": -1
+  },
+  "Mike Lowell": {
+    "Consistency": 4,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "IsPowerHitter": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "BaseRunning": 2
+  },
+  "Mike Mussina": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "DoctorK": true,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "GoodReflexes": true,
+    "GoodPickoff": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true
+  },
+  "Mike Norris": {
+    "Poise": 4,
+    "GoodDelivery": true,
+    "FastballLife": 3,
+    "Spin": 3
+  },
+  "Mike Piazza": {
+    "IsStar": true,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsContactHitter": true,
+    "IsRefinedHitter": true,
+    "IsIntimidator": true,
+    "BaseRunning": 2,
+    "Stealing": 2,
+    "Throwing": 2
+  },
+  "Mike Schmidt": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 3,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsPullHitter": true,
+    "IsRefinedHitter": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Mike Scott": {
+    "Poise": 4,
+    "DoctorK": true,
+    "IsIntimidator": true,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GroundBallOrFlyBallPitcher": 1
+  },
+  "Mike Sweeney": {
+    "Morale": 1,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsRefinedHitter": true,
+    "ClutchHitter": 1,
+    "BaseRunning": 2
+  },
+  "Mike Trout": {
+    "IsStar": true,
+    "Durability": 2,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true
+  },
+  "Mike Witt": {
+    "Poise": 3,
+    "GoodDelivery": true,
+    "FastballLife": 3,
+    "Spin": 3,
+    "GroundBallOrFlyBallPitcher": -1
+  },
+  "Mike Zunino": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "IsGoodBlocker": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Minnie Miñoso": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsPowerHitter": true,
+    "IsSparkplug": true,
+    "IsAggressiveRunner": true,
+    "IsToughRunner": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "WillSlideHeadFirst": true
+  },
+  "Mitch Williams": {
+    "Poise": 2,
+    "IsWalkProne": true,
+    "IsHotHead": true,
+    "FastballLife": 4,
+    "GoodDelivery": true,
+    "SafeOrFatPitch": -1,
+    "Recovery": 4
+  },
+  "Moises Alou": {
+    "Durability": 2,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsContactHitter": true,
+    "IsRefinedHitter": true,
+    "ClutchHitter": 1,
+    "BaseRunning": 3
+  },
+  "Mookie Betts": {
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsRefinedHitter": true,
+    "ClutchHitter": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Moose Haas": {
+    "Poise": 3,
+    "GoodDelivery": true,
+    "Spin": 3
+  },
+  "Nap Lajoie": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsPowerHitter": true,
+    "IsSprayHitter": true,
+    "IsRefinedHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsGoldGlover": true
+  },
+  "Nate Colbert": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "BaseRunning": 3
+  },
+  "Neftali Feliz": {
+    "Durability": 2,
+    "Poise": 3,
+    "FastballLife": 4,
+    "GoodDelivery": true,
+    "Recovery": 3
+  },
+  "Nellie Fox": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsTableSetter": true,
+    "IsToughOut": true,
+    "SmallBall": 1,
+    "IsPivotMan": true,
+    "IsGoldGlover": true,
+    "BaseRunning": 3
+  },
+  "Nolan Arenado": {
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsPullHitter": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsAggressiveFielder": true
+  },
+  "Nolan Ryan": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 2,
+    "Poise": 4,
+    "DoctorK": true,
+    "IsWalkProne": true,
+    "IsIntimidator": true,
+    "IsHotHead": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": -1,
+    "Recovery": 4
+  },
+  "Nomar Garciaparra": {
+    "Durability": 2,
+    "Consistency": 3,
+    "IsContactHitter": true,
+    "IsPowerHitter": true,
+    "IsFirstballHitter": true,
+    "IsFreeSwinger": true,
+    "IsHotHitter": true,
+    "BaseRunning": 4
+  },
+  "Norm Cash": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "IsToughOut": true,
+    "VersusLefty": 2,
+    "BaseRunning": 2
+  },
+  "Norm Charlton": {
+    "Poise": 3,
+    "IsHotHead": true,
+    "FastballLife": 4,
+    "GoodDelivery": true,
+    "Recovery": 4
+  },
+  "Oddibe McDowell": {
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveFielder": true,
+    "IsFreeSwinger": true
+  },
+  "Omar Vizquel": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "SmallBall": 1,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "IsPivotMan": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Orel Hershiser": {
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true
+  },
+  "Orlando Cepeda": {
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsFirstballHitter": true,
+    "IsSparkplug": true,
+    "Morale": 1,
+    "BaseRunning": 3
+  },
+  "Oscar Charleston": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsIntimidator": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsToughRunner": true,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Ozzie Guillén": {
+    "IsSparkplug": true,
+    "IsContactHitter": true,
+    "IsFirstballHitter": true,
+    "IsFreeSwinger": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "IsGoldGlover": true,
+    "IsPivotMan": true
+  },
+  "Ozzie Smith": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsTableSetter": true,
+    "IsSparkplug": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "IsPivotMan": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Pat Borders": {
+    "ClutchHitter": 1,
+    "IsGoodBlocker": true,
+    "IsFreeSwinger": true
+  },
+  "Pat Hentgen": {
+    "Consistency": 3,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "Spin": 3,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true
+  },
+  "Paul Blair": {
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "BaseRunning": 4,
+    "SmallBall": 1
+  },
+  "Paul Goldschmidt": {
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "Morale": 1,
+    "IsGoldGlover": true,
+    "BaseRunning": 4
+  },
+  "Paul Konerko": {
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "ClutchHitter": 1,
+    "IsPullHitter": true,
+    "Morale": 1,
+    "BaseRunning": 2
+  },
+  "Paul Molitor": {
+    "IsStar": true,
+    "Durability": 2,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsRefinedHitter": true,
+    "IsTableSetter": true,
+    "ClutchHitter": 2,
+    "IsHotHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "WillSlideHeadFirst": true
+  },
+  "Paul Splittorff": {
+    "Consistency": 3,
+    "Poise": 3,
+    "GoodDelivery": true,
+    "GroundBallOrFlyBallPitcher": -1
+  },
+  "Paul Waner": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsTableSetter": true,
+    "IsToughOut": true,
+    "IsRefinedHitter": true,
+    "BaseRunning": 4
+  },
+  "Pedro Martinez": {
+    "IsStar": true,
+    "Durability": 2,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "DoctorK": true,
+    "IsIntimidator": true,
+    "IsHotHead": true,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "Recovery": 2
+  },
+  "Pee Wee Reese": {
+    "IsStar": true,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsTableSetter": true,
+    "IsSparkplug": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsPivotMan": true,
+    "IsGoldGlover": true
+  },
+  "Pete Rose": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsTableSetter": true,
+    "IsSprayHitter": true,
+    "IsHotHitter": true,
+    "IsSparkplug": true,
+    "IsToughOut": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "IsAggressiveRunner": true,
+    "IsToughRunner": true,
+    "WillBreakupDoublePlay": true,
+    "WillSlideHeadFirst": true
+  },
+  "Phil Nevin": {
+    "IsPowerHitter": true,
+    "IsFreeSwinger": true,
+    "BaseRunning": 2
+  },
+  "Phil Niekro": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 3,
+    "WithRunnersInScoringPosition": 3,
+    "Spin": 4,
+    "GoodDelivery": true,
+    "GoodPickoff": true,
+    "GoodReflexes": true,
+    "GroundBallOrFlyBallPitcher": 1,
+    "Recovery": 4
+  },
+  "Pie Traynor": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "ClutchHitter": 1,
+    "IsSprayHitter": true,
+    "BaseRunning": 4,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Prince Fielder": {
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "BaseRunning": 2,
+    "Stealing": 2,
+    "IsErrorProne": true
+  },
+  "Ralph Kiner": {
+    "IsStar": true,
+    "Durability": 2,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsPullHitter": true,
+    "IsIntimidator": true,
+    "BaseRunning": 2,
+    "Stealing": 2
+  },
+  "Randy Arozarena": {
+    "ClutchHitter": 2,
+    "IsHotHitter": true,
+    "IsRallyHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "WillSlideHeadFirst": true
+  },
+  "Randy Bass": {
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsIntimidator": true,
+    "VersusLefty": 2,
+    "BaseRunning": 2
+  },
+  "Randy Johnson": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "VersusLefty": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "IsIntimidator": true,
+    "IsSlowStarter": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true
+  },
+  "Randy Jones": {
+    "Consistency": 4,
+    "Poise": 3,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "Spin": 4,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "Recovery": 2
+  },
+  "Raúl Ibáñez": {
+    "ClutchHitter": 1,
+    "IsPowerHitter": true,
+    "IsGoodPinchHitter": true,
+    "IsRallyHitter": true,
+    "BaseRunning": 2
+  },
+  "Ray Schalk": {
+    "IsStar": true,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsGoodBlocker": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true
+  },
+  "Red Faber": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Red Ruffing": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "FastballLife": 3,
+    "Recovery": 4
+  },
+  "Reggie Jackson": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 2,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsHotHitter": true,
+    "IsIntimidator": true,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "IsFirstballHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4
+  },
+  "Richie Ashburn": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsTableSetter": true,
+    "IsSprayHitter": true,
+    "IsToughOut": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true
+  },
+  "Rick Aguilera": {
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "FastballLife": 3,
+    "Recovery": 4
+  },
+  "Rick Dempsey": {
+    "ClutchHitter": 1,
+    "IsGoodBlocker": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsGoldGlover": true,
+    "BaseRunning": 2
+  },
+  "Rickey Henderson": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsTableSetter": true,
+    "IsPowerHitter": true,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "IsSparkplug": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "WillSlideHeadFirst": true,
+    "IsAggressiveFielder": true
+  },
+  "Rob Dibble": {
+    "Poise": 3,
+    "IsIntimidator": true,
+    "IsHotHead": true,
+    "FastballLife": 4,
+    "SafeOrFatPitch": -1,
+    "IsWalkProne": true,
+    "Recovery": 4
+  },
+  "Robb Nen": {
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "FastballLife": 4,
+    "Spin": 3,
+    "Recovery": 4
+  },
+  "Roberto Alomar": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsTableSetter": true,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsGoldGlover": true,
+    "IsPivotMan": true
+  },
+  "Roberto Clemente": {
+    "IsStar": true,
+    "Durability": 2,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "ClutchHitter": 1,
+    "IsHotHitter": true,
+    "BaseRunning": 4,
+    "IsAggressiveRunner": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsAggressiveFielder": true
+  },
+  "Roberto Hernandez": {
+    "Poise": 3,
+    "FastballLife": 3,
+    "GroundBallOrFlyBallPitcher": 1,
+    "Recovery": 4
+  },
+  "Robin Roberts": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "FastballLife": 4,
+    "SafeOrFatPitch": -1,
+    "Recovery": 4
+  },
+  "Robin Ventura": {
+    "ClutchHitter": 1,
+    "IsPowerHitter": true,
+    "IsRefinedHitter": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Robin Yount": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "ClutchHitter": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true
+  },
+  "Robinson Cano": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsPowerHitter": true,
+    "IsRefinedHitter": true,
+    "IsSprayHitter": true,
+    "ClutchHitter": 1,
+    "IsPivotMan": true,
+    "IsGoldGlover": true,
+    "BaseRunning": 2
+  },
+  "Rocco Baldelli": {
+    "Durability": 2,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsAggressiveFielder": true
+  },
+  "Rocky Colavito": {
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsPullHitter": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "BaseRunning": 2
+  },
+  "Rod Beck": {
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "FastballLife": 3,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Rod Carew": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsTableSetter": true,
+    "IsSprayHitter": true,
+    "IsToughOut": true,
+    "IsRefinedHitter": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4
+  },
+  "Roger Clemens": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "IsIntimidator": true,
+    "IsHotHead": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Roger Maris": {
+    "Morale": -1,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsPullHitter": true,
+    "ClutchHitter": 1,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Rogers Hornsby": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": -1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsContactHitter": true,
+    "ClutchHitter": 2,
+    "IsRefinedHitter": true,
+    "IsIntimidator": true,
+    "VersusLefty": 2,
+    "BaseRunning": 4
+  },
+  "Rollie Fingers": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Ron Gant": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true
+  },
+  "Ron Perranoski": {
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "GoodDelivery": true,
+    "Spin": 3,
+    "GroundBallOrFlyBallPitcher": 1,
+    "Recovery": 4
+  },
+  "Ron Santo": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "ClutchHitter": 1,
+    "IsToughOut": true,
+    "IsRefinedHitter": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Ron Swoboda": {
+    "IsPowerHitter": true,
+    "IsFreeSwinger": true,
+    "IsAggressiveFielder": true
+  },
+  "Ronald Acuña Jr.": {
+    "Durability": 2,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsSparkplug": true,
+    "IsFirstballHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "WillSlideHeadFirst": true,
+    "IsAggressiveFielder": true
+  },
+  "Roy Campanella": {
+    "IsStar": true,
+    "Durability": 2,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsGoodBlocker": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsGoldGlover": true
+  },
+  "Roy Face": {
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "Spin": 4,
+    "GoodDelivery": true,
+    "Recovery": 4
+  },
+  "Roy Halladay": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "GoodReflexes": true,
+    "FastballLife": 3,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Roy Oswalt": {
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "GoodDelivery": true,
+    "FastballLife": 3,
+    "Spin": 3,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true
+  },
+  "Rubén Sierra": {
+    "IsPowerHitter": true,
+    "IsSprayHitter": true,
+    "IsFreeSwinger": true,
+    "IsFirstballHitter": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "BaseRunning": 4
+  },
+  "Rusty Staub": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsToughOut": true,
+    "IsRefinedHitter": true,
+    "IsGoodPinchHitter": true,
+    "ClutchHitter": 1,
+    "BaseRunning": 2
+  },
+  "Ryan Braun": {
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsPullHitter": true,
+    "IsFirstballHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true
+  },
+  "Ryan Howard": {
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "VersusLefty": 1,
+    "BaseRunning": 2,
+    "Stealing": 2,
+    "IsErrorProne": true
+  },
+  "Ryan Zimmerman": {
+    "ClutchHitter": 1,
+    "IsPowerHitter": true,
+    "IsRefinedHitter": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "BaseRunning": 2
+  },
+  "Ryne Sandberg": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsContactHitter": true,
+    "ClutchHitter": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsGoldGlover": true,
+    "IsPivotMan": true
+  },
+  "Sadaharu Oh": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsIntimidator": true,
+    "IsPullHitter": true,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "BaseRunning": 2
+  },
+  "Sal Bando": {
+    "IsPowerHitter": true,
+    "ClutchHitter": 1,
+    "IsToughOut": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Salvador Pérez": {
+    "Durability": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsFreeSwinger": true,
+    "IsFirstballHitter": true,
+    "IsGoodBlocker": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsGoldGlover": true,
+    "BaseRunning": 2
+  },
+  "Sammy Sosa": {
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsIntimidator": true,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "IsFirstballHitter": true,
+    "Morale": 1,
+    "BaseRunning": 4,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsAggressiveFielder": true
+  },
+  "Sandy Alcántara": {
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 3,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Sandy Koufax": {
+    "IsStar": true,
+    "Durability": 2,
+    "Consistency": 4,
+    "VersusLefty": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "IsIntimidator": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "Recovery": 2
+  },
+  "Satchel Paige": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsIntimidator": true,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Scott Rolen": {
+    "IsStar": true,
+    "Durability": 2,
+    "Consistency": 4,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "BaseRunning": 4,
+    "IsAggressiveRunner": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsAggressiveFielder": true
+  },
+  "Sean Doolittle": {
+    "Morale": 1,
+    "Poise": 3,
+    "FastballLife": 4,
+    "GoodPace": true,
+    "Recovery": 2
+  },
+  "Shawn Green": {
+    "IsPowerHitter": true,
+    "IsSprayHitter": true,
+    "IsRefinedHitter": true,
+    "IsHotHitter": true,
+    "BaseRunning": 4,
+    "IsGoldGlover": true
+  },
+  "Shigeo Nagashima": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsContactHitter": true,
+    "IsSparkplug": true,
+    "IsIntimidator": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Shigeru Sugishita": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Shin-Soo Choo": {
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "IsTableSetter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "VersusLefty": 1
+  },
+  "Shoeless Joe Jackson": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsPowerHitter": true,
+    "IsSprayHitter": true,
+    "ClutchHitter": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsAggressiveFielder": true
+  },
+  "Shohei Ohtani": {
+    "IsStar": true,
+    "Durability": 2,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsIntimidator": true,
+    "IsPullHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "Poise": 4,
+    "DoctorK": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true
+  },
+  "Sid Fernandez": {
+    "Consistency": 2,
+    "DoctorK": true,
+    "GoodDelivery": true,
+    "FastballLife": 3,
+    "Spin": 3,
+    "GroundBallOrFlyBallPitcher": -1,
+    "SafeOrFatPitch": -1
+  },
+  "Stan Musial": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsContactHitter": true,
+    "ClutchHitter": 2,
+    "IsSprayHitter": true,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "VersusLefty": 2,
+    "BaseRunning": 4,
+    "IsAggressiveFielder": true
+  },
+  "Stephen Strasburg": {
+    "Durability": 2,
+    "Consistency": 2,
+    "DoctorK": true,
+    "ClutchHitter": 1,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "Recovery": 2
+  },
+  "Steve Bedrosian": {
+    "Poise": 3,
+    "FastballLife": 3,
+    "SafeOrFatPitch": -1,
+    "Recovery": 4,
+    "IsHotHead": true
+  },
+  "Steve Blass": {
+    "Poise": 2,
+    "IsWalkProne": true,
+    "Consistency": 2,
+    "GoodDelivery": true,
+    "Spin": 3
+  },
+  "Steve Carlton": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "IsIntimidator": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Steve Cishek": {
+    "GoodDelivery": true,
+    "GroundBallOrFlyBallPitcher": 1,
+    "Spin": 3,
+    "Recovery": 4
+  },
+  "Steve Finley": {
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsSprayHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true
+  },
+  "Steve Garvey": {
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "IsGoldGlover": true,
+    "BaseRunning": 2
+  },
+  "Steve Rogers": {
+    "Consistency": 4,
+    "Poise": 3,
+    "GoodDelivery": true,
+    "Spin": 3,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true
+  },
+  "Takashi Saito": {
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "FastballLife": 3,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "Recovery": 4
+  },
+  "Ted Kluszewski": {
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsContactHitter": true,
+    "IsPullHitter": true,
+    "IsIntimidator": true,
+    "BaseRunning": 2
+  },
+  "Ted Simmons": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsPowerHitter": true,
+    "IsSprayHitter": true,
+    "ClutchHitter": 1,
+    "IsGoodBlocker": true,
+    "BaseRunning": 2
+  },
+  "Ted Williams": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "VersusLefty": 1,
+    "IsContactHitter": true,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "IsIntimidator": true,
+    "BaseRunning": 2,
+    "Stealing": 2
+  },
+  "Teddy Higuera": {
+    "Durability": 2,
+    "Consistency": 3,
+    "Poise": 3,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "GoodLowPitch": true,
+    "VersusLefty": 4
+  },
+  "Three Finger Brown": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Tim Hudson": {
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "Spin": 3,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Tim Lincecum": {
+    "Durability": 2,
+    "Consistency": 2,
+    "Poise": 4,
+    "DoctorK": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "IsStarterFinisher": true
+  },
+  "Tim Raines": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsTableSetter": true,
+    "IsSparkplug": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "WillSlideHeadFirst": true
+  },
+  "Tim Salmon": {
+    "Morale": 1,
+    "IsPowerHitter": true,
+    "IsRefinedHitter": true,
+    "ClutchHitter": 1,
+    "VersusLefty": 1,
+    "BaseRunning": 2
+  },
+  "Tim Wallach": {
+    "Durability": 4,
+    "IsRefinedHitter": true,
+    "IsPowerHitter": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Tino Martinez": {
+    "ClutchHitter": 1,
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "IsGoldGlover": true,
+    "BaseRunning": 2
+  },
+  "Tippy Martinez": {
+    "GoodDelivery": true,
+    "GoodPickoff": true,
+    "Spin": 3,
+    "GroundBallOrFlyBallPitcher": 1,
+    "Recovery": 4
+  },
+  "Todd Helton": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "IsSprayHitter": true,
+    "IsGoldGlover": true,
+    "BaseRunning": 2
+  },
+  "Todd Jones": {
+    "Poise": 3,
+    "Consistency": 2,
+    "FastballLife": 3,
+    "SafeOrFatPitch": -1,
+    "Recovery": 4
+  },
+  "Tom Browning": {
+    "Consistency": 4,
+    "Poise": 3,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "Spin": 3,
+    "GoodLowPitch": true
+  },
+  "Tom Brunansky": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsAggressiveFielder": true
+  },
+  "Tom Glavine": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "VersusLefty": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "GoodPickoff": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Tom Grieve": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "BaseRunning": 2
+  },
+  "Tom Henke": {
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "DoctorK": true,
+    "FastballLife": 4,
+    "SafeOrFatPitch": 1,
+    "Recovery": 4
+  },
+  "Tom Seaver": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GroundBallOrFlyBallPitcher": -1,
+    "GoodLowPitch": true
+  },
+  "Tommy Bridges": {
+    "Consistency": 4,
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "Spin": 4,
+    "FastballLife": 3
+  },
+  "Tony Fernandez": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "IsGoldGlover": true,
+    "IsPivotMan": true
+  },
+  "Tony Gwynn": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsTableSetter": true,
+    "ClutchHitter": 1,
+    "IsToughOut": true,
+    "IsRefinedHitter": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "IsGoldGlover": true
+  },
+  "Tony Lazzeri": {
+    "IsStar": true,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "ClutchHitter": 2,
+    "IsRallyHitter": true,
+    "IsPivotMan": true,
+    "IsGoldGlover": true
+  },
+  "Tony Oliva": {
+    "Durability": 2,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsPowerHitter": true,
+    "IsSprayHitter": true,
+    "IsHotHitter": true,
+    "IsFirstballHitter": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Tony Pérez": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsRallyHitter": true,
+    "BaseRunning": 2
+  },
+  "Tony Womack": {
+    "IsTableSetter": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "WillSlideHeadFirst": true,
+    "IsSparkplug": true
+  },
+  "Torii Hunter": {
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "ClutchHitter": 1,
+    "IsFirstballHitter": true,
+    "BaseRunning": 4,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Travis Hafner": {
+    "Durability": 2,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsIntimidator": true,
+    "IsPullHitter": true,
+    "BaseRunning": 2,
+    "Stealing": 2
+  },
+  "Travis Jackson": {
+    "IsStar": true,
+    "Durability": 2,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "ClutchHitter": 1,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsPivotMan": true,
+    "BaseRunning": 4
+  },
+  "Trevor Hoffman": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Tris Speaker": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsPowerHitter": true,
+    "IsSprayHitter": true,
+    "ClutchHitter": 1,
+    "IsTableSetter": true,
+    "IsRefinedHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Troy Percival": {
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "IsIntimidator": true,
+    "FastballLife": 4,
+    "SafeOrFatPitch": -1,
+    "Recovery": 4
+  },
+  "Troy Tulowitzki": {
+    "Durability": 2,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "IsGoldGlover": true,
+    "IsPivotMan": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "BaseRunning": 4
+  },
+  "Tuffy Rhodes": {
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "BaseRunning": 2
+  },
+  "Tug McGraw": {
+    "Morale": 1,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "FastballLife": 3,
+    "Spin": 3,
+    "Recovery": 4
+  },
+  "Ty Cobb": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": -1,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "IsTableSetter": true,
+    "ClutchHitter": 1,
+    "IsToughOut": true,
+    "IsFirstballHitter": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsToughRunner": true,
+    "WillBreakupDoublePlay": true,
+    "WillSlideHeadFirst": true
+  },
+  "Tyler Glasnow": {
+    "Durability": 2,
+    "Consistency": 2,
+    "DoctorK": true,
+    "IsSlowStarter": true,
+    "FastballLife": 4,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "IsWalkProne": true
+  },
+  "Ubaldo Jiménez": {
+    "Consistency": 2,
+    "Poise": 2,
+    "FastballLife": 4,
+    "Spin": 3,
+    "IsWalkProne": true,
+    "IsSlowStarter": true,
+    "GroundBallOrFlyBallPitcher": 1
+  },
+  "Vada Pinson": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsPowerHitter": true,
+    "IsSprayHitter": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Vern Law": {
+    "Morale": 1,
+    "Consistency": 4,
+    "Poise": 4,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "Spin": 3,
+    "GroundBallOrFlyBallPitcher": 1,
+    "GoodLowPitch": true
+  },
+  "Victor Starffin": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "Poise": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 3,
+    "Recovery": 4
+  },
+  "Vida Blue": {
+    "Consistency": 2,
+    "Poise": 4,
+    "DoctorK": true,
+    "IsIntimidator": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "Spin": 3,
+    "SafeOrFatPitch": 1
+  },
+  "Vinny Castilla": {
+    "IsPowerHitter": true,
+    "IsPullHitter": true,
+    "IsFreeSwinger": true,
+    "IsFirstballHitter": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "BaseRunning": 2
+  },
+  "Vladimir Guerrero": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsFirstballHitter": true,
+    "IsFreeSwinger": true,
+    "IsIntimidator": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "BaseRunning": 4,
+    "IsAggressiveRunner": true,
+    "IsAggressiveFielder": true
+  },
+  "Wade Boggs": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsTableSetter": true,
+    "IsRefinedHitter": true,
+    "IsToughOut": true,
+    "IsSprayHitter": true,
+    "VersusLefty": 1,
+    "SmallBall": 1,
+    "BaseRunning": 2,
+    "IsGoldGlover": true
+  },
+  "Wade Davis": {
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "FastballLife": 3,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Walter Johnson": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "DoctorK": true,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "FastballLife": 4,
+    "SafeOrFatPitch": 1,
+    "Recovery": 4
+  },
+  "Warren Spahn": {
+    "IsStar": true,
+    "Durability": 4,
+    "Consistency": 4,
+    "VersusLefty": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "GoodPickoff": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Whitey Ford": {
+    "IsStar": true,
+    "Durability": 2,
+    "Consistency": 4,
+    "VersusLefty": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "IsStarterFinisher": true,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true
+  },
+  "Will Clark": {
+    "Consistency": 4,
+    "IsContactHitter": true,
+    "IsPowerHitter": true,
+    "ClutchHitter": 2,
+    "IsRefinedHitter": true,
+    "IsPullHitter": true,
+    "VersusLefty": 1,
+    "IsGoldGlover": true,
+    "BaseRunning": 2
+  },
+  "Willie Davis": {
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsAggressiveFielder": true,
+    "IsSprayHitter": true,
+    "IsFirstballHitter": true,
+    "IsErrorProne": true
+  },
+  "Willie Horton": {
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsPullHitter": true,
+    "IsToughRunner": true,
+    "BaseRunning": 2
+  },
+  "Willie Mays": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsSprayHitter": true,
+    "IsSparkplug": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "WillSlideHeadFirst": true,
+    "IsGoldGlover": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsAggressiveFielder": true
+  },
+  "Willie McCovey": {
+    "IsStar": true,
+    "Durability": 2,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 1,
+    "IsIntimidator": true,
+    "IsPullHitter": true,
+    "BaseRunning": 2,
+    "Stealing": 2
+  },
+  "Willie Stargell": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsIntimidator": true,
+    "IsPullHitter": true,
+    "IsSparkplug": true,
+    "BaseRunning": 2
+  },
+  "Willie Wilson": {
+    "IsTableSetter": true,
+    "IsContactHitter": true,
+    "IsSprayHitter": true,
+    "SmallBall": 1,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "WillSlideHeadFirst": true,
+    "IsGoldGlover": true,
+    "IsAggressiveFielder": true
+  },
+  "Willy Adames": {
+    "IsPowerHitter": true,
+    "ClutchHitter": 1,
+    "IsSparkplug": true,
+    "Morale": 1,
+    "IsPivotMan": true,
+    "BaseRunning": 4
+  },
+  "Yadier Molina": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "IsGoodBlocker": true,
+    "HasCannonArm": true,
+    "Throwing": 4,
+    "IsGoldGlover": true,
+    "ClutchHitter": 1,
+    "IsRefinedHitter": true,
+    "GoodPickoff": true,
+    "BaseRunning": 2
+  },
+  "Yogi Berra": {
+    "IsStar": true,
+    "Durability": 4,
+    "Morale": 1,
+    "Consistency": 4,
+    "ClutchHitter": 2,
+    "IsContactHitter": true,
+    "IsFreeSwinger": true,
+    "IsFirstballHitter": true,
+    "IsRallyHitter": true,
+    "IsGoodBlocker": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  },
+  "Yordan Álvarez": {
+    "IsPowerHitter": true,
+    "IsBackToBackHitter": true,
+    "ClutchHitter": 2,
+    "IsIntimidator": true,
+    "IsPullHitter": true,
+    "IsRefinedHitter": true,
+    "BaseRunning": 2,
+    "Stealing": 2
+  },
+  "Yoshinobu Yamamoto": {
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "FastballLife": 3,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true
+  },
+  "Yu Darvish": {
+    "Consistency": 4,
+    "Poise": 4,
+    "DoctorK": true,
+    "GoodDelivery": true,
+    "FastballLife": 3,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "IsSlowStarter": true
+  },
+  "Zack Greinke": {
+    "Consistency": 4,
+    "Poise": 4,
+    "WithRunnersInScoringPosition": 4,
+    "GoodDelivery": true,
+    "GoodPace": true,
+    "GoodReflexes": true,
+    "Spin": 4,
+    "SafeOrFatPitch": 1,
+    "GoodLowPitch": true,
+    "Recovery": 4
+  },
+  "Zoilo Versalles": {
+    "Consistency": 2,
+    "IsHotHitter": true,
+    "IsFreeSwinger": true,
+    "BaseRunning": 4,
+    "Stealing": 4,
+    "IsAggressiveRunner": true,
+    "IsPivotMan": true,
+    "HasCannonArm": true,
+    "Throwing": 4
+  }
+}

@@ -4,6 +4,7 @@ using System.CommandLine;
 using PowerUp.CommandLine.Commands.Rosters;
 using PowerUp.CommandLine.Commands.Csv;
 using PowerUp.CommandLine.Commands.GameSave;
+using PowerUp.CommandLine.Commands.Generation;
 
 namespace PowerUp.CommandLine.Commands
 {
@@ -16,6 +17,8 @@ namespace PowerUp.CommandLine.Commands
       services.AddTransient<ICommand, CsvImportCommand>();
       services.AddTransient<ICommand, WriteGameSaveCommand>();
       services.AddTransient<ICommand, ReadGameSaveCommand>();
+      services.AddTransient<ICommand, GenerateRosterCommand>();
+      services.AddTransient<ICommand, GenerateFranchiseRostersCommand>();
       return services;
     }
 

@@ -1,6 +1,5 @@
 ﻿using NUnit.Framework;
 using PowerUp.Entities.Players;
-using PowerUp.Fetchers.Algolia;
 using PowerUp.Fetchers.MLBLookupService;
 using PowerUp.Fetchers.MLBStatsApi;
 using Shouldly;

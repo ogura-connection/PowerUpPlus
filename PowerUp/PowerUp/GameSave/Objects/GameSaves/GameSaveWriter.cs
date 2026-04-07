@@ -23,7 +23,7 @@ namespace PowerUp.GameSave.Objects.GameSaves
       var playerWriter = new PlayerWriter(_writer);
       var players = gameSave.Players.ToList();
       for (int i = 0; i < players.Count; i++)
-        playerWriter.Write(i + 1, players[i]);
+        playerWriter.Write(players[i].PowerProsId!.Value, players[i]);
 
       var teamWriter = new TeamWriter(_writer);
       var lineupWriter = new LineupWriter(_writer);

@@ -70,7 +70,7 @@ namespace PowerUp.GameSave.IO
       }
 
       if (currentValue < @uint)
-        throw new ArgumentException("uint value is too large for the number of bits specified", nameof(@uint));
+        throw new ArgumentException($"uint value {@uint} exceeds {numberOfBits}-bit max of {(1 << numberOfBits) - 1}", nameof(@uint));
 
       return bits;
     }

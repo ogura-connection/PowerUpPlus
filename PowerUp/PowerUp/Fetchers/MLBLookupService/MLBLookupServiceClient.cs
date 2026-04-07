@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using PowerUp.Fetchers.Algolia;
 using PowerUp.Fetchers.MLBStatsApi;
 using PowerUp.Fetchers.Statcast;
 
@@ -25,24 +24,21 @@ namespace PowerUp.Fetchers.MLBLookupService
   public class MLBLookupServiceClient : IMLBLookupServiceClient
   {
     private readonly ApiClient _apiClient = new ApiClient();
-    private readonly IAlgoliaClient _algoliaClient;
     private readonly IMLBStatsApiClient _mlbStatsApiClient;
 
     public MLBLookupServiceClient(
-      IAlgoliaClient algoliaClient,
       IMLBStatsApiClient mlbStatsApiClient
     )
     {
-      _algoliaClient = algoliaClient;
       _mlbStatsApiClient = mlbStatsApiClient;
     }
 
     public async Task<PlayerSearchResults> SearchPlayer(string name)
     {
-      var searchResponse = await _algoliaClient.SearchPlayer(name);
-      var totalResults = searchResponse.NbHits;
+      var searchResponse = await _mlbStatsApiClient.SearchPlayers(name);
+      var totalResults = searchResponse.People.Length;
 
-      var results = await Task.WhenAll(searchResponse.Hits.Select(async r => await GetPlayerInfo(r.PlayerId)));
+      var results = searchResponse.People.Select(p => new PlayerInfoResult(p)).ToArray();
       return new PlayerSearchResults(totalResults, results);
     }
 

@@ -130,7 +130,7 @@ namespace PowerUp.Mappers.Players
         BirthYear = (ushort)inGameBirthDate.Year,
         BirthMonth = (ushort)inGameBirthDate.Month,
         BirthDay = (ushort)inGameBirthDate.Day,
-        YearsInMajors = (ushort)player.YearsInMajors,
+        YearsInMajors = (ushort)Math.Min(player.YearsInMajors, 31),
         PlayerNumber = gsPlayerNumber.uniformNumberValue,
         PlayerNumberNumberOfDigits = gsPlayerNumber.numberOfDigits,
         PrimaryPosition = player.PrimaryPosition == Position.DesignatedHitter

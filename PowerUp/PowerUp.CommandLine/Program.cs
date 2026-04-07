@@ -1,8 +1,10 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using PowerUp;
 using PowerUp.CommandLine.Commands;
+using PowerUp.Databases;
 using PowerUp.GameSave.Api;
 using PowerUp.Libraries;
 using Serilog;
@@ -17,6 +19,13 @@ async Task Run(IHost host)
   var quit = false;
 
   await using var scope = host.Services.CreateAsyncScope();
+
+  // Initialize the database before anything else touches it
+  var loggerFactory = host.Services.GetRequiredService<ILoggerFactory>();
+  var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+  var dataDir = config["DataDirectory"] ?? "./";
+  DatabaseConfig.Initialize(loggerFactory.CreateLogger<EntityDatabase>(), dataDir);
+
   var commands = CommandRegistry.BuildRootCommand(scope.ServiceProvider, () => { quit = true; });
   var baseRosterInitializer = host.Services.GetRequiredService<IBaseRosterInitializer>();
   baseRosterInitializer.Initialize();

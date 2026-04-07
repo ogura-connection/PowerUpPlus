@@ -14,6 +14,7 @@ namespace PowerUp.Fetchers.MLBStatsApi
     Task<VenueResult> GetVenues(IEnumerable<long> venueIds, int? year = null);
     Task<Person> GetPlayerInfo(long mlbPlayerId);
     Task<Person> GetPlayerStatistics(long mlbPlayerId, int year);
+    Task<PeopleResults> SearchPlayers(string name);
   }
 
   public class MLBStatsApiClient : IMLBStatsApiClient
@@ -82,6 +83,15 @@ namespace PowerUp.Fetchers.MLBStatsApi
         throw new InvalidOperationException("No player info found for this id");
 
       return person;
+    }
+
+    public async Task<PeopleResults> SearchPlayers(string name)
+    {
+      var url = UrlBuilder.Build(
+        new[] { BASE_URL, "people", "search" },
+        new { names = name, sportIds = 1 }
+      );
+      return await _client.Get<PeopleResults>(url);
     }
 
     public async Task<VenueResult> GetVenues(IEnumerable<long> venueIds, int? year = null)

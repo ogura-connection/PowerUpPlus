@@ -85,27 +85,5 @@ namespace PowerUp.Fetchers.MLBLookupService
       return (heightFeet, heightInches);
     }
 
-    public static PlayerRosterStatus MapRosterStatus(string status)
-    {
-      if (status.Contains("IL"))
-        return PlayerRosterStatus.IL;
-
-      switch (status)
-      {
-        case "Des. for Assignment":
-          return PlayerRosterStatus.DFA;
-        case "Free agent":
-          return PlayerRosterStatus.FreeAgent;
-        case "Temporary Inactive":
-          return PlayerRosterStatus.TemporaryInactive;
-        default:
-          var success = Enum.TryParse<PlayerRosterStatus>(status, out var value);
-          if(!success)
-            Logging.Logger.LogError($"Unhandled PlayerRosterStatus {status}");
-          return success
-            ? value
-            : PlayerRosterStatus.Unhandled;
-      }
-    }
   }
 }

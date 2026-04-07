@@ -64,7 +64,6 @@
 | BN | Carl Yastrzemski | 1967 | Yaz. Triple Crown 1967. Carried team alone. |
 | BN | Jim Rice | 1978 | MVP, feared hitter of his era. |
 | BN | Fred Lynn | 1975 | Rookie MVP+ROY in same season. |
-| BN | Mookie Betts | 2018 | MVP. Pre-Dodgers peak. Red Sox icon before departure. |
 | BN | Johnny Pesky | 1947 | Soul of the franchise in the 40s. |
 
 ---
@@ -83,13 +82,11 @@
 | RP | Don Stanhouse | 1978 | "Full Pack" — the anxiety reliever. Iconic. |
 | C | Rick Dempsey | 1983 | WS MVP, 14 years with Orioles. |
 | 1B | Eddie Murray | 1983 | Switch-power HOFer. Steady Eddie. 504 HR. |
-| 2B | Roberto Alomar | 1997 | Best 2B of his era. Spit incident mythology included. |
 | 3B | Brooks Robinson | 1970 | Human Vacuum Cleaner. 16 Gold Gloves. The greatest defensive 3B. |
 | SS | Cal Ripken Jr. | 1991 | Iron Man. 2,632 consecutive games. The position. |
 | LF | Don Baylor | 1975 | Power/speed, key piece of 70s teams. |
 | CF | Paul Blair | 1969 | 8 Gold Gloves. Elite defensive CF. |
 | RF | Frank Robinson | 1966 | Triple Crown. First Black manager. Traded for "an old 30." |
-| DH | Harold Baines | 1989 | Consistent DH for decades. |
 | BN | Boog Powell | 1969 | Big Boog. Power 1B of dynasty teams. |
 | BN | Ken Singleton | 1979 | Three-time All-Star, underrated great. |
 | BN | Mark Belanger | 1975 | 8 Gold Gloves. Defensive wizard at SS. |
@@ -105,7 +102,6 @@
 | SP1 | Dave Stieb | 1983 | Best Blue Jays pitcher ever. Near-misses on no-hitters. |
 | SP2 | Roy Halladay | 2003 | Doc. Best Jays pitcher since Stieb. Cy Young. Perfect game (Phillies) |
 | SP3 | Pat Hentgen | 1996 | First Blue Jay Cy Young winner. |
-| SP4 | Roger Clemens | 1997 | 2 Cy Youngs back-to-back in Toronto. Most dominant Jays SP stretch. |
 | SP5 | Marcus Stroman | 2017 | HDMH. Best modern-era Jays starter. |
 | CL | Tom Henke | 1987 | "The Terminator." Defined the closer role for Toronto. |
 | RP | Duane Ward | 1993 | Henke's setup man. WS champion. Dominant. |
@@ -120,7 +116,6 @@
 | RF | Jesse Barfield | 1986 | Best RF arm of the 1980s. 40 HR season. |
 | DH | Carlos Delgado | 2003 | 4 consecutive HRs in one game (2003). Franchise power. |
 | BN | Fred McGriff | 1990 | Crime Dog. Best years as a Blue Jay. |
-| BN | Paul Molitor | 1993 | WS MVP at 37. Final glory. |
 | BN | Lloyd Moseby | 1983 | Soul of the early teams. |
 | BN | Pat Borders | 1992 | WS MVP. Under-the-radar hero. |
 | BN | Joe Carter | 1993 | Walk-off WS HR. Greatest single moment in Jays history. Generate for that swing. |
@@ -138,7 +133,6 @@
 | SP3 | Tyler Glasnow | 2021 | Electric stuff, peak Rays ace. |
 | SP4 | James Shields | 2011 | "Big Game James." Workhorse of Rays dynasty. |
 | SP5 | Matt Garza | 2008 | Key piece of WS run. |
-| CL | Roberto Hernandez | 2010 | Consistent closer for multiple Rays playoff teams. |
 | RP | Alex Colome | 2016 | Led AL in saves. Reliable closer. |
 | RP | Fernando Rodney | 2012 | 0.60 ERA season. Arrow guy. |
 | C | Mike Zunino | 2018 | Power bat behind the plate. |
@@ -149,8 +143,6 @@
 | LF | Carl Crawford | 2010 | Best Rays position player. 5-tool speed demon. |
 | CF | Kevin Kiermaier | 2015 | Best defensive CF of his era. Gold Glove machine. |
 | RF | Randy Arozarena | 2020 | WS performance is the stuff of legend — 10 HR, .377 BA. |
-| DH | Wade Boggs | 1998 | Myth pick. He got his 3,000th hit as a Devil Ray. Rode a police horse. |
-| BN | Fred McGriff | 1998 | Original Devil Ray. Crime Dog. |
 | BN | Rocco Baldelli | 2003 | Would have been a star but for injury. Rays identity player. |
 | BN | David DeJesus | 2013 | Steady veteran of Tampa playoff teams. |
 | BN | Desmond Jennings | 2012 | Speed and promise. Central to early Rays culture. |
@@ -209,7 +201,6 @@
 | 3B | José Ramírez | 2022 | Active. Best Indian/Guardian since Thome. Franchise cornerstone. |
 | SS | Lou Boudreau | 1948 | Playing manager. Won WS. One of the great player-managers. |
 | LF | Albert Belle | 1995 | 50 HR in strike-shortened season. Most feared hitter of his era. |
-| CF | Tris Speaker | 1916 | Best defensive OF ever. .386 Cleveland peak. |
 | RF | Manny Ramirez | 1999 | 165 RBI season. Before the Dodgers years. |
 | DH | Travis Hafner | 2006 | Pronk. OPS 1.097 that year. Dominant before injuries. |
 | BN | Kenny Lofton | 1996 | Speed and defense. Heart of the 90s teams. |
@@ -228,7 +219,6 @@
 | SP2 | Red Faber | 1921 | HOF. 254 wins. Only 1919 White Sox not involved in scandal. |
 | SP3 | Billy Pierce | 1956 | Best White Sox pitcher of the 50s. |
 | SP4 | Mark Buehrle | 2009 | Perfect game. Franchise identity pitcher. Immaculate Inning all-star. |
-| SP5 | Early Wynn | 1959 | Cy Young with White Sox. WS pennant. |
 | CL | Bobby Jenks | 2005 | Closer of the WS champion team. 41 saves. |
 | RP | Hoyt Wilhelm | 1964 | Knuckleball at its best in Chicago. |
 | RP | Roberto Hernandez | 1996 | Dominant closer of the 90s White Sox. |
@@ -242,9 +232,7 @@
 | RF | Harold Baines | 1984 | Franchise RF. Quiet consistent great. |
 | DH | Magglio Ordóñez | 2002 | Best Sox DH/RF of the modern era pre-WS run. |
 | BN | Ozzie Guillén | 1990 | Gold Glove SS. Soul of the franchise. WS manager too. |
-| BN | Carlton Fisk | 1985 | Sox second act. Caught more games than anyone at time of retirement. |
 | BN | Paul Konerko | 2005 | Grand slam in WS. Mr. White Sox. |
-| BN | Bo Jackson | 1993 | Hip replacement comeback with Sox. Mythology transcends stats. |
 | BN | Jim Landis | 1962 | Elite CF of the late-50s/early-60s teams. |
 
 > **Shoeless Joe note:** Banned from baseball and HOF. His stats are legitimate — third-highest career BA in history (.356). His mythology IS the Black Sox story. Include without apology.
@@ -319,13 +307,10 @@
 
 | Slot | Player | Peak Season | Notes |
 |------|--------|-------------|-------|
-| SP1 | Nolan Ryan | 1973 | Houston first. 383 K. 4 no-hitters in Astros. |
 | SP2 | J.R. Richard | 1979 | 313 K at 6'8". Career ended by stroke at age 30. Tragedy. |
 | SP3 | Mike Scott | 1986 | Split-finger. Cy Young. Clinched division in no-hitter. |
 | SP4 | Roy Oswalt | 2004 | Best Astros starter of the 2000s. 3× 20-win pitcher. |
-| SP5 | Justin Verlander | 2019 | Cy Young in Houston. Best modern Astros pitcher. |
 | CL | Billy Wagner | 2003 | 97 mph lefty. Sub-1.00 ERA stretches. |
-| RP | Brad Lidge | 2004 | "Lights Out" before the Pujols HR. |
 | RP | José Valverde | 2008 | "Papa Grande." Dominant closer for Astros. |
 | C | Brad Ausmus | 1999 | Franchise catcher for multiple playoff teams. |
 | 1B | Jeff Bagwell | 1994 | MVP in strike year. 449 career HR. Complete player. |
@@ -338,7 +323,6 @@
 | DH | Yordan Álvarez | 2022 | Active. ALCS MVP, WS legend. Best Astros hitter of modern era. |
 | BN | Jim Wynn | 1969 | "The Toy Cannon." 37 HR, 107 BB. Astrodome pioneer. |
 | BN | Bob Watson | 1977 | Scored the millionth run in MLB history. Consistent great. |
-| BN | Roger Clemens | 2004 | Houston Rocket. Cy Young, 218 Ks. (Pre-conviction — his Astros peak included here.) |
 | BN | George Springer | 2017 | WS MVP. Franchise face for the title run. |
 | BN | Enos Cabell | 1978 | Integral piece of the late-70s contenders. |
 
@@ -348,7 +332,6 @@
 
 | Slot | Player | Peak Season | Notes |
 |------|--------|-------------|-------|
-| SP1 | Nolan Ryan | 1977 | Angels first — 341 K, multiple no-hitters. |
 | SP2 | Frank Tanana | 1977 | Best lefty in AL. Paired with Ryan. |
 | SP3 | Chuck Finley | 1996 | Most wins in Angels history. Franchise anchor 1986–99. |
 | SP4 | Jered Weaver | 2012 | Best Angels SP of modern era. No-hitter. |
@@ -357,19 +340,13 @@
 | RP | Francisco Rodríguez | 2008 | K-Rod. 62 saves — single-season record. |
 | RP | Bryan Harvey | 1991 | Dominant closer before Percival. |
 | C | Bob Boone | 1983 | Franchise C. Managed the clubhouse as much as the pitching staff. |
-| 1B | Rod Carew | 1983 | Angels version. Still elite contact hitter in his 30s. |
 | 2B | Bobby Grich | 1981 | Underrated all-time 2B. Defense + OBP before anyone tracked OBP. |
 | 3B | Doug DeCinces | 1982 | Power 3B of the playoff teams. |
 | SS | Jim Fregosi | 1964 | 6× All-Star. Franchise SS. (Later traded for Nolan Ryan.) |
 | LF | Brian Downing | 1982 | Transformed himself from weak catcher to masher. |
 | CF | Mike Trout | 2012 | The best player of his generation. Non-negotiable. |
-| RF | Vladimir Guerrero | 2004 | MVP. Best Angels RF. Hit a ball out of the strike zone for a double. |
-| DH | Shohei Ohtani *(hitter)* | 2021 | Best Angels hitter since Guerrero. Two-way phenom. |
 | BN | Tim Salmon | 2002 | WS champion. Franchise hero. "The Fish." |
 | BN | Darin Erstad | 2000 | .355 BA, 240 hits. Best non-Trout Angels season. |
-| BN | Don Baylor | 1979 | MVP. Beloved by pitchers (led league in HBP repeatedly). |
-| BN | Devon White | 1991 | Speed and defense. Part of the great early-90s teams. |
-| BN | Reggie Jackson | 1982 | Angels version. Still produced. Capping career in California. |
 
 ---
 
@@ -381,23 +358,18 @@
 | SP2 | Ferguson Jenkins | 1974 | Cy Young. Hall of Famer. |
 | SP3 | Kenny Rogers | 1995 | Perfect game. Best Rangers pitcher of the 90s. |
 | SP4 | Yu Darvish | 2012 | Best pure stuff since Ryan in Texas. |
-| SP5 | Corey Kluber | 2020 | Brief but dominant Rangers stint. |
 | CL | John Wetteland | 1997 | WS MVP with Yankees, then closed in Texas. |
 | RP | Francisco Cordero | 2004 | Dominant closer. 49 saves. |
 | RP | Neftali Feliz | 2010 | ROY, 40 saves. WS run closer. |
 | C | Iván Rodríguez | 1999 | Pudge. MVP. Best defensive C ever. THE Ranger. |
-| 1B | Will Clark | 1994 | The Thrill. Arrived and delivered immediately. |
 | 2B | Ian Kinsler | 2011 | 30-30. Best Rangers 2B. |
 | 3B | Adrián Beltré | 2012 | Funniest player in baseball. Hated people touching his head. 3,166 hits. |
-| SS | Alex Rodriguez | 2001 | $252M. 52 HR. Most mythological contract in history played out in Texas. |
 | LF | Juan González | 1996 | 2× MVP. 47 HR. Heart of the 90s teams. |
 | CF | Josh Hamilton | 2010 | 4 HR game vs. Orioles. MVP. Comeback story. |
 | RF | Rubén Sierra | 1989 | The Duke of Ensenada. Switch power. Should have been bigger. |
-| DH | Prince Fielder | 2012 | 30 HR. Massive presence in lineup. |
 | BN | Michael Young | 2005 | Franchise SS/3B. Mr. Ranger of the 2000s. |
 | BN | Tom Grieve | 1977 | Power bat of the early Rangers. |
 | BN | Oddibe McDowell | 1985 | Speed OF. Stole 33 bases. Fan favourite of early Rangers. |
-| BN | Kevin Brown | 1994 | Best Rangers SP of the mid-90s before Darvish era. |
 | BN | Shin-Soo Choo | 2014 | OBP machine. Key player of the playoff era. |
 
 ---
@@ -406,7 +378,6 @@
 
 | Slot | Player | Peak Season | Notes |
 |------|--------|-------------|-------|
-| SP1 | Randy Johnson | 1995 | The Big Unit in Seattle. ALDS clincher helicopter hair. |
 | SP2 | Félix Hernández | 2010 | King Felix. Cy Young. Perfect game. 13 years in Seattle. |
 | SP3 | Mark Langston | 1987 | Best early Mariners pitcher. 262 K. |
 | SP4 | Jamie Moyer | 2001 | 116-win team ace. Threw 83 mph and made it work. |
@@ -417,15 +388,12 @@
 | C | Dan Wilson | 1997 | Franchise catcher. Reliable, underappreciated. |
 | 1B | Alvin Davis | 1984 | Mr. Mariner. ROY. Only star for years. |
 | 2B | Robinson Cano | 2016 | Best Mariners 2B since Alomar. Consistent great. |
-| 3B | Adrián Beltré | 2004 | Best Mariners 3B. Career year here (.334, 48 HR). |
-| SS | Alex Rodriguez | 1998 | Best player on Earth for a stretch. The original Seattle Rodriguez. |
 | LF | Raúl Ibáñez | 2006 | Franchise OF. Fan favourite. |
 | CF | Ken Griffey Jr. | 1997 | The Kid. The swing. The catch. The franchise. |
 | RF | Ichiro Suzuki | 2004 | 262 hits. .372 BA. Japanese import who redefined the game. |
 | DH | Edgar Martinez | 1995 | "The Double." DH HOFer. The Hit. The award is named after him. |
 | BN | Harold Reynolds | 1987 | Gold Glove 2B. Heart of early teams. |
 | BN | Jay Buhner | 1995 | Bone. Seinfeld cameo. 40 HR power. |
-| BN | Dave Henderson | 1986 | "Hendu." HR in the ALCS that saved the Boston series... for Boston. |
 | BN | Tino Martinez | 1995 | Before his Yankee years, franchise 1B. |
 | BN | Mike Cameron | 2002 | 4 HR game vs. White Sox (one game after Griffey's return). |
 
@@ -450,7 +418,6 @@
 | SS | Bert Campaneris | 1968 | 7 stolen base titles. Speed of the dynasty. |
 | LF | Rickey Henderson | 1982 | 130 stolen bases. Best leadoff hitter ever. The A's are his team. |
 | CF | Dave Henderson | 1988 | Power CF of WS champion team. |
-| RF | Reggie Jackson | 1973 | WS MVP with A's. Three-peat. The original Mr. October was an Athletic. |
 | DH | José Canseco | 1988 | First 40-40 player. Juiced mythology included. |
 | BN | Joe Rudi | 1972 | Complete OF. WS hero. Dynasty cornerstone. |
 | BN | Mike Norris | 1980 | Should-have-been ace. 22 wins. Arm died young. |
@@ -503,17 +470,14 @@
 | SP5 | Sid Fernandez | 1986 | El Sid. WS champion. Dominant strikeout rate. |
 | CL | John Franco | 1990 | 424 saves. Mets lifer. Brooklyn kid who stayed home. |
 | RP | Tug McGraw | 1969 | "Ya Gotta Believe!" Miracle Mets. Culture. |
-| RP | Billy Wagner | 2006 | Dominant closer of near-pennant-winning team. |
 | C | Mike Piazza | 2000 | Greatest hitting catcher ever. Most iconic post-9/11 HR. |
 | 1B | Keith Hernandez | 1984 | Won the Mets over. 2 GG. Defensive 1B standard. |
 | 2B | Edgardo Alfonzo | 1999 | Best Mets 2B. Underrated offensive season. |
 | 3B | David Wright | 2007 | Captain America. Mr. Met. Best Mets hitter since Piazza. |
 | SS | José Reyes | 2006 | Batting champ. Speed icon. Franchise SS. |
 | LF | Cleon Jones | 1969 | Miracle Mets OF. Caught the final out. |
-| CF | Carlos Beltrán | 2006 | Best Mets CF. Looking at strike 3 mythology included. |
 | RF | Darryl Strawberry | 1987 | Raw talent. Franchise RF. Complicated legacy, unquestionable ability. |
 | BN | Rusty Staub | 1975 | "Le Grand Orange." Beloved in both Montreal and NY. |
-| BN | Gary Carter | 1986 | WS champion. Emotional core of the 1986 team. |
 | BN | Lenny Dykstra | 1986 | Nails. WS champion. Chaos energy. |
 | BN | Ron Swoboda | 1969 | The catch. Not a star but the moment was mythological. |
 | BN | Bobby Bonilla | 1992 | Bobby Bonilla Day (July 1) is Mets mythology. Annual $1.19M until 2035. |
@@ -528,9 +492,7 @@
 |------|--------|-------------|-------|
 | SP1 | Steve Carlton | 1972 | Lefty. 27-10 on a 59-win team. Most wins by pitcher on losing team. HOF. |
 | SP2 | Robin Roberts | 1952 | 28 wins. 6 consecutive 20-win seasons. HOF. |
-| SP3 | Roy Halladay | 2011 | Playoff no-hitter. Cy Young. Best Phillies pitcher since Carlton. |
 | SP4 | Jim Bunning | 1964 | Perfect game on Father's Day. HOF. |
-| SP5 | Curt Schilling | 2002 | Best Phillies stretch for a while before Arizona heroics. |
 | CL | Brad Lidge | 2008 | 41/41 saves. Perfect season. WS champion. |
 | RP | Mitch Williams | 1993 | Wild Thing. WS blown save mythology. Equally famous as a story. |
 | RP | Steve Bedrosian | 1987 | Cy Young. 40 saves. |
@@ -542,11 +504,8 @@
 | LF | Greg Luzinski | 1977 | "The Bull." Power bat. Fan favourite of the 70s. |
 | CF | Richie Ashburn | 1958 | 2 batting titles. HOF. "Whitey." Voice of the franchise. |
 | RF | Bobby Abreu | 2004 | Complete player. .300/.400/.500 machine. Overlooked great. |
-| BN | Pete Rose | 1980 | WS champion with Phillies. 3 years of excellence (1979-81). |
 | BN | Dick Allen | 1966 | Richie Allen. Controversial, immensely talented. Should be in HOF. |
 | BN | Garry Maddox | 1976 | "The Secretary of Defense." 8 Gold Gloves. |
-| BN | Lenny Dykstra | 1993 | Nails with Phillies too. NLCS MVP. |
-| BN | Tug McGraw | 1980 | WS champion closer. "You Gotta Believe" translated to Philadelphia. |
 
 ---
 
@@ -573,7 +532,6 @@
 | BN | Bryce Harper | 2015 | MVP. Face of Nationals before Phillies. |
 | BN | Anthony Rendon | 2019 | WS champion. Best Nats 3B. |
 | BN | Moises Alou | 1994 | Part of the 1994 team that would have won the World Series if not for the strike. |
-| BN | Larry Walker | 1994 | Expos version before Rockies stardom. |
 | BN | Marquis Grissom | 1993 | Speed + defense. Core of the great Expos team. |
 
 ---
@@ -587,7 +545,6 @@
 | SP3 | Dontrelle Willis | 2005 | The D-Train. ROY. 22 wins. Electric delivery. |
 | SP4 | Sandy Alcántara | 2022 | Cy Young. Best modern Marlin. Complete game machine. |
 | SP5 | Liván Hernández | 1997 | NLCS MVP + WS MVP as a rookie. Cuban defector story. |
-| CL | Robb Nen | 1996 | Best Marlins closer. Dominant before Giants years. |
 | RP | A.J. Ramos | 2016 | Consistent closer. Marlins lifer for a stretch. |
 | RP | Steve Cishek | 2013 | Best reliever of the rebuild era. |
 | C | Charles Johnson | 1997 | WS champion. Elite defense. Gold Gloves. |
@@ -595,14 +552,11 @@
 | 2B | Luis Castillo | 2000 | Speedster. 2 WS rings. Best Marlins 2B. |
 | 3B | Mike Lowell | 2003 | Power + defense. WS champion. |
 | SS | Edgar Rentería | 1997 | Walk-off single to win Game 7. One hit = franchise immortality. |
-| LF | Christian Yelich | 2017 | Pre-Brewers MVP-trajectory years. The one they traded away. |
 | CF | Juan Pierre | 2003 | Speed. 65 SB. WS champion leadoff hitter. |
 | RF | Jeff Conine | 1997 | "Mr. Marlin." Only player on both WS championship teams. Essential. |
 | BN | Gary Sheffield | 1996 | .314/.465/.624. Most productive Marlins season ever. |
-| BN | Bobby Bonilla | 1997 | WS champion. Then famously paid to go away by Mets. |
 | BN | Giancarlo Stanton | 2017 | 59 HR. Most prodigious power in franchise history. Then traded. |
 | BN | Hanley Ramírez | 2009 | Batting title. Best Marlins SS/LF. |
-| BN | Craig Counsell | 1997 | His soul patch scored the winning run in Game 7 WS. Myth. |
 
 ---
 
@@ -616,21 +570,17 @@
 |------|--------|-------------|-------|
 | SP1 | Three Finger Brown | 1906 | Mordecai. 1.04 ERA. Best Cubs pitcher ever. |
 | SP2 | Fergie Jenkins | 1971 | Cy Young. 284 wins. HOF. |
-| SP3 | Greg Maddux | 1992 | Cubs version — before Atlanta dynasty. 20 wins. |
 | SP4 | Kerry Wood | 1998 | 20-K game. Most electric single game for a Cubs pitcher. |
 | SP5 | Jake Arrieta | 2015 | No-hitter + Cy Young. Carried the trophy run. |
 | CL | Bruce Sutter | 1977 | Invented the modern split-finger closer. Cy Young with Cubs. |
 | RP | Lee Smith | 1985 | Held all-time saves record for years. |
-| RP | Wade Davis | 2016 | Last out of 108-year championship drought. |
 | C | Gabby Hartnett | 1935 | "Homer in the Gloamin'." MVP. Greatest Cub catcher. |
-| 1B | Ernie Banks | 1958 | Mr. Cub. "Let's play two!" 2× MVP. SS who moved to 1B. |
 | 2B | Ryne Sandberg | 1984 | Ryno. MVP. The 1984 game on national TV. HOF. |
 | 3B | Ron Santo | 1969 | Should have been HOF in his lifetime. Clicked his heels. |
 | SS | Ernie Banks | 1958 | Starts at SS (natural home). See 1B note — Banks played both. |
 | LF | Billy Williams | 1972 | "Sweet Swinging." 2,510 hits. HOF. Underrated great. |
 | CF | Hack Wilson | 1930 | 56 HR (still NL record). 191 RBI (MLB record). Played drunk apparently. |
 | RF | Sammy Sosa | 1998 | 66 HR. The home run race. Wrigley mythology. Complicated, essential. |
-| BN | André Dawson | 1987 | MVP on last-place team. Took pay cut to play on grass. |
 | BN | Kris Bryant | 2016 | MVP + WS champion. Caught the last out. |
 | BN | Mark Grace | 1998 | Most hits in the 1990s. Franchise 1B of the modern era. |
 | BN | Anthony Rizzo | 2016 | WS champion. Stepped on first base for the final out. |
@@ -649,9 +599,7 @@
 | SP3 | Adam Wainwright | 2010 | Best Cardinals pitcher of modern era. 20 wins. |
 | SP4 | Chris Carpenter | 2005 | Cy Young. WS champion. |
 | SP5 | Jesse Haines | 1927 | HOF. Knuckleball pioneer. Cardinals anchor. |
-| CL | Bruce Sutter | 1982 | WS champion with Cardinals. Split-finger closer. |
 | RP | Jason Isringhausen | 2004 | Best Cardinals closer of the 2000s. |
-| RP | Lee Smith | 1991 | Came from Cubs. Still dominant in St. Louis. |
 | C | Yadier Molina | 2012 | Best defensive C of his era. 9 Gold Gloves. Cardinals forever. |
 | 1B | Albert Pujols | 2006 | 3 MVPs with Cardinals. One of the 5 greatest hitters ever. |
 | 2B | Rogers Hornsby | 1922 | .401 BA that year. The greatest right-handed hitter. Manager too. |
@@ -661,7 +609,6 @@
 | CF | Jim Edmonds | 2004 | Best Cardinals CF. Ridiculous diving catches. |
 | RF | Enos Slaughter | 1946 | "Country." Mad Dash. WS champion. HOF. |
 | DH | — | — | NL team |
-| BN | Mark McGwire | 1998 | 70 HR. Whatever the context, that summer was transcendent. |
 | BN | Lou Brock | 1974 | 118 SB. Speed icon. HOF. Stole 938 career. |
 | BN | Scott Rolen | 2004 | Best defensive 3B of his era. WS champion. |
 | BN | David Freese | 2011 | WS MVP. "We Will See You Tomorrow Night." Iconic. |
@@ -687,8 +634,6 @@
 | 3B | Pete Rose | 1969 | Charlie Hustle. More hits than anyone. Banned but belongs. |
 | SS | Barry Larkin | 1995 | MVP. 12 Gold Gloves. Best SS in Reds history. |
 | LF | Eric Davis | 1987 | Power + speed. Should have been the player of his era. |
-| CF | Ken Griffey Jr. | 2000 | Cincinnati return. Played 9 years there. His Reds years deserve representation. |
-| RF | Frank Robinson | 1961 | First MVP. Before the "old 30" trade. THE Reds hitter. |
 | BN | Edd Roush | 1917 | 2 batting titles. HOF. Pre-war CF star. |
 | BN | Vada Pinson | 1961 | 8 seasons of .300+ with Reds. Speed and power. |
 | BN | Adam Dunn | 2004 | 40 HR, 170 K, 100 BB every year. Polarising but iconic. |
@@ -704,9 +649,7 @@
 | SP1 | Teddy Higuera | 1986 | Best Brewers pitcher. 20 wins, 2.79 ERA. |
 | SP2 | Ben Sheets | 2004 | Best Brewers pitcher of modern era. 264 K, 2.70 ERA. |
 | SP3 | Moose Haas | 1983 | Consistent Brewers SP of the 80s. |
-| SP4 | CC Sabathia | 2008 | Carried the Brewers into the playoffs with 7 dominant starts. Rented ace who delivered. |
 | SP5 | Mike Caldwell | 1978 | 22 wins. Best Brewers season for a pitcher. |
-| CL | Rollie Fingers | 1981 | MVP + Cy Young as a reliever. The Brewers finally got theirs. |
 | RP | John Axford | 2011 | 46 saves. Best modern Brewers closer. |
 | RP | Bob McClure | 1982 | Key lefty of the WS team. |
 | C | Ted Simmons | 1981 | Switch-hitting HOF catcher. Key trade acquisition. |
@@ -715,9 +658,7 @@
 | 3B | Paul Molitor | 1987 | 5-hit game. 39-game hit streak. "The Ignitor." |
 | SS | Robin Yount | 1982 | MVP as SS. Moved to CF. 2 MVPs in different positions. Franchise player. |
 | LF | Ryan Braun | 2011 | MVP. Complicated by PED suspension. Best Brewers hitter since Cooper. |
-| CF | Lorenzo Cain | 2018 | Gold Glove. Best Brewers CF of modern era. |
 | RF | Gorman Thomas | 1982 | "Stormin' Gorman." Power and strikeouts. 45 HR. |
-| DH | Hank Aaron | 1975 | Mythological: Aaron finished his career in Milwaukee, where the franchise started. His 755th HR was here. |
 | BN | Don Money | 1977 | Franchise 3B of the 70s. |
 | BN | Ben Oglivie | 1980 | 41 HR. Tied for AL HR title. Big season. |
 | BN | Geoff Jenkins | 2000 | Best Brewers RF of the lean years. Fan favourite. |
@@ -743,14 +684,13 @@
 | 2B | Bill Mazeroski | 1960 | Only WS-winning walk-off HR by a 2B (still the only one of its kind). |
 | 3B | Pie Traynor | 1927 | HOF. Best Pirates 3B of the pre-war era. |
 | SS | Honus Wagner | 1908 | The Flying Dutchman. .328 career BA. Greatest pre-Ruth player. The T206 card. |
-| LF | Barry Bonds | 1992 | 2 MVPs with Pittsburgh. Before the Giants years. The one who got away. |
 | CF | Andrew McCutchen | 2013 | MVP. Carried the team back to relevance. |
 | RF | Roberto Clemente | 1971 | WS MVP, .414. Humanitarian hero. Died delivering aid to earthquake victims. Sacred. |
 | BN | Paul Waner | 1927 | "Big Poison." .380 BA. HOF. Part of 1927 Pirates-Yankees WS. |
 | BN | Lloyd Waner | 1927 | "Little Poison." Paul's brother. HOF. Equally iconic pairing. |
 | BN | Ralph Kiner | 1949 | 7 consecutive HR titles to open career. No other player ever. |
 | BN | Fred Clarke | 1903 | Player-manager. WS champion. Pioneer. |
-| BN | Bob Robertson | 1971 | 3 HR in WS. Power bat of the championship team. |
+| BN | Josh Gibson | 1937 | Greatest power hitter ever. Negro Leagues icon. Homestead Grays shared Pittsburgh. |
 
 ---
 
@@ -782,7 +722,6 @@
 | BN | Gil Hodges | 1954 | Power 1B. Heart of Brooklyn teams. Should be HOF. |
 | BN | Maury Wills | 1962 | 104 SB. Reinvented the stolen base. MVP. |
 | BN | Don Newcombe | 1956 | Cy Young + MVP. Pioneer alongside Robinson. |
-| BN | Freddie Freeman | 2024 | Active. WS walk-off grand slam. Franchise identity of modern era. |
 
 ---
 
@@ -820,23 +759,17 @@
 |------|--------|-------------|-------|
 | SP1 | Randy Jones | 1976 | Cy Young. Best Padres SP pre-Peavy. |
 | SP2 | Jake Peavy | 2007 | Cy Young. 240 K. Best Padres pitcher ever. |
-| SP3 | Gaylord Perry | 1978 | Cy Young with Padres too. Spitball magician. |
 | SP4 | Andy Benes | 1994 | Best Padres SP of the 90s. |
 | SP5 | Eric Show | 1985 | 12-11 but franchise anchor. Gave up Pete Rose's 4,192nd hit. |
 | CL | Trevor Hoffman | 1998 | "Hells Bells." Held saves record until Rivera. Franchise. |
 | RP | Heath Bell | 2010 | 47 saves. Best Padres reliever after Hoffman. |
-| RP | Rollie Fingers | 1977 | Padres version. Mustache. HOF closer. |
 | C | Benito Santiago | 1987 | ROY. Power arm. 34-game hitting streak as a rookie. |
 | 1B | Adrian González | 2009 | 40 HR. Best Padres 1B since Nate Colbert. |
-| 2B | Roberto Alomar | 1989 | Early career excellence before Toronto. |
 | 3B | Ken Caminiti | 1996 | MVP. .326/.408/.621. Posthumously admitted to steroid use. Include for the season. |
 | SS | Fernando Tatis Jr. | 2021 | Active. Best young talent in franchise history. Grand slam on 3-0 — controversy included. |
-| LF | Dave Winfield | 1979 | Grew up in San Diego area. Best Padres LF. |
 | CF | Steve Finley | 1996 | Part of the great 90s Padres. Speed + defense. |
 | RF | Tony Gwynn | 1994 | Mr. Padre. 8 batting titles. .394 in strike year. Greatest contact hitter ever. |
 | BN | Nate Colbert | 1972 | 5 HR + 13 RBI in a doubleheader. Original Padre star. |
-| BN | Gary Sheffield | 1992 | .330/.385/.580 for Padres. Before all the other stops. |
-| BN | Steve Garvey | 1985 | NLCS hero. Beloved in San Diego. |
 | BN | Phil Nevin | 2001 | 41 HR. Face of the franchise in the lean 2000s. |
 | BN | Chase Headley | 2012 | 31 HR, 115 RBI. Best Padres 3B since Caminiti. |
 
@@ -877,7 +810,6 @@
 | SP1 | Randy Johnson | 2001 | Co-WS MVP. 3 wins in the series including relief in Game 7. GOAT. |
 | SP2 | Curt Schilling | 2001 | Co-WS MVP. Complemented Johnson. One of the great duos ever. |
 | SP3 | Brandon Webb | 2006 | Cy Young. Best D-backs pitcher post-dynasty. |
-| SP4 | Zack Greinke | 2015 | 1.66 ERA. Best single-season ERA in modern baseball at that point. |
 | SP5 | Dan Haren | 2008 | Best D-backs pitcher of the second era. |
 | CL | Byung-Hyun Kim | 2002 | Mythology: blown saves in Games 4 and 5, then co-star of a WS. The most dramatic villain-turned-hero. |
 | RP | Brad Ziegler | 2008 | Submarine specialist. Sub-1.00 ERA stretches. |
@@ -885,14 +817,11 @@
 | C | Damian Miller | 2001 | WS champion. Handled the greatest pitching duo. |
 | 1B | Paul Goldschmidt | 2013 | 3× Gold Glove. Best D-backs 1B since Grace. Franchise great. |
 | 2B | Ketel Marte | 2019 | Best D-backs 2B. Switch-hitting versatility. |
-| 3B | Matt Williams | 1999 | Power 3B. Part of the expansion dynasty. |
 | SS | Jay Bell | 2001 | WS champion. Scored the winning run. NLCS home run. |
 | LF | Luis González | 2001 | Walk-off single to win Game 7 off Rivera. THE D-backs moment. |
-| CF | Steve Finley | 2004 | Grand slam to clinch division on final day of season. |
 | RF | Shawn Green | 2005 | Career year in Arizona. Best D-backs RF. |
 | BN | Craig Counsell | 2001 | WS champion. Scored the tying run in Game 7. Soul of the team. |
 | BN | Tony Womack | 2001 | Tying hit in Game 7. 2-run double. WS mythology. |
-| BN | Mark Grace | 2001 | "Mr. Cub" in Arizona. WS champion. Two-out hit to start Game 7 rally. |
 | BN | Miguel Montero | 2011 | Best D-backs C of modern era. |
 | BN | David Peralta | 2018 | "El Torito." Best D-backs OF of recent era. |
 
@@ -924,3 +853,69 @@
 **Bill Mazeroski** (Pirates): Only 2B ever to win a World Series with a walk-off HR (also only the second walk-off HR in WS history at the time). Generate for that swing.
 
 **Babe Ruth (pitcher)** (Red Sox): Appears twice in the entire project — pitcher on Red Sox, hitter on Yankees and All-Time World. The Curse of the Bambino is inseparable from both franchises. This is the one deliberate two-team exception.
+
+---
+
+## EXPANSION TEAMS
+
+---
+
+### ALL-TIME JAPAN (NPB)
+
+| Slot | Player | Peak Season | Notes |
+|------|--------|-------------|-------|
+| SP1 | Masaichi Kaneda | 1958 | 400 career wins, "God of Pitching," dominant lefty. |
+| SP2 | Kazuhisa Inao | 1961 | 42 wins in 1961, "Iron Man" workhorse. |
+| SP3 | Victor Starffin | 1940 | First NPB pitcher to 300 wins. |
+| SP4 | Hideo Nomo | 1990 | Pre-MLB NPB peak, legendary forkball. |
+| SP5 | Daisuke Matsuzaka | 2004 | Pre-MLB peak, 2006 WBC hero. |
+| CL | Kazuhiro Sasaki | 1998 | Pre-MLB closer, 252 NPB saves. |
+| RP | Koji Uehara | 2004 | Pre-MLB peak, elite control. |
+| RP | Takashi Saito | 2003 | Pre-MLB setup/closer. |
+| RP | Hiroki Kuroda | 2005 | Pre-MLB NPB workhorse. |
+| RP | Shigeru Sugishita | 1954 | Elite reliever of the 1950s. |
+| C | Katsuya Nomura | 1965 | 657 career HR, greatest hitting C in NPB. |
+| 1B | Sadaharu Oh | 1973 | 868 career HR — all-time professional record. |
+| 2B | Hiromichi Ishige | 1988 | Defensive wizard, multiple Golden Gloves. |
+| SS | Kazuo Matsui | 2002 | Pre-MLB peak, elite SS. |
+| 3B | Shigeo Nagashima | 1963 | Japan's most beloved player. .305 BA, 444 HR. |
+| LF | Isao Harimoto | 1970 | Only NPB player to reach 3,000 hits. .319 career BA. |
+| CF | Ichiro Suzuki | 1994 | NPB peak: .385 BA, 7 straight batting titles. |
+| RF | Koji Yamamoto | 1977 | 536 career HR. Hiroshima Carp legend. |
+| DH | Hiromitsu Ochiai | 1985 | Three Triple Crowns. .311 BA, 510 HR. |
+| BN | Randy Bass | 1985 | 1985 Triple Crown. .389/54 HR. |
+| BN | Tuffy Rhodes | 2001 | 55 HR, tied Oh's single-season record. |
+| BN | Koichi Tabuchi | 1975 | 474 career HR, elite power catcher. |
+| BN | Fumio Fujimura | 1950 | Pre/post-war era legend. |
+
+---
+
+### ALL-TIME WORLD
+
+| Slot | Player | Peak Season | Notes |
+|------|--------|-------------|-------|
+| SP1 | Walter Johnson | 1913 | "The Big Train." 417 wins, 2.17 career ERA. |
+| SP2 | Satchel Paige | 1948 | Negro Leagues legend. MLB debut at ~42, still dominant. |
+| SP3 | Sandy Koufax | 1965 | Most dominant 4-year run in history. 1.86 ERA 1963-66. |
+| SP4 | Pedro Martinez | 2000 | ERA+ 243 in 1999. Most dominant modern pitcher. |
+| SP5 | Masaichi Kaneda | 1958 | NPB representative. 400 wins. |
+| CL | Mariano Rivera | 2005 | GOAT closer. 652 saves, cutter. |
+| RP | Dennis Eckersley | 1990 | 0.61 ERA in 1990. 390 saves. |
+| RP | Hoyt Wilhelm | 1959 | Knuckleball pioneer. 2.52 career ERA, 1070 games. |
+| RP | Bruce Sutter | 1979 | Invented the split-finger closer. |
+| RP | Lefty Grove | 1931 | 300 wins, ERA+ 148. |
+| C | Josh Gibson | 1937 | Estimated 800+ HR. .362 Negro Leagues BA. |
+| 1B | Lou Gehrig | 1927 | .340 BA, 493 HR, Iron Horse. |
+| 2B | Rogers Hornsby | 1925 | .358 career BA. Greatest RH hitter ever. |
+| SS | Honus Wagner | 1908 | .328 career BA, 8 batting titles. First complete SS. |
+| 3B | Mike Schmidt | 1980 | Greatest 3B ever. 548 HR, 10 Gold Gloves. |
+| LF | Ted Williams | 1941 | .406. Greatest pure hitter. .482 career OBP. |
+| CF | Willie Mays | 1965 | The Say Hey Kid. 660 HR, 338 SB. The complete player. |
+| RF | Babe Ruth | 1927 | The baseline for everything. .342/.474/.690. |
+| DH | Ty Cobb | 1911 | .366 career BA. 892 SB. |
+| BN | Oscar Charleston | 1921 | Greatest Negro Leagues player. Five-tool CF. |
+| BN | Hank Aaron | 1971 | 755 HR, 2297 RBI. Consistency at the elite level. |
+| BN | Mickey Mantle | 1956 | Triple Crown 1956. Switch-power GOAT. |
+| BN | Sadaharu Oh | 1973 | 868 career HR. NPB all-time professional record. |
+| BN | Cool Papa Bell | 1933 | Legendary speed. Negro Leagues icon. |
+| BN | Yogi Berra | 1955 | 10 WS rings. 3 MVPs. The winningest catcher. |
