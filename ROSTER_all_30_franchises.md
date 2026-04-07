@@ -973,7 +973,6 @@
 | BN | Fumio Fujimura | 1950 | Pre/post-war era legend. |
 | BN | Eiji Sawamura | 1937 | Sawamura Award namesake. First NPB no-hitter. Died in WWII at 27. Sacred. |
 | BN | Shohei Ohtani *(pitcher)* | 2016 | NPB peak: 10-4, 1.86 ERA, 165 K. Two-way phenom. |
-| BN | Shohei Ohtani *(hitter)* | 2023 | 54 HR, 59 SB. Greatest two-way player ever. |
 | BN | Yoshinobu Yamamoto | 2022 | NPB peak: 15-5, 1.68 ERA, 169 K. Best modern NPB pitcher. |
 | BN | Roki Sasaki | 2024 | Perfect game at 20. 102 mph fastball. NPB sensation. |
 

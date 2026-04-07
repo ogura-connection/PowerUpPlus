@@ -50,7 +50,7 @@ namespace PowerUp.Fetchers.MLBLookupService
       FormalDisplayName = person.LastFirstName;
       InformalDisplayName = person.FirstLastName;
       NickName = person.NickName;
-      // UniformNumber
+      UniformNumber = string.IsNullOrEmpty(person.PrimaryNumber) ? null : person.PrimaryNumber;
       Position = LookupServiceValueMapper.MapPosition(person.PrimaryPosition?.Code);
       BattingSide = LookupServiceValueMapper.MapBatingSide(person.BatSide?.Code);
       ThrowingArm = LookupServiceValueMapper.MapThrowingArm(person.PitchHand?.Code);

@@ -418,15 +418,8 @@
   "Dick Radatz": {
     "top_speed_mph": 96.0,
     "has_two_seam": false,
-    "two_seam_movement": null,
-    "slider1_type": null,
-    "slider1_movement": null,
-    "curve1_type": null,
-    "curve1_movement": null,
-    "fork1_type": null,
-    "fork1_movement": null,
-    "sinker1_type": null,
-    "sinker1_movement": null
+    "slider1_type": 1,
+    "slider1_movement": 4
   },
   "Sandy Koufax": {
     "top_speed_mph": 97.0,
@@ -912,10 +905,8 @@
   "Babe Ruth": {
     "top_speed_mph": 93,
     "has_two_seam": false,
-    "curve1": {
-      "type": 6,
-      "movement": 5
-    }
+    "curve1_type": 6,
+    "curve1_movement": 5
   },
   "Mike Flanagan": {
     "top_speed_mph": 88.0,

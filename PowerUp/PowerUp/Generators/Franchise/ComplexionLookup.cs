@@ -23,8 +23,11 @@ namespace PowerUp.Generators.Franchise
       if (File.Exists(jsonFilePath))
       {
         var json = File.ReadAllText(jsonFilePath);
-        _lookup = JsonSerializer.Deserialize<Dictionary<string, int>>(json)
+        var raw = JsonSerializer.Deserialize<Dictionary<string, int>>(json)
           ?? new Dictionary<string, int>();
+        _lookup = new Dictionary<string, int>();
+        foreach (var kvp in raw)
+          _lookup[kvp.Key.RemoveAccents()] = kvp.Value;
       }
       else
       {

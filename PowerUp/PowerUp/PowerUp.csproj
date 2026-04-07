@@ -15,11 +15,4 @@
       <_Parameter1>PowerUp.Tests</_Parameter1>
     </AssemblyAttribute>
   </ItemGroup>
-  <ItemGroup>
-    <!-- AI prompt file: copied to output so ClaudeAttributeApiCaller can load it at runtime -->
-    <Content Include="..\..\powerup_ai\Prompts\PROMPT_attribute_generation.md">
-      <Link>Prompts\PROMPT_attribute_generation.md</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
 </Project>

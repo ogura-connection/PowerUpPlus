@@ -483,9 +483,11 @@ namespace PowerUp.Generators.Franchise
       var entryByDbId = new Dictionary<int, RosterFileEntry>();
       foreach (var entry in entries)
       {
+        var entryName = entry.PlayerName.RemoveAccents();
         var player = players.FirstOrDefault(p =>
-          p.FirstName + " " + p.LastName == entry.PlayerName ||
-          entry.PlayerName.Contains(p.LastName));
+          p.FirstName + " " + p.LastName == entryName ||
+          entryName.Contains(p.LastName) ||
+          p.LastName.Contains(entryName.Split(' ').Last()));
         if (player?.Id != null && !entryByDbId.ContainsKey(player.Id.Value))
           entryByDbId[player.Id.Value] = entry;
       }
