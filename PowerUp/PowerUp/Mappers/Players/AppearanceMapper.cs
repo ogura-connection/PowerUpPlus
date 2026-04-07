@@ -24,9 +24,9 @@ namespace PowerUp.Mappers.Players
         EyebrowThickness = faceType == FaceType.Standard || faceType == FaceType.StandardWithoutEyeColor
           ? faceHasThinEyebrows ? EyebrowThickness.Thin : EyebrowThickness.Thick
           : null,
-        SkinColor = faceType == FaceType.Player || faceType == FaceType.Other
+        Complexion = faceType == FaceType.Player || faceType == FaceType.Other
           ? null
-          : (SkinColor)(player.SkinAndEyes!.Value % EYE_COLOR_OFFSET),
+          : (Complexion)(player.SkinAndEyes!.Value % EYE_COLOR_OFFSET),
         EyeColor = faceType == FaceType.Standard || faceType == FaceType.Anime
           ? player.SkinAndEyes >= EYE_COLOR_OFFSET ? EyeColor.Brown : EyeColor.Blue
           : null,

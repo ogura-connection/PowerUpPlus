@@ -171,8 +171,8 @@ namespace PowerUp.CSV
           : null,
         FaceId = appearance.FaceId,
         EyebrowThickness = (int?)appearance.EyebrowThickness,
-        SkinColor = appearance.SkinColor.HasValue
-          ? ((int)appearance.SkinColor.Value) + 1
+        Complexion = appearance.Complexion.HasValue
+          ? ((int)appearance.Complexion.Value) + 1
           : null,
         EyeColor = (int?)appearance.EyeColor,
         HairStyle = (int?)appearance.HairStyle,
@@ -379,7 +379,7 @@ namespace PowerUp.CSV
         {
           FaceId = entry.FaceId ?? @default.Appearance.FaceId,
           EyebrowThickness = ((EyebrowThickness?)entry.EyebrowThickness) ?? @default.Appearance.EyebrowThickness,
-          SkinColor = ((SkinColor?)entry.SkinColor - 1) ?? @default.Appearance.SkinColor,
+          Complexion = ((Complexion?)entry.Complexion - 1) ?? @default.Appearance.Complexion,
           EyeColor = ((EyeColor?)entry.EyeColor) ?? @default.Appearance.EyeColor,
           HairStyle = ((HairStyle?)entry.HairStyle) ?? @default.Appearance.HairStyle,
           HairColor = ((HairColor?)entry.HairColor) ?? @default.Appearance.HairColor,

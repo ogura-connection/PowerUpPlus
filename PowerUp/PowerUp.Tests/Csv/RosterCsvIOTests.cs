@@ -58,7 +58,7 @@ namespace PowerUp.Tests.Csv
       joseRamirez.ERA.ShouldBe(null);
       joseRamirez.FaceId.ShouldBe(95);
       joseRamirez.EyebrowThickness.ShouldBe(1);
-      joseRamirez.SkinColor.ShouldBe(4);
+      joseRamirez.Complexion.ShouldBe(4);
       joseRamirez.EyeColor.ShouldBe(0);
       joseRamirez.HairStyle.ShouldBe(16);
       joseRamirez.HairColor.ShouldBe(3);
@@ -229,7 +229,7 @@ namespace PowerUp.Tests.Csv
         ERA = null,
         FaceId = 95,
         EyebrowThickness = 1,
-        SkinColor = 4,
+        Complexion = 4,
         EyeColor = 0,
         HairStyle = 16,
         HairColor = 3,

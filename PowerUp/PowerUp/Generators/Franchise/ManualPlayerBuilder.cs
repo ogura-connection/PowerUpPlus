@@ -23,7 +23,7 @@ namespace PowerUp.Generators.Franchise
     [JsonPropertyName("birth_month")] public int BirthMonth { get; set; } = 1;
     [JsonPropertyName("birth_day")] public int BirthDay { get; set; } = 1;
     [JsonPropertyName("uniform_number")] public string UniformNumber { get; set; } = "000";
-    [JsonPropertyName("skin_color")] public int SkinColor { get; set; } = 1;
+    [JsonPropertyName("skin_color")] public int Complexion { get; set; } = 1;
 
     // Display stats
     [JsonPropertyName("batting_average")] public double? BattingAverage { get; set; }
@@ -117,7 +117,7 @@ namespace PowerUp.Generators.Franchise
       player.BirthMonth = def.BirthMonth;
       player.BirthDay = def.BirthDay;
       player.UniformNumber = def.UniformNumber;
-      player.Appearance.SkinColor = (SkinColor)(def.SkinColor - 1);
+      player.Appearance.Complexion = (Complexion)(def.Complexion - 1);
 
       if (def.BattingAverage.HasValue) player.BattingAverage = def.BattingAverage;
       if (def.HomeRuns.HasValue) player.HomeRuns = def.HomeRuns;

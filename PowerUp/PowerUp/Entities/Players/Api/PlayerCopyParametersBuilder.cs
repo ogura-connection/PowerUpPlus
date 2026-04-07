@@ -47,7 +47,7 @@
         {
           FaceId = apperance.FaceId,
           EyebrowThickness = apperance.EyebrowThickness,
-          SkinColor = apperance.SkinColor,
+          Complexion = apperance.Complexion,
           EyeColor = apperance.EyeColor,
           HairStyle = apperance.HairStyle,
           HairColor = apperance.HairColor,

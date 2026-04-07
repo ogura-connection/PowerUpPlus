@@ -1,5 +1,6 @@
 ﻿using PowerUp;
 using PowerUp.Entities.Players;
+using PowerUp.Fetchers.MLBStatsApi;
 using PowerUp.Libraries;
 using System;
 using System.Collections.Generic;
@@ -20,10 +21,17 @@ namespace PowerUp.Generators
 
     public LSStatistcsPlayerGenerationAlgorithm
     ( IVoiceLibrary voiceLibrary
-    , ISkinColorGuesser skinColorGuesser
+    , IComplexionGuesser complexionGuesser
     , IBattingStanceGuesser battingStanceGuesser
     , IPitchingMechanicsGuesser pitchingMechanicsGuesser
-    ) 
+    , Franchise.IPre2008PitchArsenalLookup pre2008ArsenalLookup
+    , Franchise.IHotZoneLookup? hotZoneLookup = null
+    , Franchise.IComplexionLookup? complexionLookup = null
+    , Franchise.ISpecialAbilitiesLookup? specialAbilitiesLookup = null
+    , Franchise.IPlayerFormLookup? playerFormLookup = null
+    , Franchise.IAppearanceLookup? appearanceLookup = null
+    , bool enhancedMode = true
+    )
     {
       // Player Info
       SetProperty("FirstName", (player, data) => player.FirstName = data.PlayerInfo!.FirstNameUsed.RemoveAccents().ShortenNameToLength(14));
@@ -48,7 +56,7 @@ namespace PowerUp.Generators
       SetProperty(new ERASetter());
 
       // Appearance
-      SetProperty(new SkinColorSetter(skinColorGuesser));
+      SetProperty(new ComplexionSetter(complexionGuesser));
 
       // Position Capabilities
       SetProperty(new PitcherCapabilitySetter());
@@ -70,17 +78,44 @@ namespace PowerUp.Generators
       SetProperty(new FieldingSetter());
       SetProperty(new ErrorResistanceSetter());
 
+      // Hot Zones (from real API data when available)
+      SetProperty(new HotZoneSetter());
+
       // Pitcher Abilities
       SetProperty(new ControlSetter());
       SetProperty(new StaminaSetter());
       SetProperty(new TopSpeedSetter());
-      SetProperty(new PitchArsenalSetter());
+      // In enhanced mode, use curated pre-2008 arsenal as fallback.
+      // In non-enhanced mode, only API data + heuristic.
+      SetProperty(new PitchArsenalSetter(
+        enhancedMode ? pre2008ArsenalLookup : new Franchise.NoOpPre2008PitchArsenalLookup()));
 
       // TODO: Do Special Abilities
 
       // Batting Stance and Pitching Mechanics
       SetProperty(new BattingStanceSetter(battingStanceGuesser));
       SetProperty(new PitchingMechanicsSetter(pitchingMechanicsGuesser));
+
+      // Algorithmic appearance — always applied regardless of enhancedMode.
+      // Gives every generated player varied, era-appropriate appearance.
+      SetProperty(new AlgorithmicAppearanceSetter());
+
+      // JSON Lookup overrides (curated data). Only applied in enhanced mode.
+      // Same-key setters act as fallbacks (only run if the earlier setter returned false);
+      // different-key setters always run and override formula-based values.
+      if (enhancedMode)
+      {
+        if (hotZoneLookup != null)
+          SetProperty(new HotZoneLookupSetter(hotZoneLookup));
+        if (complexionLookup != null)
+          SetProperty(new ComplexionLookupSetter(complexionLookup));
+        if (specialAbilitiesLookup != null)
+          SetProperty(new SpecialAbilitiesLookupSetter(specialAbilitiesLookup));
+        if (playerFormLookup != null)
+          SetProperty(new PlayerFormLookupSetter(playerFormLookup));
+        if (appearanceLookup != null)
+          SetProperty(new AppearanceLookupSetter(appearanceLookup));
+      }
     }
 
     public class SavedName : PlayerPropertySetter
@@ -325,20 +360,20 @@ namespace PowerUp.Generators
       }
     }
 
-    public class SkinColorSetter : PlayerPropertySetter
+    public class ComplexionSetter : PlayerPropertySetter
     {
-      private readonly ISkinColorGuesser _skinColorGuesser;
-      public override string PropertyKey => "Appearance_SkinColor";
+      private readonly IComplexionGuesser _complexionGuesser;
+      public override string PropertyKey => "Appearance_Complexion";
 
-      public SkinColorSetter(ISkinColorGuesser skinColorGuesser)
+      public ComplexionSetter(IComplexionGuesser complexionGuesser)
       {
-        _skinColorGuesser = skinColorGuesser;
+        _complexionGuesser = complexionGuesser;
       }
 
       public override bool SetProperty(Player player, PlayerGenerationData datasetCollection)
       {
-        var skinColor = _skinColorGuesser.GuessSkinColor(datasetCollection.Year, datasetCollection.PlayerInfo!.BirthCountry);
-        player.Appearance.SkinColor = skinColor;
+        var complexion = _complexionGuesser.GuessComplexion(datasetCollection.Year, datasetCollection.PlayerInfo!.BirthCountry);
+        player.Appearance.Complexion = complexion;
         return true;
       }
     }
@@ -678,12 +713,31 @@ namespace PowerUp.Generators
 
     public override bool SetProperty(Player player, PlayerGenerationData datasetCollection)
     {
+      // Use real sabermetrics SPD (speed score) when available — works for ALL eras
+      if (datasetCollection.SabermetricsSPD.HasValue)
+      {
+        var spd = datasetCollection.SabermetricsSPD.Value;
+        // SPD 0-2 → RunSpeed 4-6, SPD 2-4 → 6-8, SPD 4-6 → 8-10, SPD 6-8 → 10-12, SPD 8+ → 12-15
+        var runSpeed = MapSpdToRunSpeed(spd);
+        player.HitterAbilities.RunSpeed = runSpeed.Round().MinAt(1).CapAt(15);
+        return true;
+      }
+
+      // Fallback: original heuristic (position base + SB + runs/AB)
       var baseRunSpeed = GetBaseRunSpeedForPosition(datasetCollection.PrimaryPosition);
       var stolenBaseBonus = .06 * (datasetCollection.HittingStats?.StolenBases ?? 0);
       var runsPerAtBatBonus = 7 * GetRunsPerAtBat(datasetCollection, warning => player.GeneratorWarnings.Add(warning));
-      var runSpeed = baseRunSpeed + stolenBaseBonus + runsPerAtBatBonus;
-      player.HitterAbilities.RunSpeed = runSpeed.Round().MinAt(1).CapAt(15);
+      var runSpeedHeuristic = baseRunSpeed + stolenBaseBonus + runsPerAtBatBonus;
+      player.HitterAbilities.RunSpeed = runSpeedHeuristic.Round().MinAt(1).CapAt(15);
       return true;
+    }
+
+    private static double MapSpdToRunSpeed(double spd)
+    {
+      // SPD (FanGraphs speed score) typically ranges 0-10
+      // Map to game's RunSpeed scale (1-15)
+      var gradient = MathUtils.BuildLinearGradientFunction(0, 9, 4, 15);
+      return gradient(spd);
     }
 
     private double GetBaseRunSpeedForPosition(Position position) => position switch
@@ -833,6 +887,21 @@ namespace PowerUp.Generators
 
     public override bool SetProperty(Player player, PlayerGenerationData datasetCollection)
     {
+      // Use OAA (Outs Above Average) when available — 2016+ Statcast data
+      if (datasetCollection.OutsAboveAverage.HasValue &&
+          datasetCollection.PrimaryPosition != Position.Pitcher &&
+          datasetCollection.PrimaryPosition != Position.DesignatedHitter)
+      {
+        var oaa = datasetCollection.OutsAboveAverage.Value;
+        // OAA typically ranges from -15 (terrible) to +25 (elite)
+        // Map to game's 4-15 fielding scale: OAA -10 → 6, OAA 0 → 10, OAA +15 → 15
+        var oaaGradient = MathUtils.BuildLinearGradientFunction(-10, 15, 6, 15);
+        var oaaFielding = oaaGradient(oaa);
+        player.HitterAbilities.Fielding = oaaFielding.Round().MinAt(4).CapAt(15);
+        return true;
+      }
+
+      // Fallback: RangeFactor heuristic
       if (datasetCollection.FieldingStats == null)
       {
         if (datasetCollection.PrimaryPosition != Position.Pitcher)
@@ -999,6 +1068,28 @@ namespace PowerUp.Generators
 
     public override bool SetProperty(Player player, PlayerGenerationData datasetCollection)
     {
+      // Use real fastball velocity from pitchArsenal API when available
+      if (datasetCollection.PitchArsenalData != null)
+      {
+        var fastball = datasetCollection.PitchArsenalData
+          .FirstOrDefault(s => s.Stat?.Type?.Code == "FF" || s.Stat?.Type?.Code == "FA");
+        if (fastball?.Stat?.AverageSpeed != null)
+        {
+          // Average speed + 2 mph ≈ top speed
+          player.PitcherAbilities.TopSpeedMph = Math.Min(105, Math.Max(49, fastball.Stat.AverageSpeed.Value + 2));
+          return true;
+        }
+        // If no four-seam, try sinker/two-seam
+        var altFb = datasetCollection.PitchArsenalData
+          .FirstOrDefault(s => s.Stat?.Type?.Code == "SI" || s.Stat?.Type?.Code == "FT");
+        if (altFb?.Stat?.AverageSpeed != null)
+        {
+          player.PitcherAbilities.TopSpeedMph = Math.Min(105, Math.Max(49, altFb.Stat.AverageSpeed.Value + 2));
+          return true;
+        }
+      }
+
+      // Fallback: K/9 heuristic for pre-2008
       if (datasetCollection.PitchingStats == null)
       {
         if(datasetCollection.PrimaryPosition == Position.Pitcher)
@@ -1007,8 +1098,7 @@ namespace PowerUp.Generators
       }
 
       if (!datasetCollection.PitchingStats.StrikeoutsPer9.HasValue ||
-        datasetCollection.PitchingStats.MathematicalInnings < 15
-      )
+        datasetCollection.PitchingStats.MathematicalInnings < 15)
       {
         if (datasetCollection.PrimaryPosition == Position.Pitcher)
           player.GeneratorWarnings.Add(GeneratorWarning.InsufficientPitchingStats(PropertyKey));
@@ -1024,114 +1114,347 @@ namespace PowerUp.Generators
 
   public class PitchArsenalSetter : PlayerPropertySetter
   {
+    private readonly Franchise.IPre2008PitchArsenalLookup _pre2008Lookup;
+
+    public PitchArsenalSetter(Franchise.IPre2008PitchArsenalLookup pre2008Lookup)
+    {
+      _pre2008Lookup = pre2008Lookup;
+    }
+
     public override string PropertyKey => "PitcherAbilities_PitchArsenal";
 
-    public override bool SetProperty(Player player, PlayerGenerationData datasetCollection)
+    public override bool SetProperty(Player player, PlayerGenerationData data)
     {
-      if (datasetCollection.PitchingStats == null)
+      // Priority 1: Real pitch arsenal from API (2008+)
+      if (data.PitchArsenalData != null)
       {
-        if (datasetCollection.PrimaryPosition == Position.Pitcher)
+        ApplyRealArsenal(data.PitchArsenalData, player);
+        player.GeneratedPlayer_PitchArsenalSource = "api";
+        return true;
+      }
+
+      // Priority 2: Curated pre-2008 arsenal from JSON lookup
+      var playerName = $"{data.PlayerInfo?.FirstNameUsed} {data.PlayerInfo?.LastName}".Trim();
+      if (_pre2008Lookup.HasPlayer(playerName))
+      {
+        _pre2008Lookup.ApplyArsenal(playerName, player);
+        return true;
+      }
+
+      player.GeneratedPlayer_PitchArsenalSource = "heuristic";
+
+      // Priority 3: BAA-based heuristic (random pitch types by era)
+      if (data.PitchingStats == null)
+      {
+        if (data.PrimaryPosition == Position.Pitcher)
           player.GeneratorWarnings.Add(GeneratorWarning.NoPitchingStats(PropertyKey));
         return false;
       }
 
-      if (!datasetCollection.PitchingStats.BattingAverageAgainst.HasValue ||
-        datasetCollection.PitchingStats.MathematicalInnings < 15
-      )
+      if (!data.PitchingStats.BattingAverageAgainst.HasValue || data.PitchingStats.MathematicalInnings < 15)
       {
-        if (datasetCollection.PrimaryPosition == Position.Pitcher)
+        if (data.PrimaryPosition == Position.Pitcher)
           player.GeneratorWarnings.Add(GeneratorWarning.InsufficientPitchingStats(PropertyKey));
         return false;
       }
 
-      var breakLinearGradient = MathUtils.BuildLinearGradientFunction(.107, .264, 6, 3);
-      var firstPitchBreakCalc = breakLinearGradient(datasetCollection.PitchingStats.BattingAverageAgainst.Value);
-      var secondPitchBreakCalc = firstPitchBreakCalc * .7;
-      var thirdPitchBreakCalc = secondPitchBreakCalc * .7;
+      var breakGradient = MathUtils.BuildLinearGradientFunction(.107, .264, 6, 3);
+      var firstBreak = breakGradient(data.PitchingStats.BattingAverageAgainst.Value).Round().MinAt(1).CapAt(7);
+      var secondBreak = (firstBreak * .7).Round().MinAt(1).CapAt(7);
+      var thirdBreak = (secondBreak * .7).Round().MinAt(1).CapAt(7);
 
-      var firstPitchBreak = firstPitchBreakCalc.Round().MinAt(1).CapAt(7);
-      var secondPitchBreak = secondPitchBreakCalc.Round().MinAt(1).CapAt(7);
-      var thirdPitchBeak = thirdPitchBreakCalc.Round().MinAt(1).CapAt(7);
+      var sliderType = GetRandomSliderTypeByYear(data.Year);
+      var curveType = GetRandomCurveTypeByYear(data.Year);
+      var changeType = GetForkTypeForYear(data.Year);
 
-      var sliderType = GetRandomSliderTypeByYear(datasetCollection.Year);
-      var curveType = GetRandomCurveTypeByYear(datasetCollection.Year);
-      var changeType = GetForkTypeForYear(datasetCollection.Year);
-
-      if(player.PitcherType == PitcherType.Starter)
+      if (player.PitcherType == PitcherType.Starter)
       {
         player.PitcherAbilities.Slider1Type = sliderType;
-        player.PitcherAbilities.Slider1Movement = sliderType.HasValue
-          ? firstPitchBreak
-          : null;
-        
+        player.PitcherAbilities.Slider1Movement = sliderType.HasValue ? firstBreak : null;
         player.PitcherAbilities.Curve1Type = curveType;
-        player.PitcherAbilities.Curve1Movement = sliderType.HasValue
-          ? secondPitchBreak
-          : firstPitchBreak;
-
+        player.PitcherAbilities.Curve1Movement = sliderType.HasValue ? secondBreak : firstBreak;
         player.PitcherAbilities.Fork1Type = changeType;
-        player.PitcherAbilities.Fork1Movement = sliderType.HasValue
-          ? thirdPitchBeak
-          : secondPitchBreak;
+        player.PitcherAbilities.Fork1Movement = sliderType.HasValue ? thirdBreak : secondBreak;
       }
       else
       {
         player.PitcherAbilities.Slider1Type = sliderType;
-        player.PitcherAbilities.Slider1Movement = sliderType.HasValue
-          ? firstPitchBreak
-          : null;
-
-        player.PitcherAbilities.Curve1Type = sliderType.HasValue
-          ? null
-          : curveType;
-        player.PitcherAbilities.Curve1Movement = sliderType.HasValue
-          ? null
-          : firstPitchBreak;
-
+        player.PitcherAbilities.Slider1Movement = sliderType.HasValue ? firstBreak : null;
+        player.PitcherAbilities.Curve1Type = sliderType.HasValue ? null : curveType;
+        player.PitcherAbilities.Curve1Movement = sliderType.HasValue ? null : firstBreak;
         player.PitcherAbilities.Fork1Type = changeType;
-        player.PitcherAbilities.Fork1Movement = secondPitchBreak;
+        player.PitcherAbilities.Fork1Movement = secondBreak;
       }
-
       return true;
     }
 
+    /// <summary>Maps real MLB pitch arsenal data to game pitch slots.</summary>
+    private static void ApplyRealArsenal(Fetchers.MLBStatsApi.PitchArsenalSplit[] splits, Player player)
+    {
+      var p = player.PitcherAbilities;
+      // Clear existing
+      p.HasTwoSeam = false; p.TwoSeamMovement = null;
+      p.Slider1Type = null; p.Slider1Movement = null; p.Slider2Type = null; p.Slider2Movement = null;
+      p.Curve1Type = null; p.Curve1Movement = null; p.Curve2Type = null; p.Curve2Movement = null;
+      p.Fork1Type = null; p.Fork1Movement = null; p.Fork2Type = null; p.Fork2Movement = null;
+      p.Sinker1Type = null; p.Sinker1Movement = null; p.Sinker2Type = null; p.Sinker2Movement = null;
+      p.SinkingFastball1Type = null; p.SinkingFastball1Movement = null;
+      p.SinkingFastball2Type = null; p.SinkingFastball2Movement = null;
+
+      var era = player.EarnedRunAverage ?? 4.0;
+      int baseMove = era < 2.5 ? 6 : era < 3.25 ? 5 : era < 4.0 ? 4 : era < 5.0 ? 3 : 2;
+      int tier = 0;
+      int sc = 0, cc = 0, fc = 0, snc = 0;
+
+      foreach (var split in splits)
+      {
+        var code = split.Stat?.Type?.Code ?? "";
+        if (code == "FF" || code == "FA") continue; // fastball handled by TopSpeedSetter
+        if (code == "FT") { p.HasTwoSeam = true; p.TwoSeamMovement = Clamp(baseMove - 1); continue; }
+
+        int mv = Clamp(baseMove - tier);
+        tier++;
+
+        switch (code)
+        {
+          case "SL": case "ST":
+            if (sc == 0) { p.Slider1Type = SliderType.Slider; p.Slider1Movement = mv; sc++; }
+            else if (sc == 1) { p.Slider2Type = SliderType.Slider; p.Slider2Movement = mv; sc++; }
+            break;
+          case "FC":
+            if (sc == 0) { p.Slider1Type = SliderType.Cutter; p.Slider1Movement = mv; sc++; }
+            else if (sc == 1) { p.Slider2Type = SliderType.Cutter; p.Slider2Movement = mv; sc++; }
+            break;
+          case "CU": case "CB":
+            if (cc == 0) { p.Curve1Type = CurveType.Curve; p.Curve1Movement = mv; cc++; }
+            else if (cc == 1) { p.Curve2Type = CurveType.Curve; p.Curve2Movement = mv; cc++; }
+            break;
+          case "KC":
+            if (cc == 0) { p.Curve1Type = CurveType.KnuckleCurve; p.Curve1Movement = mv; cc++; }
+            else if (cc == 1) { p.Curve2Type = CurveType.KnuckleCurve; p.Curve2Movement = mv; cc++; }
+            break;
+          case "SV":
+            if (cc == 0) { p.Curve1Type = CurveType.Slurve; p.Curve1Movement = mv; cc++; }
+            break;
+          case "EP":
+            if (cc == 0) { p.Curve1Type = CurveType.SlowCurve; p.Curve1Movement = mv; cc++; }
+            break;
+          case "CH":
+            if (fc == 0) { p.Fork1Type = ForkType.ChangeUp; p.Fork1Movement = mv; fc++; }
+            else if (fc == 1) { p.Fork2Type = ForkType.ChangeUp; p.Fork2Movement = mv; fc++; }
+            break;
+          case "FS":
+            if (fc == 0) { p.Fork1Type = ForkType.Splitter; p.Fork1Movement = mv; fc++; }
+            else if (fc == 1) { p.Fork2Type = ForkType.Splitter; p.Fork2Movement = mv; fc++; }
+            break;
+          case "KN":
+            if (fc == 0) { p.Fork1Type = ForkType.Knuckleball; p.Fork1Movement = mv; fc++; }
+            break;
+          case "SI":
+            if (snc == 0) { p.Sinker1Type = SinkerType.Sinker; p.Sinker1Movement = mv; snc++; }
+            break;
+          case "SC":
+            if (snc == 0) { p.Sinker1Type = SinkerType.Screwball; p.Sinker1Movement = mv; snc++; }
+            break;
+          default: tier--; break;
+        }
+      }
+    }
+
+    private static int Clamp(int v) => Math.Max(1, Math.Min(7, v));
+
     private SliderType? GetRandomSliderTypeByYear(int year)
     {
-      if (year < 1925)
-        return null;
-
-      if (year < 1955)
-        return SliderType.Slider;
-
+      if (year < 1925) return null;
+      if (year < 1955) return SliderType.Slider;
       var rand = Random.Shared.NextDouble();
-      if (rand < .76)
-        return SliderType.Slider;
-      else if (rand < .9)
-        return SliderType.Cutter;
-      else 
-        return SliderType.HardSlider;
+      return rand < .76 ? SliderType.Slider : rand < .9 ? SliderType.Cutter : SliderType.HardSlider;
     }
 
     private CurveType GetRandomCurveTypeByYear(int year)
     {
-      if (year < 1945)
-        return CurveType.Curve;
-
+      if (year < 1945) return CurveType.Curve;
       var rand = Random.Shared.NextDouble();
-      if (rand < .78)
-        return CurveType.Curve;
-      else if (rand < .9)
-        return CurveType.DropCurve;
-      else
-        return CurveType.Slurve;
+      return rand < .78 ? CurveType.Curve : rand < .9 ? CurveType.DropCurve : CurveType.Slurve;
     }
 
-    private ForkType GetForkTypeForYear(int year)
+    private ForkType GetForkTypeForYear(int year) => year < 1945 ? ForkType.Palmball : ForkType.ChangeUp;
+  }
+
+  /// <summary>Sets hot zones from real API BA-by-zone data (2008+).</summary>
+  public class HotZoneSetter : PlayerPropertySetter
+  {
+    public override string PropertyKey => "HitterAbilities_HotZones";
+
+    public override bool SetProperty(Player player, PlayerGenerationData data)
     {
-      if (year < 1945)
-        return ForkType.Palmball;
-      else
-        return ForkType.ChangeUp;
+      if (data.HotZoneData == null || data.HotZoneData.Length < 9)
+        return false; // Leave at neutral (or let JSON lookup override later)
+
+      // Map zone numbers (01-09) to HotZoneGrid fields
+      // Zone layout: 01=UpAndIn, 02=Up, 03=UpAndAway, 04=MiddleIn, 05=Middle,
+      //              06=MiddleAway, 07=DownAndIn, 08=Down, 09=DownAndAway
+      foreach (var zone in data.HotZoneData)
+      {
+        var pref = ZoneBaToPreference(zone.Value);
+        switch (zone.Zone)
+        {
+          case "01": player.HitterAbilities.HotZones.UpAndIn = pref; break;
+          case "02": player.HitterAbilities.HotZones.Up = pref; break;
+          case "03": player.HitterAbilities.HotZones.UpAndAway = pref; break;
+          case "04": player.HitterAbilities.HotZones.MiddleIn = pref; break;
+          case "05": player.HitterAbilities.HotZones.Middle = pref; break;
+          case "06": player.HitterAbilities.HotZones.MiddleAway = pref; break;
+          case "07": player.HitterAbilities.HotZones.DownAndIn = pref; break;
+          case "08": player.HitterAbilities.HotZones.Down = pref; break;
+          case "09": player.HitterAbilities.HotZones.DownAndAway = pref; break;
+        }
+      }
+      return true;
+    }
+
+    private static HotZonePreference ZoneBaToPreference(double ba)
+    {
+      if (ba >= .300) return HotZonePreference.Hot;
+      if (ba <= .200) return HotZonePreference.Cold;
+      return HotZonePreference.Neutral;
+    }
+  }
+
+  /// <summary>
+  /// Helper to get the lookup name from PlayerGenerationData.
+  /// Prefers RosterDisplayName (which handles nicknames), falls back to API name.
+  /// </summary>
+  internal static class LookupNameHelper
+  {
+    /// <summary>
+    /// Get the lookup name for JSON dictionary matching.
+    /// Strips accents so "Pedro Martínez" matches "Pedro Martinez" in JSON keys.
+    /// </summary>
+    public static string? GetName(PlayerGenerationData data)
+    {
+      string? raw = null;
+      if (!string.IsNullOrEmpty(data.RosterDisplayName))
+        raw = data.RosterDisplayName;
+      else if (data.PlayerInfo != null)
+        raw = data.PlayerInfo.FirstNameUsed + " " + data.PlayerInfo.LastName;
+      return raw?.RemoveAccents();
+    }
+  }
+
+  /// <summary>
+  /// Fallback hot zone setter: applies curated JSON hot zones when API data wasn't available.
+  /// Same PropertyKey as HotZoneSetter so it only runs when the API setter returned false.
+  /// </summary>
+  public class HotZoneLookupSetter : PlayerPropertySetter
+  {
+    private readonly Franchise.IHotZoneLookup _lookup;
+    public HotZoneLookupSetter(Franchise.IHotZoneLookup lookup) => _lookup = lookup;
+    public override string PropertyKey => "HitterAbilities_HotZones";
+
+    public override bool SetProperty(Player player, PlayerGenerationData data)
+    {
+      var name = LookupNameHelper.GetName(data);
+      if (name == null) return false;
+      var before = player.HitterAbilities.HotZones.Middle;
+      _lookup.ApplyHotZones(name, player);
+      // Return true if the lookup actually changed something
+      return player.HitterAbilities.HotZones.Middle != before
+          || player.HitterAbilities.HotZones.UpAndIn != HotZonePreference.Neutral;
+    }
+  }
+
+  /// <summary>
+  /// Overrides skin color from curated JSON lookup.
+  /// Uses a different key so it always runs after the guesser.
+  /// </summary>
+  public class ComplexionLookupSetter : PlayerPropertySetter
+  {
+    private readonly Franchise.IComplexionLookup _lookup;
+    public ComplexionLookupSetter(Franchise.IComplexionLookup lookup) => _lookup = lookup;
+    public override string PropertyKey => "Appearance_Complexion_Override";
+
+    public override bool SetProperty(Player player, PlayerGenerationData data)
+    {
+      var name = LookupNameHelper.GetName(data);
+      if (name == null) return false;
+      var complexion = _lookup.GetComplexion(name);
+      if (!complexion.HasValue) return false;
+      player.Appearance.Complexion = complexion.Value;
+      return true;
+    }
+  }
+
+  /// <summary>
+  /// Applies curated special abilities from JSON lookup.
+  /// </summary>
+  public class SpecialAbilitiesLookupSetter : PlayerPropertySetter
+  {
+    private readonly Franchise.ISpecialAbilitiesLookup _lookup;
+    public SpecialAbilitiesLookupSetter(Franchise.ISpecialAbilitiesLookup lookup) => _lookup = lookup;
+    public override string PropertyKey => "SpecialAbilities_Lookup";
+
+    public override bool SetProperty(Player player, PlayerGenerationData data)
+    {
+      var name = LookupNameHelper.GetName(data);
+      if (name == null) return false;
+      _lookup.ApplySpecialAbilities(name, player.SpecialAbilities);
+      return true;
+    }
+  }
+
+  /// <summary>
+  /// Overrides batting stance and pitching mechanics from curated JSON lookup.
+  /// Uses a different key so it always runs after the guessers.
+  /// </summary>
+  public class PlayerFormLookupSetter : PlayerPropertySetter
+  {
+    private readonly Franchise.IPlayerFormLookup _lookup;
+    public PlayerFormLookupSetter(Franchise.IPlayerFormLookup lookup) => _lookup = lookup;
+    public override string PropertyKey => "PlayerForm_Override";
+
+    public override bool SetProperty(Player player, PlayerGenerationData data)
+    {
+      var name = LookupNameHelper.GetName(data);
+      if (name == null) return false;
+      _lookup.ApplyForms(name, player);
+      return true;
+    }
+  }
+
+  /// <summary>
+  /// Algorithmic appearance — always runs regardless of enhancedMode.
+  /// Gives every player a varied, era-appropriate look using deterministic hashing.
+  /// </summary>
+  public class AlgorithmicAppearanceSetter : PlayerPropertySetter
+  {
+    public override string PropertyKey => "Appearance_Algorithmic";
+
+    public override bool SetProperty(Player player, PlayerGenerationData data)
+    {
+      var name = LookupNameHelper.GetName(data);
+      if (name == null) return false;
+      AlgorithmicAppearance.Apply(name, data.Year, player);
+      return true;
+    }
+  }
+
+  /// <summary>
+  /// Applies curated appearance from JSON lookup (enhanced mode only).
+  /// Overrides the algorithmic appearance for players with curated entries.
+  /// </summary>
+  public class AppearanceLookupSetter : PlayerPropertySetter
+  {
+    private readonly Franchise.IAppearanceLookup _lookup;
+    public AppearanceLookupSetter(Franchise.IAppearanceLookup lookup) => _lookup = lookup;
+    public override string PropertyKey => "Appearance_Lookup";
+
+    public override bool SetProperty(Player player, PlayerGenerationData data)
+    {
+      var name = LookupNameHelper.GetName(data);
+      if (name == null) return false;
+      _lookup.ApplyAppearance(name, data.Year, player);
+      return true;
     }
   }
 }

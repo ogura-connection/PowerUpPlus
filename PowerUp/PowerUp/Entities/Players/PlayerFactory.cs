@@ -56,7 +56,7 @@
     {
       FaceId = 177,
       EyebrowThickness = EyebrowThickness.Thick,
-      SkinColor = SkinColor.One,
+      Complexion = Complexion.One,
       EyeColor = EyeColor.Brown,
       HairStyle = null,
       HairColor = null,

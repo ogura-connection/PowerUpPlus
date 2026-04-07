@@ -102,8 +102,8 @@
       appearance.EyebrowThickness = FaceTypeHelpers.CanChooseEyebrows(faceType)
         ? parameters.EyebrowThickness
         : null;
-      appearance.SkinColor = FaceTypeHelpers.CanChooseSkinColor(faceType)
-        ? parameters.SkinColor
+      appearance.Complexion = FaceTypeHelpers.CanChooseComplexion(faceType)
+        ? parameters.Complexion
         : null;
       appearance.EyeColor = FaceTypeHelpers.CanChooseEyes(faceType)
         ? parameters.EyeColor

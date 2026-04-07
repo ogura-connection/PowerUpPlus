@@ -51,10 +51,10 @@ export function AppearanceEditor(props: AppearanceEditorProps) {
           <FieldLabel htmlFor='skin'>Skin</FieldLabel>
           <SelectField 
             id='skin'
-            value={details.skinColor.key}
+            value={details.complexion.key}
             disabled={editorDisabled}
-            onChange={skin => update({ type: 'updateSkinColor', skinColor: fromOptions(options.skinColorOptions, skin) })}
-          >{options.skinColorOptions.map(c => toColorOption(c, getSkinColor))}</SelectField> 
+            onChange={skin => update({ type: 'updateComplexion', complexion: fromOptions(options.complexionOptions, skin) })}
+          >{options.complexionOptions.map(c => toColorOption(c, getComplexion))}</SelectField> 
           </>}
         </FlexFracItem> 
         <FlexFracItem frac='1/2'>
@@ -262,7 +262,7 @@ function toBatColorOption(code: KeyedCode): OptionElement {
     }
 }
 
-function getSkinColor(key: string): string | undefined {
+function getComplexion(key: string): string | undefined {
   switch(key) {
     case 'One':
       return 'hsl(12deg 91% 83%)';

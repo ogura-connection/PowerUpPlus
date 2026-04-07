@@ -4,6 +4,7 @@ using PowerUp.Entities.Players;
 using PowerUp.Entities.Rosters;
 using PowerUp.Entities.Teams;
 using PowerUp.Fetchers.MLBLookupService;
+using PowerUp.Fetchers.MLBStatsApi;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,7 @@ namespace PowerUp.Generators
 
   public class RosterGenerationResult
   {
-    public Roster Roster { get; set; } 
+    public Roster Roster { get; set; }
     public IEnumerable<GeneratorWarning> Warnings { get; set; } = Enumerable.Empty<GeneratorWarning>();
 
     public RosterGenerationResult(Roster roster, IEnumerable<GeneratorWarning> warnings)
@@ -37,14 +38,17 @@ namespace PowerUp.Generators
   public class RosterGenerator : IRosterGenerator
   {
     private readonly IMLBLookupServiceClient _mlbLookupServiceClient;
+    private readonly IMLBStatsApiClient _mlbStatsApiClient;
     private readonly ITeamGenerator _teamGenerator;
 
     public RosterGenerator(
       IMLBLookupServiceClient mlbLookupServiceClient,
+      IMLBStatsApiClient mlbStatsApiClient,
       ITeamGenerator teamGenerator
     )
     {
       _mlbLookupServiceClient = mlbLookupServiceClient;
+      _mlbStatsApiClient = mlbStatsApiClient;
       _teamGenerator = teamGenerator;
     }
 
@@ -139,29 +143,76 @@ namespace PowerUp.Generators
         .Select(t => t.Team)
         .ToList();
 
-      Team? nlAllStars = null;
-      if(!ppTeamByTeamId.ContainsValue(MLBPPTeam.NationalLeagueAllStars) && nlPlayers.Any())
+      // Fetch actual MLB All-Star Game rosters from the game feed
+      var allGeneratedPlayers = alPlayers.Concat(nlPlayers).ToList();
+      Fetchers.MLBStatsApi.AllStarGameRosters? allStarRosters = null;
+      try
       {
-        nlAllStars = BuildAllStarTeam(nlPlayers, year, MLBPPTeam.NationalLeagueAllStars.GetFullDisplayName(), isAL: false);
-        ppTeamByTeamId[nlAllStars.GeneratedTeam_LSTeamId!.Value] = MLBPPTeam.NationalLeagueAllStars;
-        teamsToUse.Add(nlAllStars);
+        if (onTeamProgressUpdate != null)
+          onTeamProgressUpdate(new ProgressUpdate("Fetching All-Star Game rosters from API", 0, 0));
+
+        allStarRosters = Task.Run(() => _mlbStatsApiClient.GetAllStarGameRosters(year))
+          .WaitAsync(TimeSpan.FromSeconds(15))
+          .GetAwaiter()
+          .GetResult();
+      }
+      catch (Exception ex)
+      {
+        if (onTeamProgressUpdate != null)
+          onTeamProgressUpdate(new ProgressUpdate($"All-Star Game fetch failed ({ex.Message}) — using best-of-league fallback", 0, 0));
       }
 
-      if (!ppTeamByTeamId.ContainsValue(MLBPPTeam.AmericanLeagueAllStars) && alPlayers.Any())
+      var allStarConfigs = new[]
       {
-        var alAllStars = BuildAllStarTeam(alPlayers, year, MLBPPTeam.AmericanLeagueAllStars.GetFullDisplayName(), isAL: true);
-        ppTeamByTeamId[alAllStars.GeneratedTeam_LSTeamId!.Value] = MLBPPTeam.AmericanLeagueAllStars;
-        teamsToUse.Add(alAllStars);
-      }
+        (ppTeam: MLBPPTeam.AmericanLeagueAllStars, apiIds: allStarRosters?.ALPlayerIds, leaguePlayers: alPlayers, isAL: true),
+        (ppTeam: MLBPPTeam.NationalLeagueAllStars, apiIds: allStarRosters?.NLPlayerIds, leaguePlayers: nlPlayers, isAL: false),
+      };
 
-      var notFirstTeamNl = nlAllStars != null
-        ? nlPlayers.Where(p => !nlAllStars.PlayerDefinitions.Any(a => a.PlayerId == p.Id))
-        : Enumerable.Empty<Player>();
-      if (!ppTeamByTeamId.ContainsValue(MLBPPTeam.AmericanLeagueAllStars) && !alPlayers.Any() && notFirstTeamNl.Any())
+      foreach (var asCfg in allStarConfigs)
       {
-        var nlAllStars2 = BuildAllStarTeam(notFirstTeamNl, year, "Second Team All National League", isAL: true);
-        ppTeamByTeamId[nlAllStars2.GeneratedTeam_LSTeamId!.Value] = MLBPPTeam.AmericanLeagueAllStars;
-        teamsToUse.Add(nlAllStars2);
+        if (ppTeamByTeamId.ContainsValue(asCfg.ppTeam))
+          continue;
+
+        var asTeamName = asCfg.ppTeam.GetFullDisplayName();
+
+        if (asCfg.apiIds != null && asCfg.apiIds.Count > 0)
+        {
+          var asPlayerIdSet = asCfg.apiIds.ToHashSet();
+
+          var matched = allGeneratedPlayers
+            .Where(p => p.GeneratedPlayer_LSPLayerId.HasValue && asPlayerIdSet.Contains(p.GeneratedPlayer_LSPLayerId.Value))
+            .ToList();
+
+          if (onTeamProgressUpdate != null)
+            onTeamProgressUpdate(new ProgressUpdate(
+              $"{asTeamName}: {asCfg.apiIds.Count} API selections, {matched.Count} matched to generated players", 0, 0));
+
+          if (matched.Count < 9)
+          {
+            var matchedIds = matched.Select(p => p.GeneratedPlayer_LSPLayerId!.Value).ToHashSet();
+            var supplements = asCfg.leaguePlayers
+              .Where(p => !matchedIds.Contains(p.GeneratedPlayer_LSPLayerId ?? 0))
+              .OrderByDescending(p => p.Overall)
+              .Take(Math.Max(0, 20 - matched.Count));
+            matched.AddRange(supplements);
+            if (onTeamProgressUpdate != null)
+              onTeamProgressUpdate(new ProgressUpdate(
+                $"{asTeamName}: supplemented to {matched.Count} players", 0, 0));
+          }
+
+          var asTeam = BuildAllStarTeam(matched, year, asTeamName, asCfg.isAL);
+          ppTeamByTeamId[asTeam.GeneratedTeam_LSTeamId!.Value] = asCfg.ppTeam;
+          teamsToUse.Add(asTeam);
+        }
+        else if (asCfg.leaguePlayers.Any())
+        {
+          if (onTeamProgressUpdate != null)
+            onTeamProgressUpdate(new ProgressUpdate(
+              $"{asTeamName}: no API data — using best-of-league fallback", 0, 0));
+          var fallback = BuildAllStarTeam(asCfg.leaguePlayers, year, asTeamName, asCfg.isAL);
+          ppTeamByTeamId[fallback.GeneratedTeam_LSTeamId!.Value] = asCfg.ppTeam;
+          teamsToUse.Add(fallback);
+        }
       }
 
       DatabaseConfig.Database.SaveAll(teamsToUse);

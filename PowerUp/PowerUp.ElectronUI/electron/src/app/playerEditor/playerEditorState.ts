@@ -295,7 +295,7 @@ export function getPersonalDetailsReducer(state: PlayerEditorDetails, update: Di
 export interface Appearance {
   face: FaceCode;
   eyebrows: KeyedCode;
-  skinColor: KeyedCode;
+  complexion: KeyedCode;
   eyeColor: KeyedCode;
   hairStyle: KeyedCode | undefined;
   hairColor: KeyedCode;
@@ -315,7 +315,7 @@ export interface Appearance {
 export type AppearanceAction =
 | { type: 'updateFace', face: FaceCode }
 | { type: 'updateEyebrows', eyebrows: KeyedCode }
-| { type: 'updateSkinColor', skinColor: KeyedCode }
+| { type: 'updateComplexion', complexion: KeyedCode }
 | { type: 'updateEyeColor', eyeColor: KeyedCode }
 | { type: 'updateHairStyle', hairStyle: KeyedCode | undefined }
 | { type: 'updateHairColor', hairColor: KeyedCode }
@@ -343,10 +343,10 @@ export function AppearanceReducer(state: Appearance, action: AppearanceAction): 
         ...state,
         eyebrows: action.eyebrows
       }
-    case 'updateSkinColor':
+    case 'updateComplexion':
       return {
         ...state,
-        skinColor: action.skinColor
+        complexion: action.complexion
       }
     case 'updateEyeColor':
       return {
@@ -929,7 +929,7 @@ export function getInitialStateFromResponse(response: PlayerEditorResponse): Pla
     appearance: {
       face: appearance.face,
       eyebrows: appearance.eyebrows ?? appearanceOptions.eyebrowThicknessOptions[0],
-      skinColor: appearance.skinColor ?? appearanceOptions.skinColorOptions[0],
+      complexion: appearance.complexion ?? appearanceOptions.complexionOptions[0],
       eyeColor: appearance.eyeColor ?? appearanceOptions.eyeColorOptions[0],
       hairStyle: appearance.hairStyle ?? undefined,
       hairColor: appearance.hairColor ?? appearanceOptions.hairColorOptions[0],
@@ -1044,8 +1044,8 @@ export function buildSavePlayerRequestFromState(state: PlayerEditorDetails, play
       eyebrowThicknessKey: appearance.face.canChooseEyebrows
         ? appearance.eyebrows.key
         : null,
-      skinColorKey: appearance.face.canChooseSkin
-        ? appearance.skinColor.key
+      complexionKey: appearance.face.canChooseSkin
+        ? appearance.complexion.key
         : null,
       eyeColorKey: appearance.face.canChooseEyes
         ? appearance.eyeColor.key

@@ -29,6 +29,7 @@ namespace PowerUp.Entities.Players
     public string? GeneratedPlayer_FullLastName { get; set; }
     public DateTime? GeneratedPlayer_ProDebutDate { get; set; }
     public int? Year { get; set; }
+    public string? GeneratedPlayer_PitchArsenalSource { get; set; }
     public List<GeneratorWarning> GeneratorWarnings { get; set; } = new List<GeneratorWarning>();
     public bool GeneratedPlayer_IsUnedited { get; set; }
 

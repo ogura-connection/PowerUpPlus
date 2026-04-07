@@ -2,6 +2,7 @@ using Microsoft.Extensions.Logging;
 using PowerUp.Databases;
 using PowerUp.Entities.Rosters;
 using PowerUp.Generators;
+using PowerUp.Generators.Franchise;
 using PowerUp.Libraries;
 using System.CommandLine;
 using System.CommandLine.Invocation;
@@ -13,9 +14,15 @@ namespace PowerUp.CommandLine.Commands.Generation
     ILogger<GenerateRosterCommand> logger,
     IRosterGenerator rosterGenerator,
     IVoiceLibrary voiceLibrary,
-    ISkinColorGuesser skinColorGuesser,
+    IComplexionGuesser complexionGuesser,
     IBattingStanceGuesser battingStanceGuesser,
-    IPitchingMechanicsGuesser pitchingMechanicsGuesser
+    IPitchingMechanicsGuesser pitchingMechanicsGuesser,
+    IPre2008PitchArsenalLookup pre2008ArsenalLookup,
+    IHotZoneLookup hotZoneLookup,
+    IComplexionLookup complexionLookup,
+    ISpecialAbilitiesLookup specialAbilitiesLookup,
+    IPlayerFormLookup playerFormLookup,
+    IAppearanceLookup appearanceLookup
   ) : ICommand
   {
     public Command Build()
@@ -36,9 +43,15 @@ namespace PowerUp.CommandLine.Commands.Generation
 
         var algorithm = new LSStatistcsPlayerGenerationAlgorithm(
           voiceLibrary,
-          skinColorGuesser,
+          complexionGuesser,
           battingStanceGuesser,
-          pitchingMechanicsGuesser
+          pitchingMechanicsGuesser,
+          pre2008ArsenalLookup,
+          hotZoneLookup,
+          complexionLookup,
+          specialAbilitiesLookup,
+          playerFormLookup,
+          appearanceLookup
         );
 
         var teamCount = 0;

@@ -1,6 +1,7 @@
 ﻿using PowerUp.Databases;
 using PowerUp.Entities.GenerationResults;
 using PowerUp.Generators;
+using PowerUp.Generators.Franchise;
 using PowerUp.Libraries;
 
 namespace PowerUp.ElectronUI.Api.Generation
@@ -9,21 +10,21 @@ namespace PowerUp.ElectronUI.Api.Generation
   {
     private readonly ITeamGenerator _teamGenerator;
     private readonly IVoiceLibrary _voiceLibrary;
-    private readonly ISkinColorGuesser _skinColorGuesser;
+    private readonly IComplexionGuesser _complexionGuesser;
     private readonly IBattingStanceGuesser _batttingStanceGuesser;
     private readonly IPitchingMechanicsGuesser _pitchingMechanicsGuesser;
 
     public TeamGenerationCommand
     ( ITeamGenerator teamGenerator
     , IVoiceLibrary voiceLibrary
-    , ISkinColorGuesser skinColorGuesser
+    , IComplexionGuesser complexionGuesser
     , IBattingStanceGuesser batttingStanceGuesser
     , IPitchingMechanicsGuesser pitchingMechanicsGuesser
     )
     {
       _teamGenerator = teamGenerator;
       _voiceLibrary = voiceLibrary;
-      _skinColorGuesser = skinColorGuesser;
+      _complexionGuesser = complexionGuesser;
       _batttingStanceGuesser = batttingStanceGuesser;
       _pitchingMechanicsGuesser = pitchingMechanicsGuesser;
     }
@@ -40,9 +41,10 @@ namespace PowerUp.ElectronUI.Api.Generation
         , name: request.TeamName
         , playerGenerationAlgorithm: new LSStatistcsPlayerGenerationAlgorithm
           ( _voiceLibrary
-          , _skinColorGuesser
+          , _complexionGuesser
           , _batttingStanceGuesser
           , _pitchingMechanicsGuesser
+          , new NoOpPre2008PitchArsenalLookup()
           )
         , onProgressUpdate: update => UpdateProgressAndSave(update, teamGenerationProgress)
         );

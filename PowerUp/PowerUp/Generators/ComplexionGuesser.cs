@@ -4,37 +4,37 @@ using System;
 
 namespace PowerUp.Generators
 {
-  public interface ISkinColorGuesser
+  public interface IComplexionGuesser
   {
-    public SkinColor GuessSkinColor(int year, string? birthCountry);
+    public Complexion GuessComplexion(int year, string? birthCountry);
   }
 
-  public class SkinColorGuesser : ISkinColorGuesser
+  public class ComplexionGuesser : IComplexionGuesser
   {
-    private readonly ICountryAndSkinColorLibrary _countryAndSkinColorLibrary;
+    private readonly ICountryAndComplexionLibrary _countryAndComplexionLibrary;
 
-    public SkinColorGuesser(ICountryAndSkinColorLibrary countryAndSkinColorLibrary)
+    public ComplexionGuesser(ICountryAndComplexionLibrary countryAndComplexionLibrary)
     {
-      _countryAndSkinColorLibrary = countryAndSkinColorLibrary;
+      _countryAndComplexionLibrary = countryAndComplexionLibrary;
     }
         
-    public SkinColor GuessSkinColor(int year, string? birthCountry)
+    public Complexion GuessComplexion(int year, string? birthCountry)
     {
       if (birthCountry == "United States of America" || birthCountry == "USA" || birthCountry == null)
-        return GuessAmericanSkinColorForYear(year);
+        return GuessAmericanComplexionForYear(year);
 
-      var skinColorForCountry = _countryAndSkinColorLibrary[birthCountry];
-      return skinColorForCountry.HasValue
-        ? (SkinColor)(skinColorForCountry - 1)
-        : SkinColor.Three;
+      var complexionForCountry = _countryAndComplexionLibrary[birthCountry];
+      return complexionForCountry.HasValue
+        ? (Complexion)(complexionForCountry - 1)
+        : Complexion.Three;
     }
 
-    private SkinColor GuessAmericanSkinColorForYear(int year)
+    private Complexion GuessAmericanComplexionForYear(int year)
     {
       var rand = Random.Shared.NextDouble();
 
       if (year < 1947)
-        return SkinColor.One;
+        return Complexion.One;
       else if (year < 1957)
         return ForPercentagesAndRandomNumber(.9, .06, .04, rand);
       else if (year < 1967)
@@ -53,22 +53,22 @@ namespace PowerUp.Generators
         return ForPercentagesAndRandomNumber(.85, .05, .1, rand);
     }
 
-    private SkinColor ForPercentagesAndRandomNumber(double white, double africanAmerican, double latino, double rand)
+    private Complexion ForPercentagesAndRandomNumber(double white, double africanAmerican, double latino, double rand)
     {
       var rand2 = Random.Shared.NextDouble();
 
       if (rand < white)
-        return SkinColor.One;
+        return Complexion.One;
       else if (rand < white + africanAmerican)
         return rand2 > .5
-          ? SkinColor.Five
-          : SkinColor.Four;
+          ? Complexion.Five
+          : Complexion.Four;
       else if (rand < white + africanAmerican + latino)
         return rand2 > .5
-          ? SkinColor.Three
-          : SkinColor.Four;
+          ? Complexion.Three
+          : Complexion.Four;
       else
-        return SkinColor.Two;
+        return Complexion.Two;
     }
   }
 }

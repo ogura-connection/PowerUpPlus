@@ -215,13 +215,13 @@ namespace PowerUp.Tests.Mappers.Players
 
     [Test]
     [TestCase(null, null, 0)]
-    [TestCase(SkinColor.One, EyeColor.Brown, 5)]
-    [TestCase(SkinColor.One, EyeColor.Blue, 0)]
-    [TestCase(SkinColor.Five, EyeColor.Brown, 9)]
-    [TestCase(SkinColor.Five, EyeColor.Blue, 4)]
-    public void MapToGSPlayer_ShouldMapSkinAndEyes(SkinColor? skin, EyeColor? eyeColor, int exptectedValue)
+    [TestCase(Complexion.One, EyeColor.Brown, 5)]
+    [TestCase(Complexion.One, EyeColor.Blue, 0)]
+    [TestCase(Complexion.Five, EyeColor.Brown, 9)]
+    [TestCase(Complexion.Five, EyeColor.Blue, 4)]
+    public void MapToGSPlayer_ShouldMapSkinAndEyes(Complexion? skin, EyeColor? eyeColor, int exptectedValue)
     {
-      player.Appearance.SkinColor = skin;
+      player.Appearance.Complexion = skin;
       player.Appearance.EyeColor = eyeColor;
       var result = playerMapper.MapToGSPlayer(player, MLBPPTeam.Indians, 1);
       result.SkinAndEyes.ShouldBe((ushort)exptectedValue);

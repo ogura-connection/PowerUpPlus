@@ -108,7 +108,7 @@ namespace PowerUp.ElectronUI.Api.PlayerEditor
   {
     public int? FaceId { get; set; }
     public string? EyebrowThicknessKey { get; set; }
-    public string? SkinColorKey { get; set; }
+    public string? ComplexionKey { get; set; }
     public string? EyeColorKey { get; set; }
     public string? HairStyleKey { get; set; }
     public string? HairColorKey { get; set; }
@@ -134,8 +134,8 @@ namespace PowerUp.ElectronUI.Api.PlayerEditor
         EyebrowThickness = EyebrowThicknessKey != null && FaceTypeHelpers.CanChooseEyebrows(faceType)
             ? Enum.Parse<EyebrowThickness>(EyebrowThicknessKey)
             : null,
-        SkinColor = SkinColorKey != null && FaceTypeHelpers.CanChooseSkinColor(faceType)
-          ? Enum.Parse<SkinColor>(SkinColorKey)
+        Complexion = ComplexionKey != null && FaceTypeHelpers.CanChooseComplexion(faceType)
+          ? Enum.Parse<Complexion>(ComplexionKey)
           : null,
         EyeColor = EyeColorKey != null && FaceTypeHelpers.CanChooseEyes(faceType)
             ? Enum.Parse<EyeColor>(EyeColorKey)

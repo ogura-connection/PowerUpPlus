@@ -1,6 +1,7 @@
 ﻿using PowerUp.Databases;
 using PowerUp.Entities.GenerationResults;
 using PowerUp.Generators;
+using PowerUp.Generators.Franchise;
 using PowerUp.Libraries;
 
 namespace PowerUp.ElectronUI.Api.Generation
@@ -9,21 +10,21 @@ namespace PowerUp.ElectronUI.Api.Generation
   {
     private readonly IRosterGenerator _rosterGenerator;
     private readonly IVoiceLibrary _voiceLibrary;
-    private readonly ISkinColorGuesser _skinColorGuesser;
+    private readonly IComplexionGuesser _complexionGuesser;
     private readonly IBattingStanceGuesser _battingStanceGuesser;
     private readonly IPitchingMechanicsGuesser _pitchingMechanicsGuesser;
 
     public RosterGenerationCommand
     ( IRosterGenerator rosterGenerator
     , IVoiceLibrary voiceLibrary
-    , ISkinColorGuesser skinColorGuesser
+    , IComplexionGuesser complexionGuesser
     , IBattingStanceGuesser battingStanceGuesser
     , IPitchingMechanicsGuesser pitchingMechanicsGuesser
     )
     {
       _rosterGenerator = rosterGenerator;
       _voiceLibrary = voiceLibrary;
-      _skinColorGuesser = skinColorGuesser;
+      _complexionGuesser = complexionGuesser;
       _battingStanceGuesser = battingStanceGuesser;
       _pitchingMechanicsGuesser = pitchingMechanicsGuesser;
     }
@@ -40,9 +41,10 @@ namespace PowerUp.ElectronUI.Api.Generation
           (year: request.Year
           , playerGenerationAlgorithm: new LSStatistcsPlayerGenerationAlgorithm
             (_voiceLibrary
-            , _skinColorGuesser
+            , _complexionGuesser
             , _battingStanceGuesser
             , _pitchingMechanicsGuesser
+            , new NoOpPre2008PitchArsenalLookup()
             )
           , onTeamProgressUpdate: update => UpdateTeamProgressAndSave(update, generationStatus)
           , onPlayerProgressUpdate: update => UpdatePlayerProgressAndSave(update, generationStatus)

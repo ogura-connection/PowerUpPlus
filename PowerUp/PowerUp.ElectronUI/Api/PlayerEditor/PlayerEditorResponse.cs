@@ -91,7 +91,7 @@ namespace PowerUp.ElectronUI.Api.PlayerEditor
   {
     public IEnumerable<FaceCode> FaceOptions { get; }
     public IEnumerable<KeyedCode> EyebrowThicknessOptions => EnumExtensions.GetKeyedCodeList<EyebrowThickness>();
-    public IEnumerable<KeyedCode> SkinColorOptions => EnumExtensions.GetKeyedCodeList<SkinColor>();
+    public IEnumerable<KeyedCode> ComplexionOptions => EnumExtensions.GetKeyedCodeList<Complexion>();
     public IEnumerable<KeyedCode> EyeColorOptions => EnumExtensions.GetKeyedCodeList<EyeColor>(c => c.ToNumberedKeyedCode(addOne: true));
     public IEnumerable<KeyedCode> HairStyleOptions => EnumExtensions.GetKeyedCodeList<HairStyle>(c => c.ToNumberedKeyedCode());
     public IEnumerable<KeyedCode> FacialHairStyleOptions => EnumExtensions.GetKeyedCodeList<FacialHairStyle>(c => c.ToNumberedKeyedCode());
@@ -120,7 +120,7 @@ namespace PowerUp.ElectronUI.Api.PlayerEditor
       : base(id, name)
     {
       var faceType = FaceTypeHelpers.GetFaceType(id);
-      CanChooseSkin = FaceTypeHelpers.CanChooseSkinColor(faceType);
+      CanChooseSkin = FaceTypeHelpers.CanChooseComplexion(faceType);
       CanChooseEyebrows = FaceTypeHelpers.CanChooseEyebrows(faceType);
       CanChooseEyes = FaceTypeHelpers.CanChooseEyes(faceType);
     }
@@ -218,7 +218,7 @@ namespace PowerUp.ElectronUI.Api.PlayerEditor
   {
     public FaceCode Face { get; set; }
     public KeyedCode? Eyebrows { get; set; }
-    public KeyedCode? SkinColor { get; set; }
+    public KeyedCode? Complexion { get; set; }
     public KeyedCode? EyeColor { get; set; }
     public KeyedCode? HairStyle { get; set; }
     public KeyedCode? HairColor { get; set; }
@@ -238,7 +238,7 @@ namespace PowerUp.ElectronUI.Api.PlayerEditor
     {
       Face = new FaceCode(id: appearance.FaceId, name: faceLibrary[appearance.FaceId]);
       Eyebrows = appearance.EyebrowThickness?.ToKeyedCode();
-      SkinColor = appearance.SkinColor?.ToKeyedCode();
+      Complexion = appearance.Complexion?.ToKeyedCode();
       EyeColor = appearance.EyeColor?.ToNumberedKeyedCode(addOne: true);
       HairStyle = appearance.HairStyle?.ToNumberedKeyedCode();
       HairColor = appearance.HairColor?.ToNumberedKeyedCode(addOne: true);

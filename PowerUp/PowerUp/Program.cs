@@ -8,6 +8,7 @@ using PowerUp.Fetchers.MLBLookupService;
 using PowerUp.Fetchers.MLBStatsApi;
 using PowerUp.Fetchers.Statcast;
 using PowerUp.GameSave.Api;
+using PowerUp.Generators.Franchise;
 using PowerUp.GameSave.IO;
 using PowerUp.GameSave.Objects.Lineups;
 using PowerUp.GameSave.Objects.Players;
@@ -43,14 +44,19 @@ namespace PowerUp
       var baseballReferenceClient = new BaseballReferenceClient();
       var statsFetcher = new LSPlayerStatisticsFetcher(mlbLookupServiceClient);
       var playerApi = new PlayerApi();
-      var playerGenerator = new PlayerGenerator(playerApi, statsFetcher, baseballReferenceClient);
-      var countryAndSkinLibrary = new CountryAndSkinColorLibrary(Path.Combine(DATA_DIRECTORY, "./data/CountryAndSkinColor_Library.csv"));
-      var skinColorGuesser = new SkinColorGuesser(countryAndSkinLibrary);
+      var playerGenerator = new PlayerGenerator(playerApi, statsFetcher, baseballReferenceClient, mlbStatsApiClient);
+      var countryAndSkinLibrary = new CountryAndComplexionLibrary(Path.Combine(DATA_DIRECTORY, "./data/CountryAndComplexion_Library.csv"));
+      var complexionGuesser = new ComplexionGuesser(countryAndSkinLibrary);
+      var pre2008ArsenalPath = Path.Combine(DATA_DIRECTORY, "./data/PitchArsenal_Pre2008_Library.json");
+      var pre2008Arsenal = File.Exists(pre2008ArsenalPath)
+        ? (IPre2008PitchArsenalLookup)new JsonPre2008PitchArsenalLookup(pre2008ArsenalPath)
+        : new NoOpPre2008PitchArsenalLookup();
       var lsStatsAlgorithm = new LSStatistcsPlayerGenerationAlgorithm
         ( voiceLibrary
-        , skinColorGuesser
+        , complexionGuesser
         , new BattingStanceGuesser(battingStanceLibrary)
         , new PitchingMechanicsGuesser(pitchingMechanicsLibrary)
+        , pre2008Arsenal
         );
       //var teamGenerator = new TeamGenerator(mlbStatsApiClient, playerGenerator);
       //var rosterGenerator = new RosterGenerator(mlbLookupServiceClient, teamGenerator);
@@ -296,7 +302,7 @@ namespace PowerUp
         "VoiceName",
         "BattingSide",
         "ThrowingArm",
-        "SkinColor",
+        "Complexion",
         "Pos_P",
         "Pos_C",
         "Pos_1B",
@@ -344,7 +350,7 @@ namespace PowerUp
               voiceLibrary[generatedPlayer.VoiceId],
               generatedPlayer.BattingSide,
               generatedPlayer.ThrowingArm,
-              generatedPlayer.Appearance.SkinColor?.ToString() ?? "None",
+              generatedPlayer.Appearance.Complexion?.ToString() ?? "None",
               genPlayerPosCapabilities.Pitcher,
               genPlayerPosCapabilities.Catcher,
               genPlayerPosCapabilities.FirstBase,

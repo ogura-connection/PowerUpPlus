@@ -5,20 +5,20 @@ using System.Text.Json;
 
 namespace PowerUp.Generators.Franchise
 {
-  public interface ISkinColorLookup
+  public interface IComplexionLookup
   {
-    SkinColor? GetSkinColor(string playerName);
+    Complexion? GetComplexion(string playerName);
   }
 
   /// <summary>
   /// Reads a JSON file mapping player names to skin color values (1-5).
-  /// Falls back to null (letting SkinColorGuesser handle it) when no match.
+  /// Falls back to null (letting ComplexionGuesser handle it) when no match.
   /// </summary>
-  public class JsonSkinColorLookup : ISkinColorLookup
+  public class JsonComplexionLookup : IComplexionLookup
   {
     private readonly Dictionary<string, int> _lookup;
 
-    public JsonSkinColorLookup(string jsonFilePath)
+    public JsonComplexionLookup(string jsonFilePath)
     {
       if (File.Exists(jsonFilePath))
       {
@@ -32,18 +32,18 @@ namespace PowerUp.Generators.Franchise
       }
     }
 
-    public SkinColor? GetSkinColor(string playerName)
+    public Complexion? GetComplexion(string playerName)
     {
       if (_lookup.TryGetValue(playerName, out var value) && value >= 1 && value <= 5)
-        return (SkinColor)(value - 1); // SkinColor enum is 0-based (One=0, Five=4)
+        return (Complexion)(value - 1); // Complexion enum is 0-based (One=0, Five=4)
 
       return null;
     }
   }
 
   /// <summary>No-op lookup that always returns null.</summary>
-  public class NoOpSkinColorLookup : ISkinColorLookup
+  public class NoOpComplexionLookup : IComplexionLookup
   {
-    public SkinColor? GetSkinColor(string playerName) => null;
+    public Complexion? GetComplexion(string playerName) => null;
   }
 }

@@ -6,8 +6,11 @@ using PowerUp.Entities.Rosters;
 using PowerUp.Entities.Teams;
 using PowerUp.Fetchers.MLBStatsApi;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace PowerUp.Generators.Franchise
@@ -46,27 +49,35 @@ namespace PowerUp.Generators.Franchise
   {
     private readonly IMLBStatsApiClient _mlbApi;
     private readonly IPlayerGenerator _playerGenerator;
-    private readonly ISkinColorLookup _skinColorLookup;
     private readonly ISpecialAbilitiesLookup _specialAbilitiesLookup;
+    private readonly IPlayerFormLookup _playerFormLookup;
+    private readonly IHotZoneLookup _hotZoneLookup;
+    private readonly IAppearanceLookup _appearanceLookup;
     private readonly ManualPlayerBuilder _manualBuilder;
     private readonly ILogger<FranchiseRosterGenerator> _logger;
 
     public FranchiseRosterGenerator(
       IMLBStatsApiClient mlbApi,
       IPlayerGenerator playerGenerator,
-      ISkinColorLookup skinColorLookup,
       ISpecialAbilitiesLookup specialAbilitiesLookup,
+      IPlayerFormLookup playerFormLookup,
+      IHotZoneLookup hotZoneLookup,
+      IAppearanceLookup appearanceLookup,
       ManualPlayerBuilder manualBuilder,
       ILogger<FranchiseRosterGenerator> logger
     )
     {
       _mlbApi = mlbApi;
       _playerGenerator = playerGenerator;
-      _skinColorLookup = skinColorLookup;
       _specialAbilitiesLookup = specialAbilitiesLookup;
+      _playerFormLookup = playerFormLookup;
+      _hotZoneLookup = hotZoneLookup;
+      _appearanceLookup = appearanceLookup;
       _manualBuilder = manualBuilder;
       _logger = logger;
     }
+
+    private const int MaxConcurrency = 12;
 
     public FranchiseGenerationResult GenerateRoster(
       string rosterFilePath,
@@ -75,6 +86,8 @@ namespace PowerUp.Generators.Franchise
       HashSet<string>? teamFilter = null
     )
     {
+      var stopwatch = Stopwatch.StartNew();
+
       void Log(string msg)
       {
         if (onLog != null)
@@ -90,38 +103,39 @@ namespace PowerUp.Generators.Franchise
       var byTeam = RosterFileParser.GroupByTeam(allEntries);
       Log($"Parsed {allEntries.Count} players across {byTeam.Count} teams");
 
-      // Step 2: Generate each team
-      var teamsByPPTeam = new Dictionary<MLBPPTeam, int>();
+      // Step 2: Collect work items and process manual players (fast, no API calls)
+      var apiWorkItems = new List<(RosterFileEntry entry, string teamName, MLBPPTeam ppTeam)>();
+      var manualPlayersByTeam = new Dictionary<MLBPPTeam, List<Player>>();
+      var filteredTeams = new List<(MLBPPTeam ppTeam, List<RosterFileEntry> entries)>();
 
       foreach (var (ppTeam, entries) in byTeam)
       {
         var teamName = entries.First().TeamName;
-
-        // Apply team filter if specified
         if (teamFilter != null && !teamFilter.Any(f =>
           teamName.Contains(f, StringComparison.OrdinalIgnoreCase)))
           continue;
 
-        Log($"\n=== {teamName} ({entries.Count} players) ===");
+        filteredTeams.Add((ppTeam, entries));
+        manualPlayersByTeam[ppTeam] = new List<Player>();
 
-        var generatedPlayers = new List<Player>();
-        var generatedPlayerIds = new HashSet<long>(); // Track by MLB player ID to avoid duplicates
+        Log($"\n=== {teamName} ({entries.Count} players) ===");
 
         foreach (var entry in entries)
         {
-          var playerResult = new FranchisePlayerResult(entry);
-
-          // Check for manually-built players first (Negro Leaguers, NPB-only, etc.)
-          // Only use manual when the peak season matches the definition
           if (_manualBuilder.ShouldUseManual(entry.PlayerName, entry.PeakSeason!.Value))
           {
+            var playerResult = new FranchisePlayerResult(entry);
             try
             {
               var player = _manualBuilder.Build(entry.PlayerName);
-              _specialAbilitiesLookup.ApplySpecialAbilities(entry.PlayerName, player.SpecialAbilities);
-              DatabaseConfig.Database.Save(player);
+              var lookupName = entry.PlayerName.RemoveAccents();
+              _specialAbilitiesLookup.ApplySpecialAbilities(lookupName, player.SpecialAbilities);
+              _playerFormLookup.ApplyForms(lookupName, player);
+              _hotZoneLookup.ApplyHotZones(lookupName, player);
+              _appearanceLookup.ApplyAppearance(lookupName, entry.PeakSeason!.Value, player);
+              player.GeneratedPlayer_PitchArsenalSource = "manual";
               playerResult.Player = player;
-              generatedPlayers.Add(player);
+              manualPlayersByTeam[ppTeam].Add(player);
               Log($"  OK {entry.Slot,-4} {entry.PlayerName} ({entry.PeakSeason}) [manual]");
             }
             catch (Exception ex)
@@ -131,62 +145,105 @@ namespace PowerUp.Generators.Franchise
               Log($"  FAIL {entry.PlayerName} ({entry.PeakSeason}) - {ex.Message}");
             }
             result.PlayerResults.Add(playerResult);
-            continue;
           }
-
-          // Resolve MLB player ID
-          long? playerId = ResolvePlayerId(entry, Log);
-          if (playerId == null)
+          else
           {
-            playerResult.SkipReason = "Could not resolve MLB player ID";
+            apiWorkItems.Add((entry, teamName, ppTeam));
+          }
+        }
+      }
+
+      // Step 3: Parallel resolve + generate for all API players
+      Log($"\nGenerating {apiWorkItems.Count} API players (concurrency {MaxConcurrency})...");
+      var apiResults = new ConcurrentBag<(MLBPPTeam ppTeam, RosterFileEntry entry, FranchisePlayerResult playerResult, Player? player, long? resolvedId)>();
+
+      Parallel.ForEach(apiWorkItems, new ParallelOptions { MaxDegreeOfParallelism = MaxConcurrency }, item =>
+      {
+        var playerResult = new FranchisePlayerResult(item.entry);
+
+        // Resolve MLB player ID
+        long? playerId = ResolvePlayerId(item.entry, _ => { }); // suppress per-player logging during parallel
+        if (playerId == null)
+        {
+          playerResult.SkipReason = "Could not resolve MLB player ID";
+          apiResults.Add((item.ppTeam, item.entry, playerResult, null, null));
+          return;
+        }
+
+        playerResult.ResolvedPlayerId = playerId;
+
+        // Generate player at their peak season
+        try
+        {
+          var genResult = _playerGenerator.GeneratePlayer(
+            playerId.Value, item.entry.PeakSeason!.Value, algorithm,
+            rosterDisplayName: item.entry.PlayerName);
+
+          playerResult.Player = genResult.Player;
+          apiResults.Add((item.ppTeam, item.entry, playerResult, genResult.Player, playerId));
+        }
+        catch (Exception ex)
+        {
+          playerResult.SkipReason = $"Generation failed: {ex.Message}";
+          apiResults.Add((item.ppTeam, item.entry, playerResult, null, playerId));
+        }
+      });
+
+      // Step 4: Batch save to DB and build teams (sequential — LiteDB is not thread-safe)
+      var teamsByPPTeam = new Dictionary<MLBPPTeam, int>();
+      var apiResultsByTeam = apiResults.GroupBy(r => r.ppTeam).ToDictionary(g => g.Key, g => g.ToList());
+
+      foreach (var (ppTeam, entries) in filteredTeams)
+      {
+        var teamName = entries.First().TeamName;
+        var generatedPlayers = new List<Player>();
+        var generatedPlayerIds = new HashSet<long>();
+
+        // Save manual players to DB
+        foreach (var player in manualPlayersByTeam[ppTeam])
+        {
+          DatabaseConfig.Database.Save(player);
+          generatedPlayers.Add(player);
+        }
+
+        // Save API players to DB and log results
+        if (apiResultsByTeam.TryGetValue(ppTeam, out var teamApiResults))
+        {
+          foreach (var (_, entry, playerResult, player, resolvedId) in teamApiResults)
+          {
             result.PlayerResults.Add(playerResult);
-            result.Warnings.Add($"UNRESOLVED: {entry.PlayerName} ({entry.PeakSeason}) - {teamName}");
-            Log($"  SKIP {entry.PlayerName} ({entry.PeakSeason}) - unresolved");
-            continue;
-          }
 
-          playerResult.ResolvedPlayerId = playerId;
+            if (playerResult.SkipReason != null && playerResult.SkipReason.Contains("resolve"))
+            {
+              result.Warnings.Add($"UNRESOLVED: {entry.PlayerName} ({entry.PeakSeason}) - {teamName}");
+              Log($"  SKIP {entry.PlayerName} ({entry.PeakSeason}) - unresolved");
+              continue;
+            }
 
-          // Skip if we already generated this player on this team
-          if (generatedPlayerIds.Contains(playerId.Value))
-          {
-            Log($"  DUP  {entry.Slot,-4} {entry.PlayerName} ({entry.PeakSeason}) - already generated");
-            result.PlayerResults.Add(playerResult);
-            continue;
-          }
+            if (player == null)
+            {
+              result.Warnings.Add($"FAILED: {entry.PlayerName} ({entry.PeakSeason}) - {playerResult.SkipReason}");
+              Log($"  FAIL {entry.PlayerName} ({entry.PeakSeason}) - {playerResult.SkipReason}");
+              continue;
+            }
 
-          // Generate player at their peak season
-          try
-          {
-            var genResult = _playerGenerator.GeneratePlayer(
-              playerId.Value, entry.PeakSeason!.Value, algorithm);
-
-            var player = genResult.Player;
-
-            // Override skin color from lookup
-            var skinColor = _skinColorLookup.GetSkinColor(entry.PlayerName);
-            if (skinColor.HasValue)
-              player.Appearance.SkinColor = skinColor.Value;
-
-            // Apply special abilities from lookup
-            _specialAbilitiesLookup.ApplySpecialAbilities(entry.PlayerName, player.SpecialAbilities);
+            if (resolvedId.HasValue && generatedPlayerIds.Contains(resolvedId.Value))
+            {
+              Log($"  DUP  {entry.Slot,-4} {entry.PlayerName} ({entry.PeakSeason}) - already generated");
+              continue;
+            }
 
             DatabaseConfig.Database.Save(player);
-            playerResult.Player = player;
             generatedPlayers.Add(player);
-            generatedPlayerIds.Add(playerId.Value);
-            Log($"  OK {entry.Slot,-4} {entry.PlayerName} ({entry.PeakSeason})");
-          }
-          catch (Exception ex)
-          {
-            playerResult.SkipReason = $"Generation failed: {ex.Message}";
-            result.PlayerResults.Add(playerResult);
-            result.Warnings.Add($"FAILED: {entry.PlayerName} ({entry.PeakSeason}) - {ex.Message}");
-            Log($"  FAIL {entry.PlayerName} ({entry.PeakSeason}) - {ex.Message}");
-            continue;
-          }
+            if (resolvedId.HasValue) generatedPlayerIds.Add(resolvedId.Value);
 
-          result.PlayerResults.Add(playerResult);
+            var tags = new List<string>();
+            if (player.GeneratedPlayer_PitchArsenalSource == "api") tags.Add("arsenal:api");
+            if (player.HitterAbilities.HotZones.UpAndIn != HotZonePreference.Neutral ||
+                player.HitterAbilities.HotZones.Middle != HotZonePreference.Neutral) tags.Add("hz");
+            var tagStr = tags.Count > 0 ? $" [{string.Join(",", tags)}]" : "";
+            Log($"  OK {entry.Slot,-4} {entry.PlayerName} ({entry.PeakSeason}){tagStr}");
+          }
         }
 
         if (generatedPlayers.Count < 9)
@@ -210,10 +267,9 @@ namespace PowerUp.Generators.Franchise
         }
       }
 
-      // Step 3: Build roster
+      // Step 5: Build roster
       if (teamsByPPTeam.Count > 0)
       {
-        // Fill missing teams from base roster
         var baseRoster = DatabaseConfig.Database
           .LoadAll<Roster>()
           .SingleOrDefault(r => r.SourceType == EntitySourceType.Base);
@@ -229,7 +285,7 @@ namespace PowerUp.Generators.Franchise
         {
           SourceType = EntitySourceType.Generated,
           Name = "All-Time Franchise Rosters",
-          Year = 2000, // Nominal year for all-time roster
+          Year = 2000,
           TeamIdsByPPTeam = teamsByPPTeam,
           FreeAgentPlayerIds = Enumerable.Empty<int>(),
         };
@@ -239,10 +295,11 @@ namespace PowerUp.Generators.Franchise
       }
 
       // Summary
+      stopwatch.Stop();
       var resolved = result.PlayerResults.Count(r => r.Player != null);
       var unresolved = result.PlayerResults.Count(r => r.SkipReason != null && r.SkipReason.Contains("resolve"));
       var failed = result.PlayerResults.Count(r => r.SkipReason != null && !r.SkipReason.Contains("resolve"));
-      Log($"\nSummary: {resolved} generated, {unresolved} unresolved, {failed} failed");
+      Log($"\nSummary: {resolved} generated, {unresolved} unresolved, {failed} failed — elapsed {stopwatch.Elapsed.Minutes}m {stopwatch.Elapsed.Seconds}s");
 
       return result;
     }
@@ -311,6 +368,9 @@ namespace PowerUp.Generators.Franchise
       ["Tripp Cromer III"] = "Tripp Cromer",
       ["Pedro Martínez"] = "Pedro Martinez",
       ["Vladimir Guerrero"] = "Vladimir Guerrero",
+      ["Grover Cleveland Alexander"] = "Grover Alexander",
+      ["A.J. Pollock"] = "AJ Pollock",
+      ["Garry Templeton"] = "Garry Templeton",
     };
 
     private long? ResolvePlayerId(RosterFileEntry entry, Action<string> log)

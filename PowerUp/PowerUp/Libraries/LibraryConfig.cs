@@ -14,22 +14,43 @@ namespace PowerUp.Libraries
       services.AddTransient<IBattingStanceLibrary>(provider => new BattingStanceLibrary(Path.Combine(dataDirectory, "./data/BattingForm_Library.csv")));
       services.AddTransient<IPitchingMechanicsLibrary>(provider => new PitchingMechanicsLibrary(Path.Combine(dataDirectory, "./data/PitchingForm_Library.csv")));
       services.AddTransient<IFaceLibrary>(provider => new FaceLibrary(Path.Combine(dataDirectory, "./data/Face_Library.csv")));
-      services.AddTransient<ICountryAndSkinColorLibrary>(provider => new CountryAndSkinColorLibrary(Path.Combine(dataDirectory, "./data/CountryAndSkinColor_Library.csv")));
+      services.AddTransient<ICountryAndComplexionLibrary>(provider => new CountryAndComplexionLibrary(Path.Combine(dataDirectory, "./data/CountryAndComplexion_Library.csv")));
       services.AddTransient<IBaseGameSavePathProvider>(provider => new BaseGameSavePathProvider(Path.Combine(dataDirectory, "./data/BASE.pm2maus.dat")));
       services.AddTransient<IFranchisesAndNamesLibrary>(provider => new FranchisesAndNamesLibrary(Path.Combine(dataDirectory, "./data/FranchisesAndNames_Library.csv")));
       services.AddTransient<IPlayerSalariesLibrary>(provider => new PlayerSalariesLibrary(Path.Combine(dataDirectory, "./data/PlayerSalaries_Library.csv")));
-      services.AddSingleton<ISkinColorLookup>(provider =>
+      services.AddSingleton<IComplexionLookup>(provider =>
       {
-        var path = Path.Combine(dataDirectory, "./data/PlayerSkinColor_Library.json");
-        return File.Exists(path) ? new JsonSkinColorLookup(path) : new NoOpSkinColorLookup();
+        var path = Path.Combine(dataDirectory, "./data/PlayerComplexion_Library.json");
+        return File.Exists(path) ? new JsonComplexionLookup(path) : new NoOpComplexionLookup();
       });
       services.AddSingleton<ISpecialAbilitiesLookup>(provider =>
       {
         var path = Path.Combine(dataDirectory, "./data/PlayerSpecialAbilities_Library.json");
         return File.Exists(path) ? new JsonSpecialAbilitiesLookup(path) : new NoOpSpecialAbilitiesLookup();
       });
+      services.AddSingleton<IPlayerFormLookup>(provider =>
+      {
+        var path = Path.Combine(dataDirectory, "./data/PlayerStancesAndForms_Library.json");
+        return File.Exists(path) ? new JsonPlayerFormLookup(path) : new NoOpPlayerFormLookup();
+      });
+      services.AddSingleton<IHotZoneLookup>(provider =>
+      {
+        var path = Path.Combine(dataDirectory, "./data/HotZones_Library.json");
+        return File.Exists(path) ? new JsonHotZoneLookup(path) : new NoOpHotZoneLookup();
+      });
+      services.AddSingleton<IAppearanceLookup>(provider =>
+      {
+        var path = Path.Combine(dataDirectory, "./data/AppearanceLibrary.json");
+        return File.Exists(path) ? new JsonAppearanceLookup(path) : new NoOpAppearanceLookup();
+      });
+      services.AddSingleton<IPre2008PitchArsenalLookup>(provider =>
+      {
+        var path = Path.Combine(dataDirectory, "./data/PitchArsenal_Pre2008_Library.json");
+        return File.Exists(path) ? new JsonPre2008PitchArsenalLookup(path) : new NoOpPre2008PitchArsenalLookup();
+      });
       services.AddSingleton(provider =>
         new ManualPlayerBuilder(Path.Combine(dataDirectory, "./data/ManualPlayers_Library.json")));
+      services.AddTransient<PitchArsenalService>();
     }
   }
 }

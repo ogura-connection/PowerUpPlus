@@ -105,7 +105,7 @@ namespace PowerUp.Mappers.Players
       var hittingSpecialAbilities = player.SpecialAbilities.Hitter;
       var pitchingSpecialAbilities = player.SpecialAbilities.Pitcher;
 
-      var skinColorValue = (int?)appearance.SkinColor ?? 0;
+      var complexionValue = (int?)appearance.Complexion ?? 0;
       var eyewearFrameColorValue = (int?)appearance.EyewearFrameColor ?? 0;
       var eyewearLensColorValue = (int?)appearance.EyewearLensColor ?? 0;
 
@@ -158,8 +158,8 @@ namespace PowerUp.Mappers.Players
           ? (ushort)(appearance.FaceId + AppearanceMapper.THICK_EYEBROW_OFFSET)
           : (ushort)appearance.FaceId,
         SkinAndEyes = appearance.EyeColor == EyeColor.Brown
-          ? (ushort)(skinColorValue + AppearanceMapper.EYE_COLOR_OFFSET)
-          : (ushort)skinColorValue,
+          ? (ushort)(complexionValue + AppearanceMapper.EYE_COLOR_OFFSET)
+          : (ushort)complexionValue,
         Hair = (ushort?)appearance.HairStyle ?? 0,
         HairColor = (ushort?)appearance.HairColor ?? 0,
         FacialHair = (ushort?)appearance.FacialHairStyle ?? 0,

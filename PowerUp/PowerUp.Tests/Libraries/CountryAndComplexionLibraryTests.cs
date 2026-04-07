@@ -4,19 +4,19 @@ using Shouldly;
 
 namespace PowerUp.Tests.Libraries
 {
-  public class CountryAndSkinColorLibraryTests
+  public class CountryAndComplexionLibraryTests
   {
-    ICountryAndSkinColorLibrary library;
+    ICountryAndComplexionLibrary library;
 
     [SetUp]
     public void SetUp()
     {
-      library = TestConfig.CountryAndSkinColorLibrary.Value;
+      library = TestConfig.CountryAndComplexionLibrary.Value;
     }
 
 
     [Test]
-    public void Library_GetsSkinColorForCountry()
+    public void Library_GetsComplexionForCountry()
     {
       library["United States of America"].ShouldBe(1);
       library["Dominican Republic"].ShouldBe(4);

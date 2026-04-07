@@ -6,6 +6,7 @@ using PowerUp.Fetchers.BaseballReference;
 using PowerUp.Fetchers.MLBLookupService;
 using PowerUp.Fetchers.MLBStatsApi;
 using PowerUp.Generators;
+using PowerUp.Generators.Franchise;
 using PowerUp.Libraries;
 using Shouldly;
 
@@ -15,7 +16,7 @@ namespace PowerUp.Tests.Generators
   {
     IPlayerGenerator _playerGenerator;
     IVoiceLibrary _voiceLibrary; 
-    ISkinColorGuesser _skinColorGuesser;
+    IComplexionGuesser _complexionGuesser;
     IBattingStanceGuesser _battingStanceGuesser;
     IPitchingMechanicsGuesser _pitchingMechanicsGuesser;
     IMLBLookupServiceClient _mlbLookupApiClient;
@@ -24,9 +25,9 @@ namespace PowerUp.Tests.Generators
     public void SetUp()
     {
       _mlbLookupApiClient = new MLBLookupServiceClient(new MLBStatsApiClient());
-      _playerGenerator = new PlayerGenerator(new PlayerApi(), new LSPlayerStatisticsFetcher(_mlbLookupApiClient), new BaseballReferenceClient());
+      _playerGenerator = new PlayerGenerator(new PlayerApi(), new LSPlayerStatisticsFetcher(_mlbLookupApiClient), new BaseballReferenceClient(), new MLBStatsApiClient());
       _voiceLibrary = TestConfig.VoiceLibrary.Value;
-      _skinColorGuesser = new SkinColorGuesser(TestConfig.CountryAndSkinColorLibrary.Value);
+      _complexionGuesser = new ComplexionGuesser(TestConfig.CountryAndComplexionLibrary.Value);
       _battingStanceGuesser = new BattingStanceGuesser(TestConfig.BattingStanceLibrary.Value);
       _pitchingMechanicsGuesser = new PitchingMechanicsGuesser(TestConfig.PitchingMechanicsLibrary.Value);
     }
@@ -36,9 +37,10 @@ namespace PowerUp.Tests.Generators
     {
       var result = _playerGenerator.GeneratePlayer(110849, 1980, new LSStatistcsPlayerGenerationAlgorithm
         ( _voiceLibrary
-        , _skinColorGuesser
+        , _complexionGuesser
         , _battingStanceGuesser
         , _pitchingMechanicsGuesser
+        , new NoOpPre2008PitchArsenalLookup()
         )
       );
       result.LastTeamForYear_LSTeamId.ShouldBe(113);
@@ -66,7 +68,7 @@ namespace PowerUp.Tests.Generators
 
       var appearance = resultPlayer.Appearance;
       // Skin Color is non-deterministic
-      // appearance.SkinColor.ShouldBe(SkinColor.One);
+      // appearance.Complexion.ShouldBe(Complexion.One);
 
       var positionCapabilities = resultPlayer.PositionCapabilities;
       positionCapabilities.Pitcher.ShouldBe(Grade.G);
@@ -98,9 +100,10 @@ namespace PowerUp.Tests.Generators
     {
       var result = _playerGenerator.GeneratePlayer(121222, 1990, new LSStatistcsPlayerGenerationAlgorithm
         ( _voiceLibrary
-        , _skinColorGuesser
+        , _complexionGuesser
         , _battingStanceGuesser
         , _pitchingMechanicsGuesser
+        , new NoOpPre2008PitchArsenalLookup()
         ),
         "8"
       );
@@ -128,7 +131,7 @@ namespace PowerUp.Tests.Generators
 
       var appearance = resultPlayer.Appearance;
       // Skin Color is non-deterministic
-      //appearance.SkinColor.ShouldBe(SkinColor.One);
+      //appearance.Complexion.ShouldBe(Complexion.One);
 
       var positionCapabilities = resultPlayer.PositionCapabilities;
       positionCapabilities.Pitcher.ShouldBe(Grade.G);
@@ -160,9 +163,10 @@ namespace PowerUp.Tests.Generators
     {
       var result = _playerGenerator.GeneratePlayer(665742, 2021, new LSStatistcsPlayerGenerationAlgorithm
         ( _voiceLibrary
-        , _skinColorGuesser
+        , _complexionGuesser
         , _battingStanceGuesser
         , _pitchingMechanicsGuesser
+        , new NoOpPre2008PitchArsenalLookup()
         ),
         "22"
       );
@@ -190,7 +194,7 @@ namespace PowerUp.Tests.Generators
 
       var appearance = resultPlayer.Appearance;
       // Skin Color is non-deterministic
-      //appearance.SkinColor.ShouldBe(SkinColor.One);
+      //appearance.Complexion.ShouldBe(Complexion.One);
 
       var positionCapabilities = resultPlayer.PositionCapabilities;
       positionCapabilities.Pitcher.ShouldBe(Grade.G);
@@ -222,9 +226,10 @@ namespace PowerUp.Tests.Generators
     {
       var result = _playerGenerator.GeneratePlayer(114756, 1963, new LSStatistcsPlayerGenerationAlgorithm
         ( _voiceLibrary
-        , _skinColorGuesser
+        , _complexionGuesser
         , _battingStanceGuesser
         , _pitchingMechanicsGuesser
+        , new NoOpPre2008PitchArsenalLookup()
         )
       );
       result.LastTeamForYear_LSTeamId.ShouldBe(138);
@@ -252,7 +257,7 @@ namespace PowerUp.Tests.Generators
 
       var appearance = resultPlayer.Appearance;
       // Skin Color is non-deterministic
-      // appearance.SkinColor.ShouldBe(SkinColor.Five);
+      // appearance.Complexion.ShouldBe(Complexion.Five);
 
       var positionCapabilities = resultPlayer.PositionCapabilities;
       positionCapabilities.Pitcher.ShouldBe(Grade.A);
@@ -291,7 +296,7 @@ namespace PowerUp.Tests.Generators
       {
         var searchResult = await _mlbLookupApiClient.SearchPlayer("Myles Straw");
         var player = searchResult.Results.Single(p => p.IsActive);
-        var result = _playerGenerator.GeneratePlayer(player.LSPlayerId, 2021, new LSStatistcsPlayerGenerationAlgorithm(_voiceLibrary, _skinColorGuesser));
+        var result = _playerGenerator.GeneratePlayer(player.LSPlayerId, 2021, new LSStatistcsPlayerGenerationAlgorithm(_voiceLibrary, _complexionGuesser));
         result.HitterAbilities.ErrorResistance.ShouldBe(12);
       }).GetAwaiter().GetResult();
     }

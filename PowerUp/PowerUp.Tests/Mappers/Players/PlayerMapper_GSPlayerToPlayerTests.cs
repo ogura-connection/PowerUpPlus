@@ -443,15 +443,15 @@ namespace PowerUp.Tests.Mappers.Players
 
     [Test]
     [TestCase( 0, 0, null)]
-    [TestCase( 177, 0, SkinColor.One)]
-    [TestCase( 200, 3, SkinColor.Four)]
-    [TestCase( 232, 6, SkinColor.Two)]
-    public void MapToPlayer_ShouldMapSkinColor(int faceId, int skinAndEyesValue, SkinColor? expectedValue)
+    [TestCase( 177, 0, Complexion.One)]
+    [TestCase( 200, 3, Complexion.Four)]
+    [TestCase( 232, 6, Complexion.Two)]
+    public void MapToPlayer_ShouldMapComplexion(int faceId, int skinAndEyesValue, Complexion? expectedValue)
     {
       gsPlayer.Face = (ushort)faceId;
       gsPlayer.SkinAndEyes = (ushort)skinAndEyesValue;
       var result = playerMapper.MapToPlayer(gsPlayer, mappingParameters);
-      result.Appearance.SkinColor.ShouldBe(expectedValue);
+      result.Appearance.Complexion.ShouldBe(expectedValue);
     }
 
     [Test]

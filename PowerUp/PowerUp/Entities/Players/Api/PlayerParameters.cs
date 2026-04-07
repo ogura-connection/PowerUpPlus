@@ -44,7 +44,7 @@ namespace PowerUp.Entities.Players.Api
   {
     public int FaceId { get; set; }
     public EyebrowThickness? EyebrowThickness { get; set; }
-    public SkinColor? SkinColor { get; set; }
+    public Complexion? Complexion { get; set; }
     public EyeColor? EyeColor { get; set; }
     public HairStyle? HairStyle { get; set; }
     public HairColor? HairColor { get; set; }
@@ -184,8 +184,8 @@ namespace PowerUp.Entities.Players.Api
       if (FaceTypeHelpers.CanChooseEyebrows(faceType))
         ThrowIfNull(parameters.EyebrowThickness);
       
-      if (FaceTypeHelpers.CanChooseSkinColor(faceType))
-        ThrowIfNull(parameters.SkinColor);
+      if (FaceTypeHelpers.CanChooseComplexion(faceType))
+        ThrowIfNull(parameters.Complexion);
 
       if (FaceTypeHelpers.CanChooseEyes(faceType))
         ThrowIfNull(parameters.EyeColor);

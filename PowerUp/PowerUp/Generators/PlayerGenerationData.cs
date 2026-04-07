@@ -27,6 +27,24 @@ namespace PowerUp.Generators
     public LSHittingStatsDataset? HittingStats { get; set; }
     public LSFieldingStatDataset? FieldingStats { get; set; }
     public LSPitchingStatsDataset? PitchingStats { get; set; }
+
+    // Real MLB API data (fetched separately, null if unavailable)
+    public Fetchers.MLBStatsApi.PitchArsenalSplit[]? PitchArsenalData { get; set; }
+    public HotZoneData[]? HotZoneData { get; set; }
+    public double? SabermetricsSPD { get; set; } // Speed score from sabermetrics
+    public int? OutsAboveAverage { get; set; } // OAA fielding metric (2016+)
+
+    /// <summary>
+    /// Optional display name from the roster file (e.g. "Goose Gossage" vs API "Rich Gossage").
+    /// Used by JSON lookup setters to match curated data.
+    /// </summary>
+    public string? RosterDisplayName { get; set; }
+  }
+
+  public class HotZoneData
+  {
+    public string Zone { get; set; } = "";
+    public double Value { get; set; }
   }
 
   public class LSPlayerInfoDataset

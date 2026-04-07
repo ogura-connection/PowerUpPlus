@@ -24,7 +24,7 @@
     public double? ERA { get; set; }
     public int? FaceId { get; set; }
     public int? EyebrowThickness { get; set; }
-    public int? SkinColor { get; set; }
+    public int? Complexion { get; set; }
     public int? EyeColor { get; set; }
     public int? HairStyle { get; set; }
     public int? HairColor { get; set; }

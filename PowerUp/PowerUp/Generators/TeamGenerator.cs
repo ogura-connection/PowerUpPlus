@@ -5,6 +5,7 @@ using PowerUp.Entities.Players;
 using PowerUp.Entities.Teams;
 using PowerUp.Fetchers.MLBStatsApi;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -51,33 +52,36 @@ namespace PowerUp.Generators
       _playerGenerator = playerGenerator;
     }
 
+    private const int MaxConcurrency = 12;
+
     public TeamGenerationResult GenerateTeam(long lsTeamId, int year, string name, PlayerGenerationAlgorithm algorithm, Action<ProgressUpdate>? onProgressUpdate = null)
     {
       var playerResults = Task.Run(() => _mlbStatsApiClient.GetTeamRoster(lsTeamId, year)).WaitAsync(TimeSpan.FromSeconds(5)).GetAwaiter().GetResult();
-      var teamPlayers = playerResults.Roster.ToList();
-      var warnings = new List<GeneratorWarning>();
+      var teamPlayers = playerResults.Roster.Where(p => p.Person != null).ToList();
+      var warnings = new ConcurrentBag<GeneratorWarning>();
+      var generatedResults = new ConcurrentBag<PlayerGenerationResult>();
+      var completed = 0;
 
-      var generatedPlayers = new List<PlayerGenerationResult>();
-      for(var i=0; i<teamPlayers.Count; i++)
+      Parallel.ForEach(teamPlayers, new ParallelOptions { MaxDegreeOfParallelism = MaxConcurrency }, player =>
       {
-        var player = teamPlayers[i];
-        if (player.Person == null) continue;
-
-        var playerInformalDisplayName = player.Person.FullName;
+        var playerInformalDisplayName = player.Person!.FullName;
+        var idx = System.Threading.Interlocked.Increment(ref completed);
         if (onProgressUpdate != null)
-          onProgressUpdate(new ProgressUpdate($"Generating {playerInformalDisplayName}", i, teamPlayers.Count + 1));
+          onProgressUpdate(new ProgressUpdate($"Generating {playerInformalDisplayName}", idx, teamPlayers.Count + 1));
 
         try
         {
           var generatedPlayer = _playerGenerator.GeneratePlayer(player.Person.Id, year, algorithm, player.JerseyNumber);
-          generatedPlayers.Add(generatedPlayer);
-        } catch (Exception ex)
+          generatedResults.Add(generatedPlayer);
+        }
+        catch (Exception ex)
         {
           warnings.Add(new GeneratorWarning("Player", "GenerationFailed", $"Failed to generaete {playerInformalDisplayName}"));
           _logger.LogError($"Failed to generate {year} {playerInformalDisplayName} {ex}");
         }
+      });
 
-      }
+      var generatedPlayers = generatedResults.ToList();
 
       if (onProgressUpdate != null)
         onProgressUpdate(new ProgressUpdate($"Setting rosters, lineups, and rotations", teamPlayers.Count, teamPlayers.Count + 1));

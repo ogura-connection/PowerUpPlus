@@ -43,7 +43,7 @@ export interface PersonalDetailsOptions {
 export interface AppearanceOptions {
   faceOptions: FaceCode[];
   eyebrowThicknessOptions: KeyedCode[];
-  skinColorOptions: KeyedCode[];
+  complexionOptions: KeyedCode[];
   eyeColorOptions: KeyedCode[];
   hairStyleOptions: KeyedCode[];
   facialHairStyleOptions: KeyedCode[];
@@ -117,7 +117,7 @@ export interface PlayerPersonalDetailsDto {
 export interface PlayerAppearanceDetailsDto {
   face: FaceCode;
   eyebrows: KeyedCode | null;
-  skinColor: KeyedCode | null;
+  complexion: KeyedCode | null;
   eyeColor: KeyedCode | null;
   hairStyle: KeyedCode | null;
   hairColor: KeyedCode | null;

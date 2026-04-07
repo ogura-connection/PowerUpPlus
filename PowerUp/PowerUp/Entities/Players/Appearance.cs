@@ -1,6 +1,6 @@
 ﻿namespace PowerUp.Entities.Players
 {
-  public enum SkinColor 
+  public enum Complexion 
   { 
     [DisplayName("1")]
     One, 
@@ -246,7 +246,7 @@
   {
     public int FaceId { get; set; } = 177;
     public EyebrowThickness? EyebrowThickness { get; set; }
-    public SkinColor? SkinColor { get; set; }
+    public Complexion? Complexion { get; set; }
     public EyeColor? EyeColor { get; set; }
     public HairStyle? HairStyle { get; set; }
     public HairColor? HairColor { get; set; }

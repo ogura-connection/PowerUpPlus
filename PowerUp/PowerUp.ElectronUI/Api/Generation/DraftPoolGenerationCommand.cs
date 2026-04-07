@@ -1,6 +1,7 @@
 ﻿using PowerUp.Databases;
 using PowerUp.ElectronUI.Api.Shared;
 using PowerUp.Generators;
+using PowerUp.Generators.Franchise;
 using PowerUp.Libraries;
 
 namespace PowerUp.ElectronUI.Api.Generation
@@ -9,21 +10,21 @@ namespace PowerUp.ElectronUI.Api.Generation
   {
     private readonly IDraftPoolGenerator _draftPoolGenerator;
     private readonly IVoiceLibrary _voiceLibrary;
-    private readonly ISkinColorGuesser _skinColorGuesser;
+    private readonly IComplexionGuesser _complexionGuesser;
     private readonly IBattingStanceGuesser _batttingStanceGuesser;
     private readonly IPitchingMechanicsGuesser _pitchingMechanicsGuesser;
 
     public DraftPoolGenerationCommand(
       IDraftPoolGenerator draftPoolGenerator,
       IVoiceLibrary voiceLibrary, 
-      ISkinColorGuesser skinColorGuesser, 
+      IComplexionGuesser complexionGuesser, 
       IBattingStanceGuesser batttingStanceGuesser, 
       IPitchingMechanicsGuesser pitchingMechanicsGuesser
     )
     {
       _draftPoolGenerator = draftPoolGenerator;
       _voiceLibrary = voiceLibrary;
-      _skinColorGuesser = skinColorGuesser;
+      _complexionGuesser = complexionGuesser;
       _batttingStanceGuesser = batttingStanceGuesser;
       _pitchingMechanicsGuesser = pitchingMechanicsGuesser;
     }
@@ -32,9 +33,10 @@ namespace PowerUp.ElectronUI.Api.Generation
     {
       var algorithm = new LSStatistcsPlayerGenerationAlgorithm(
         _voiceLibrary,
-        _skinColorGuesser,
+        _complexionGuesser,
         _batttingStanceGuesser,
-        _pitchingMechanicsGuesser
+        _pitchingMechanicsGuesser,
+        new NoOpPre2008PitchArsenalLookup()
       );
       var draftPool = _draftPoolGenerator.GenerateDraftPool(algorithm, request.Size)
         .GetAwaiter()

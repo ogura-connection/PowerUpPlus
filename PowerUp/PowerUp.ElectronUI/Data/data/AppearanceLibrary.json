@@ -1,0 +1,1262 @@
+{
+  "Luis González": {
+    "FaceId": 0
+  },
+  "Brandon Webb": {
+    "FaceId": 2
+  },
+  "Eric Byrnes": {
+    "FaceId": 4
+  },
+  "Chipper Jones": {
+    "FaceId": 7
+  },
+  "Andruw Jones": {
+    "FaceId": 10
+  },
+  "Edgar Renteria": {
+    "FaceId": 11
+  },
+  "Miguel Tejada": {
+    "FaceId": 12
+  },
+  "Brian Roberts": {
+    "FaceId": 14
+  },
+  "Manny Ramirez": {
+    "FaceId": 17,
+    "HairStyle": 7,
+    "HairColor": 8
+  },
+  "David Ortiz": {
+    "FaceId": 18,
+    "BatColor": 1,
+    "FacialHairStyle": 10,
+    "FacialHairColor": 8,
+    "EyewearType": 1
+  },
+  "Curt Schilling": {
+    "FaceId": 19
+  },
+  "Derrek Lee": {
+    "FaceId": 23
+  },
+  "Aramis Ramirez": {
+    "FaceId": 25
+  },
+  "Carlos Zambrano": {
+    "FaceId": 26
+  },
+  "Greg Maddux": {
+    "FaceId": 27,
+    "EyewearType": 7,
+    "EyewearFrameColor": 0,
+    "EyewearLensColor": 0,
+    "EyeColor": 1
+  },
+  "Mark Buehrle": {
+    "FaceId": 28
+  },
+  "Paul Konerko": {
+    "FaceId": 29
+  },
+  "Jim Thome": {
+    "FaceId": 30
+  },
+  "Adam Dunn": {
+    "FaceId": 35
+  },
+  "Ken Griffey Jr.": {
+    "FaceId": 36,
+    "EyewearType": 1,
+    "FacialHairStyle": 0
+  },
+  "Travis Hafner": {
+    "FaceId": 40
+  },
+  "Grady Sizemore": {
+    "FaceId": 42
+  },
+  "CC Sabathia": {
+    "FaceId": 44
+  },
+  "Aaron Cook": {
+    "FaceId": 45
+  },
+  "Jeff Francis": {
+    "FaceId": 46
+  },
+  "Todd Helton": {
+    "FaceId": 47
+  },
+  "Matt Holliday": {
+    "FaceId": 48
+  },
+  "Brian Fuentes": {
+    "FaceId": 49
+  },
+  "Kazuo Matsui": {
+    "FaceId": 50
+  },
+  "Ivan Rodriguez": {
+    "FaceId": 51
+  },
+  "Justin Verlander": {
+    "FaceId": 54,
+    "FacialHairStyle": 15,
+    "FacialHairColor": 7
+  },
+  "Carlos Guillen": {
+    "FaceId": 55
+  },
+  "Miguel Cabrera": {
+    "FaceId": 57
+  },
+  "Dan Uggla": {
+    "FaceId": 58
+  },
+  "Dontrelle Willis": {
+    "FaceId": 59
+  },
+  "Hanley Ramírez": {
+    "FaceId": 61
+  },
+  "Lance Berkman": {
+    "FaceId": 62
+  },
+  "Roy Oswalt": {
+    "FaceId": 64
+  },
+  "Brad Lidge": {
+    "FaceId": 65
+  },
+  "Roger Clemens": {
+    "FaceId": 66
+  },
+  "Vladimir Guerrero": {
+    "FaceId": 71,
+    "HairStyle": 7,
+    "HairColor": 8
+  },
+  "Francisco Rodríguez": {
+    "FaceId": 72
+  },
+  "Chone Figgins": {
+    "FaceId": 73
+  },
+  "John Lackey": {
+    "FaceId": 74
+  },
+  "Nomar Garciaparra": {
+    "FaceId": 77
+  },
+  "Takashi Saito": {
+    "FaceId": 80
+  },
+  "Ben Sheets": {
+    "FaceId": 83
+  },
+  "Prince Fielder": {
+    "FaceId": 84
+  },
+  "Carlos Lee": {
+    "FaceId": 85
+  },
+  "Joe Mauer": {
+    "FaceId": 89
+  },
+  "Johan Santana": {
+    "FaceId": 90
+  },
+  "Joe Nathan": {
+    "FaceId": 92
+  },
+  "Torii Hunter": {
+    "FaceId": 93
+  },
+  "Carlos Delgado": {
+    "FaceId": 94
+  },
+  "Carlos Beltrán": {
+    "FaceId": 95
+  },
+  "Pedro Martínez": {
+    "FaceId": 96,
+    "FacialHairStyle": 8,
+    "FacialHairColor": 8
+  },
+  "David Wright": {
+    "FaceId": 98
+  },
+  "Alex Rodriguez": {
+    "FaceId": 99
+  },
+  "Derek Jeter": {
+    "FaceId": 100,
+    "FacialHairStyle": 0
+  },
+  "Randy Johnson": {
+    "FaceId": 101,
+    "HairStyle": 5,
+    "HairColor": 7
+  },
+  "Jason Giambi": {
+    "FaceId": 102,
+    "FacialHairStyle": 10,
+    "FacialHairColor": 7
+  },
+  "Bobby Abreu": {
+    "FaceId": 105
+  },
+  "Ryan Howard": {
+    "FaceId": 106
+  },
+  "Chase Utley": {
+    "FaceId": 107
+  },
+  "Pat Burrell": {
+    "FaceId": 108
+  },
+  "Barry Zito": {
+    "FaceId": 110
+  },
+  "Eric Chavez": {
+    "FaceId": 111
+  },
+  "Huston Street": {
+    "FaceId": 113
+  },
+  "Frank Thomas": {
+    "FaceId": 114,
+    "BatColor": 1
+  },
+  "Jake Peavy": {
+    "FaceId": 120
+  },
+  "Mike Cameron": {
+    "FaceId": 121
+  },
+  "Mike Piazza": {
+    "FaceId": 122
+  },
+  "Adrian González": {
+    "FaceId": 123
+  },
+  "Trevor Hoffman": {
+    "FaceId": 124
+  },
+  "Moises Alou": {
+    "FaceId": 129
+  },
+  "Ichiro Suzuki": {
+    "FaceId": 130,
+    "FacialHairStyle": 0
+  },
+  "Raúl Ibáñez": {
+    "FaceId": 132
+  },
+  "Adrián Beltré": {
+    "FaceId": 134
+  },
+  "Albert Pujols": {
+    "FaceId": 135
+  },
+  "Chris Carpenter": {
+    "FaceId": 137
+  },
+  "Scott Rolen": {
+    "FaceId": 138
+  },
+  "Jim Edmonds": {
+    "FaceId": 139
+  },
+  "Rocco Baldelli": {
+    "FaceId": 143
+  },
+  "Carl Crawford": {
+    "FaceId": 145
+  },
+  "Mark Teixeira": {
+    "FaceId": 146
+  },
+  "Michael Young": {
+    "FaceId": 147
+  },
+  "Roy Halladay": {
+    "FaceId": 151
+  },
+  "Vernon Wells": {
+    "FaceId": 153
+  },
+  "Ryan Zimmerman": {
+    "FaceId": 159
+  },
+  "Daisuke Matsuzaka": {
+    "FaceId": 162
+  },
+  "Cole Hamels": {
+    "FaceId": 165
+  },
+  "Josh Johnson": {
+    "FaceId": 168
+  },
+  "Jonathan Papelbon": {
+    "FaceId": 169
+  },
+  "Mariano Rivera": {
+    "FaceId": 173,
+    "FacialHairStyle": 0
+  },
+  "Robinson Cano": {
+    "FaceId": 174
+  },
+  "Gary Sheffield": {
+    "FaceId": 175,
+    "EarringSide": 2,
+    "EarringColor": 5
+  },
+  "Babe Ruth": {
+    "FaceId": 187,
+    "HairStyle": 0,
+    "BatColor": 0,
+    "EyewearType": 1,
+    "FacialHairStyle": 0
+  },
+  "Lou Gehrig": {
+    "FaceId": 178,
+    "HairStyle": 3,
+    "HairColor": 7,
+    "FacialHairStyle": 0
+  },
+  "Ted Williams": {
+    "FaceId": 181,
+    "HairStyle": 3,
+    "HairColor": 7
+  },
+  "Mickey Mantle": {
+    "FaceId": 177,
+    "HairStyle": 3,
+    "HairColor": 1,
+    "FacialHairStyle": 0
+  },
+  "Joe DiMaggio": {
+    "FaceId": 178,
+    "HairStyle": 3,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Willie Mays": {
+    "FaceId": 183,
+    "HairStyle": 3,
+    "HairColor": 8
+  },
+  "Hank Aaron": {
+    "FaceId": 182,
+    "HairStyle": 15,
+    "HairColor": 8
+  },
+  "Jackie Robinson": {
+    "FaceId": 180,
+    "HairStyle": 3,
+    "HairColor": 8
+  },
+  "Roberto Clemente": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8
+  },
+  "Barry Bonds": {
+    "FaceId": 190,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "EarringSide": 2,
+    "EarringColor": 5
+  },
+  "Rickey Henderson": {
+    "FaceId": 182,
+    "HairStyle": 15,
+    "HairColor": 8
+  },
+  "Ty Cobb": {
+    "FaceId": 179,
+    "HairStyle": 3,
+    "HairColor": 6
+  },
+  "Honus Wagner": {
+    "FaceId": 187,
+    "HairStyle": 0,
+    "HairColor": 7
+  },
+  "Stan Musial": {
+    "FaceId": 178,
+    "HairStyle": 3,
+    "HairColor": 7
+  },
+  "Cal Ripken Jr.": {
+    "FaceId": 177,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 0
+  },
+  "Ozzie Smith": {
+    "FaceId": 182,
+    "HairStyle": 15,
+    "HairColor": 8
+  },
+  "Pete Rose": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7
+  },
+  "Johnny Bench": {
+    "FaceId": 177,
+    "HairStyle": 15,
+    "HairColor": 7
+  },
+  "Nolan Ryan": {
+    "FaceId": 181,
+    "HairStyle": 15,
+    "HairColor": 7
+  },
+  "Sandy Koufax": {
+    "FaceId": 178,
+    "HairStyle": 3,
+    "HairColor": 8
+  },
+  "Bob Gibson": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8
+  },
+  "Tom Seaver": {
+    "FaceId": 178,
+    "HairStyle": 4,
+    "HairColor": 7
+  },
+  "Carlton Fisk": {
+    "FaceId": 177,
+    "HairStyle": 15,
+    "HairColor": 7
+  },
+  "George Brett": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 6
+  },
+  "Mike Schmidt": {
+    "FaceId": 178,
+    "HairStyle": 4,
+    "HairColor": 6,
+    "FacialHairStyle": 1,
+    "FacialHairColor": 6
+  },
+  "Reggie Jackson": {
+    "FaceId": 185,
+    "HairStyle": 8,
+    "HairColor": 8,
+    "FacialHairStyle": 1,
+    "FacialHairColor": 8,
+    "EyewearType": 7,
+    "EyewearFrameColor": 0,
+    "EyewearLensColor": 0
+  },
+  "Rollie Fingers": {
+    "FaceId": 178,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 3,
+    "FacialHairColor": 7
+  },
+  "Goose Gossage": {
+    "FaceId": 181,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 1,
+    "FacialHairColor": 8
+  },
+  "Tony Gwynn": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Kirby Puckett": {
+    "FaceId": 185,
+    "HairStyle": 0,
+    "HairColor": 8
+  },
+  "Rod Carew": {
+    "FaceId": 183,
+    "HairStyle": 8,
+    "HairColor": 8
+  },
+  "Craig Biggio": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7
+  },
+  "Jeff Bagwell": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 10,
+    "FacialHairColor": 7
+  },
+  "Bo Jackson": {
+    "FaceId": 183,
+    "HairStyle": 19,
+    "HairColor": 8
+  },
+  "Mike Trout": {
+    "FaceId": 177,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 15,
+    "FacialHairColor": 7,
+    "EyewearType": 1
+  },
+  "Shohei Ohtani": {
+    "FaceId": 180,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Clayton Kershaw": {
+    "FaceId": 178,
+    "HairStyle": 15,
+    "HairColor": 6,
+    "FacialHairStyle": 15,
+    "FacialHairColor": 6,
+    "EyeColor": 1
+  },
+  "Jacob deGrom": {
+    "FaceId": 179,
+    "HairStyle": 5,
+    "HairColor": 7,
+    "FacialHairStyle": 17,
+    "FacialHairColor": 7
+  },
+  "Mookie Betts": {
+    "FaceId": 182,
+    "HairStyle": 19,
+    "HairColor": 8,
+    "FacialHairStyle": 0,
+    "EyewearType": 1
+  },
+  "Freddie Freeman": {
+    "FaceId": 177,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 15,
+    "FacialHairColor": 7
+  },
+  "Sadaharu Oh": {
+    "FaceId": 180,
+    "HairStyle": 3,
+    "HairColor": 8
+  },
+  "Shigeo Nagashima": {
+    "FaceId": 180,
+    "HairStyle": 3,
+    "HairColor": 8
+  },
+  "Satchel Paige": {
+    "FaceId": 191,
+    "HairStyle": 15,
+    "HairColor": 8
+  },
+  "Walter Johnson": {
+    "FaceId": 178,
+    "HairStyle": 3,
+    "HairColor": 7
+  },
+  "Cy Young": {
+    "FaceId": 187,
+    "HairStyle": 0,
+    "FacialHairStyle": 1,
+    "FacialHairColor": 7
+  },
+  "Christy Mathewson": {
+    "FaceId": 178,
+    "HairStyle": 3,
+    "HairColor": 6
+  },
+  "Warren Spahn": {
+    "FaceId": 179,
+    "HairStyle": 3,
+    "HairColor": 7
+  },
+  "Steve Carlton": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7
+  },
+  "Whitey Ford": {
+    "FaceId": 178,
+    "HairStyle": 3,
+    "HairColor": 1
+  },
+  "Bob Feller": {
+    "FaceId": 177,
+    "HairStyle": 3,
+    "HairColor": 7
+  },
+  "Robin Yount": {
+    "FaceId": 179,
+    "HairStyle": 4,
+    "HairColor": 7,
+    "FacialHairStyle": 3,
+    "FacialHairColor": 7
+  },
+  "Paul Molitor": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7
+  },
+  "Willie Stargell": {
+    "FaceId": 183,
+    "HairStyle": 8,
+    "HairColor": 8
+  },
+  "Roberto Alomar": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8
+  },
+  "Eddie Murray": {
+    "FaceId": 183,
+    "HairStyle": 8,
+    "HairColor": 8
+  },
+  "Frank Robinson": {
+    "FaceId": 182,
+    "HairStyle": 15,
+    "HairColor": 8
+  },
+  "Brooks Robinson": {
+    "FaceId": 178,
+    "HairStyle": 3,
+    "HairColor": 7
+  },
+  "Harmon Killebrew": {
+    "FaceId": 177,
+    "HairStyle": 3,
+    "HairColor": 7
+  },
+  "Carl Yastrzemski": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7
+  },
+  "Dennis Eckersley": {
+    "FaceId": 179,
+    "HairStyle": 5,
+    "HairColor": 8,
+    "FacialHairStyle": 1,
+    "FacialHairColor": 8
+  },
+  "Bruce Sutter": {
+    "FaceId": 181,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 17,
+    "FacialHairColor": 7
+  },
+  "Don Drysdale": {
+    "FaceId": 181,
+    "HairStyle": 3,
+    "HairColor": 8
+  },
+  "Orel Hershiser": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7
+  },
+  "Fernando Valenzuela": {
+    "FaceId": 185,
+    "HairStyle": 9,
+    "HairColor": 8
+  },
+  "Yogi Berra": {
+    "FaceId": 185,
+    "HairStyle": 3,
+    "HairColor": 8
+  },
+  "Don Mattingly": {
+    "FaceId": 179,
+    "HairStyle": 18,
+    "HairColor": 7,
+    "FacialHairStyle": 1,
+    "FacialHairColor": 7
+  },
+  "Bernie Williams": {
+    "FaceId": 183,
+    "HairStyle": 9,
+    "HairColor": 8
+  },
+  "Joe Morgan": {
+    "FaceId": 183,
+    "HairStyle": 8,
+    "HairColor": 8
+  },
+  "Barry Larkin": {
+    "FaceId": 182,
+    "HairStyle": 15,
+    "HairColor": 8
+  },
+  "Eric Davis": {
+    "FaceId": 183,
+    "HairStyle": 19,
+    "HairColor": 8
+  },
+  "Aaron Judge": {
+    "FaceId": 181,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0,
+    "EyewearType": 1,
+    "EyeColor": 1
+  },
+  "Yoshinobu Yamamoto": {
+    "FaceId": 180,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Juan Soto": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Bobby Witt Jr.": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 0
+  },
+  "Bryce Harper": {
+    "FaceId": 177,
+    "HairStyle": 15,
+    "HairColor": 6,
+    "FacialHairStyle": 26,
+    "FacialHairColor": 6,
+    "EyewearType": 1,
+    "EyeColor": 1
+  },
+  "Fernando Tatis Jr.": {
+    "FaceId": 182,
+    "HairStyle": 19,
+    "HairColor": 8,
+    "FacialHairStyle": 10,
+    "FacialHairColor": 8
+  },
+  "Madison Bumgarner": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 17,
+    "FacialHairColor": 7
+  },
+  "Dallas Keuchel": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 26,
+    "FacialHairColor": 8
+  },
+  "Kenley Jansen": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 15,
+    "FacialHairColor": 8
+  },
+  "Brian Wilson": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 27,
+    "FacialHairColor": 8
+  },
+  "Jayson Werth": {
+    "FaceId": 179,
+    "HairStyle": 5,
+    "HairColor": 7,
+    "FacialHairStyle": 17,
+    "FacialHairColor": 7
+  },
+  "Charlie Blackmon": {
+    "FaceId": 179,
+    "HairStyle": 5,
+    "HairColor": 8,
+    "FacialHairStyle": 27,
+    "FacialHairColor": 8
+  },
+  "Josh Donaldson": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 6,
+    "FacialHairStyle": 17,
+    "FacialHairColor": 6
+  },
+  "Sergio Romo": {
+    "FaceId": 185,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 26,
+    "FacialHairColor": 8
+  },
+  "Evan Gattis": {
+    "FaceId": 181,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 27,
+    "FacialHairColor": 7
+  },
+  "Jake Arrieta": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 17,
+    "FacialHairColor": 8
+  },
+  "Corey Kluber": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 15,
+    "FacialHairColor": 8
+  },
+  "Lance Lynn": {
+    "FaceId": 181,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 26,
+    "FacialHairColor": 7
+  },
+  "Max Scherzer": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 15,
+    "FacialHairColor": 7,
+    "EyeColor": 1
+  },
+  "Andrew McCutchen": {
+    "FaceId": 182,
+    "HairStyle": 7,
+    "HairColor": 8,
+    "FacialHairStyle": 17,
+    "FacialHairColor": 8
+  },
+  "David Price": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 15,
+    "FacialHairColor": 8
+  },
+  "Josh Hader": {
+    "FaceId": 179,
+    "HairStyle": 5,
+    "HairColor": 7,
+    "FacialHairStyle": 17,
+    "FacialHairColor": 7
+  },
+  "Catfish Hunter": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 1,
+    "FacialHairColor": 7
+  },
+  "Keith Hernandez": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 1,
+    "FacialHairColor": 8
+  },
+  "Wade Boggs": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 6,
+    "FacialHairStyle": 1,
+    "FacialHairColor": 6
+  },
+  "Dave Winfield": {
+    "FaceId": 183,
+    "HairStyle": 8,
+    "HairColor": 8,
+    "FacialHairStyle": 2,
+    "FacialHairColor": 8
+  },
+  "Thurman Munson": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 1,
+    "FacialHairColor": 7
+  },
+  "Al Hrabosky": {
+    "FaceId": 181,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 3,
+    "FacialHairColor": 8
+  },
+  "Dan Quisenberry": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 3,
+    "FacialHairColor": 7
+  },
+  "Mark McGwire": {
+    "FaceId": 181,
+    "HairStyle": 15,
+    "HairColor": 5,
+    "FacialHairStyle": 10,
+    "FacialHairColor": 5
+  },
+  "Justin Turner": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 5,
+    "FacialHairStyle": 17,
+    "FacialHairColor": 5
+  },
+  "Salvador Pérez": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 15,
+    "FacialHairColor": 8
+  },
+  "Harold Baines": {
+    "FaceId": 183,
+    "HairStyle": 8,
+    "HairColor": 8
+  },
+  "Giancarlo Stanton": {
+    "FaceId": 181,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0,
+    "EyewearType": 1
+  },
+  "Ronald Acuña Jr.": {
+    "FaceId": 182,
+    "HairStyle": 19,
+    "HairColor": 8,
+    "FacialHairStyle": 0,
+    "EyewearType": 1
+  },
+  "Eric Gagné": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 10,
+    "FacialHairColor": 8,
+    "EyewearType": 10,
+    "EyewearFrameColor": 0,
+    "EyewearLensColor": 1
+  },
+  "Victor Starffin": {
+    "FaceId": 179,
+    "HairStyle": 3,
+    "HairColor": 7
+  },
+  "Kyle Schwarber": {
+    "FaceId": 181,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 15,
+    "FacialHairColor": 7
+  },
+  "Alex Bregman": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 0
+  },
+  "Roman Anthony": {
+    "FaceId": 182,
+    "HairStyle": 19,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Will Smith": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 0
+  },
+  "Brice Turang": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Byron Buxton": {
+    "FaceId": 183,
+    "HairStyle": 19,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Cal Raleigh": {
+    "FaceId": 181,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 17,
+    "FacialHairColor": 7
+  },
+  "Gunnar Henderson": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 0
+  },
+  "Pete Crow-Armstrong": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 0
+  },
+  "Paul Goldschmidt": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 6,
+    "FacialHairStyle": 0
+  },
+  "Ernie Clement": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 0
+  },
+  "Paul Skenes": {
+    "FaceId": 181,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 0
+  },
+  "Logan Webb": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 17,
+    "FacialHairColor": 7
+  },
+  "Nolan McLean": {
+    "FaceId": 181,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 0
+  },
+  "Jeff Hoffman": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 0
+  },
+  "Manny Barreda": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Mason Miller": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 0
+  },
+  "David Bednar": {
+    "FaceId": 179,
+    "HairStyle": 5,
+    "HairColor": 7,
+    "FacialHairStyle": 26,
+    "FacialHairColor": 7
+  },
+  "Garrett Whitlock": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 17,
+    "FacialHairColor": 7
+  },
+  "Griffin Jax": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 0
+  },
+  "Brad Keller": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 15,
+    "FacialHairColor": 7
+  },
+  "Gabe Speier": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 0
+  },
+  "Garrett Cleavinger": {
+    "FaceId": 179,
+    "HairStyle": 15,
+    "HairColor": 7,
+    "FacialHairStyle": 0
+  },
+  "Maikel Garcia": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Luis Arraez": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Eugenio Suárez": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 15,
+    "FacialHairColor": 8
+  },
+  "Gleyber Torres": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Ezequiel Tovar": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Wilyer Abreu": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Jackson Chourio": {
+    "FaceId": 182,
+    "HairStyle": 19,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "William Contreras": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Willson Contreras": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 15,
+    "FacialHairColor": 8
+  },
+  "Andrés Giménez": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Anthony Santander": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 15,
+    "FacialHairColor": 8
+  },
+  "Javier Sanoja": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Eduardo Rodriguez": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Ranger Suárez": {
+    "FaceId": 185,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Keider Montero": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Germán Márquez": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Antonio Senzatela": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Daniel Palencia": {
+    "FaceId": 182,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Andrés Machado": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "José Butto": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Ángel Zerpa": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Eduard Bazardo": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Enmanuel De Jesus": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  },
+  "Ricardo Sánchez": {
+    "FaceId": 183,
+    "HairStyle": 15,
+    "HairColor": 8,
+    "FacialHairStyle": 0
+  }
+}

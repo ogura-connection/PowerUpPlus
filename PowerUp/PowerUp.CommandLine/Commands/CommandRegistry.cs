@@ -19,6 +19,7 @@ namespace PowerUp.CommandLine.Commands
       services.AddTransient<ICommand, ReadGameSaveCommand>();
       services.AddTransient<ICommand, GenerateRosterCommand>();
       services.AddTransient<ICommand, GenerateFranchiseRostersCommand>();
+      services.AddTransient<ICommand, BuildWbcTeamsCommand>();
       return services;
     }
 

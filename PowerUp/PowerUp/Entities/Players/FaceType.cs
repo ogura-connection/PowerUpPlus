@@ -25,7 +25,7 @@
         return FaceType.Other;
     }
 
-    public static bool CanChooseSkinColor(FaceType faceType)
+    public static bool CanChooseComplexion(FaceType faceType)
       => faceType == FaceType.Anime
         || faceType == FaceType.Standard
         || faceType == FaceType.StandardWithoutEyeColor;

@@ -12,9 +12,15 @@ namespace PowerUp.CommandLine.Commands.Generation
     ILogger<GenerateFranchiseRostersCommand> logger,
     IFranchiseRosterGenerator franchiseGenerator,
     IVoiceLibrary voiceLibrary,
-    ISkinColorGuesser skinColorGuesser,
+    IComplexionGuesser complexionGuesser,
     IBattingStanceGuesser battingStanceGuesser,
-    IPitchingMechanicsGuesser pitchingMechanicsGuesser
+    IPitchingMechanicsGuesser pitchingMechanicsGuesser,
+    IPre2008PitchArsenalLookup pre2008ArsenalLookup,
+    IHotZoneLookup hotZoneLookup,
+    IComplexionLookup complexionLookup,
+    ISpecialAbilitiesLookup specialAbilitiesLookup,
+    IPlayerFormLookup playerFormLookup,
+    IAppearanceLookup appearanceLookup
   ) : ICommand
   {
     public Command Build()
@@ -40,9 +46,15 @@ namespace PowerUp.CommandLine.Commands.Generation
 
         var algorithm = new LSStatistcsPlayerGenerationAlgorithm(
           voiceLibrary,
-          skinColorGuesser,
+          complexionGuesser,
           battingStanceGuesser,
-          pitchingMechanicsGuesser
+          pitchingMechanicsGuesser,
+          pre2008ArsenalLookup,
+          hotZoneLookup,
+          complexionLookup,
+          specialAbilitiesLookup,
+          playerFormLookup,
+          appearanceLookup
         );
 
         HashSet<string>? teamFilter = null;

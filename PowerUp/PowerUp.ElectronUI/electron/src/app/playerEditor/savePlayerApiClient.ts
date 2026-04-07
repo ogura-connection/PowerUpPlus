@@ -39,7 +39,7 @@ export interface PersonalDetailsRequest {
 export interface AppearanceRequest {
   faceId: number;
   eyebrowThicknessKey: string | null;
-  skinColorKey: string | null;
+  complexionKey: string | null;
   eyeColorKey: string | null;
   hairStyleKey: string | null;
   hairColorKey: string | null;
