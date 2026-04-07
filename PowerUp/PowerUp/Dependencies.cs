@@ -1,0 +1,58 @@
+﻿using PowerUp.CSV;
+using Microsoft.Extensions.DependencyInjection;
+using PowerUp.Entities.Players.Api;
+using PowerUp.Entities.Rosters.Api;
+using PowerUp.Entities.Teams.Api;
+using PowerUp.Fetchers.BaseballReference;
+using PowerUp.Fetchers.MLBLookupService;
+using PowerUp.Fetchers.MLBStatsApi;
+using PowerUp.Fetchers.Statcast;
+using PowerUp.GameSave.Api;
+using PowerUp.GameSave.GameSaveManagement;
+using PowerUp.Generators;
+using PowerUp.Generators.Franchise;
+using PowerUp.Libraries;
+using PowerUp.Mappers.Players;
+using PowerUp.Migrations;
+using PowerUp.Providers;
+using Microsoft.Extensions.Logging;
+
+namespace PowerUp
+{
+  public static class Dependencies
+  {
+    public static void RegisterDependencies(this IServiceCollection services)
+    {
+      services.AddTransient(p => p.GetRequiredService<ILoggerFactory>().CreateLogger(""));
+      services.AddTransient<IRosterImportApi>(provider => new RosterImportApi(provider.GetRequiredService<ICharacterLibrary>(), provider.GetRequiredService<IPlayerMapper>()));
+      services.AddTransient<IRosterExportApi, RosterExportApi>();
+      services.AddTransient<IPlayerMapper>(provider => new PlayerMapper(provider.GetRequiredService<ISpecialSavedNameLibrary>()));
+      services.AddTransient<IPlayerApi>(provider => new PlayerApi());
+      services.AddTransient<ITeamApi>(provider => new TeamApi(provider.GetRequiredService<IPlayerApi>()));
+      services.AddTransient<IBaseRosterInitializer>(provider => new BaseRosterInitalizer(provider.GetRequiredService<IBaseGameSavePathProvider>(), provider.GetRequiredService<IRosterImportApi>()));
+      services.AddTransient<IRosterApi>(provider => new RosterApi());
+      services.AddTransient<IMLBStatsApiClient, MLBStatsApiClient>();
+      services.AddTransient<IStatcastClient, StatcastClient>();
+      services.AddTransient<IMLBLookupServiceClient, MLBLookupServiceClient>();
+      services.AddTransient<IPlayerStatisticsFetcher>(provider => new LSPlayerStatisticsFetcher(provider.GetRequiredService<IMLBLookupServiceClient>()));
+      services.AddTransient<IComplexionGuesser>(provider => new ComplexionGuesser(provider.GetRequiredService<ICountryAndComplexionLibrary>()));
+      services.AddTransient<IPlayerGenerator>(provider => new PlayerGenerator(provider.GetRequiredService<IPlayerApi>(), provider.GetRequiredService<IPlayerStatisticsFetcher>(), provider.GetRequiredService<IBaseballReferenceClient>(), provider.GetRequiredService<IMLBStatsApiClient>()));
+      services.AddTransient<ITeamGenerator, TeamGenerator>();
+      services.AddTransient<IRosterGenerator>(provider => new RosterGenerator(provider.GetRequiredService<IMLBLookupServiceClient>(), provider.GetRequiredService<IMLBStatsApiClient>(), provider.GetRequiredService<ITeamGenerator>()));
+      services.AddTransient<IDraftPoolGenerator, DraftPoolGenerator>();
+      services.AddSingleton<IBaseballReferenceClient>(provider => new BaseballReferenceClient());
+      services.AddTransient<IBaseballReferenceUrlProvider>(provider => new BaseballReferenceUrlProvider(provider.GetRequiredService<IBaseballReferenceClient>()));
+      services.AddTransient<IGameSaveManager>(provider => new GameSaveManager(provider.GetRequiredService<ICharacterLibrary>(), provider.GetRequiredService<IBaseGameSavePathProvider>()));
+      services.AddTransient<IMigrationApi, MigrationApi>();
+      services.AddTransient<IPowerProsIdAssigner>(provider => new PowerProsIdAssigner());
+      services.AddTransient<IBattingStanceGuesser>(provider => new BattingStanceGuesser(provider.GetRequiredService<IBattingStanceLibrary>()));
+      services.AddTransient<IPitchingMechanicsGuesser>(provider => new PitchingMechanicsGuesser(provider.GetRequiredService<IPitchingMechanicsLibrary>()));
+      services.AddTransient<IPlayerCsvReader, RosterCsvReader>();
+      services.AddTransient<IPlayerCsvWriter, RosterCsvWriter>();
+      services.AddTransient<IPlayerCsvService, RosterCsvService>();
+
+      // Franchise roster generation
+      services.AddTransient<IFranchiseRosterGenerator, FranchiseRosterGenerator>();
+    }
+  }
+}
